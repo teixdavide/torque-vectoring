@@ -1,22 +1,15 @@
 #include "include/reference_generators/reference_generator.hpp"
 
-Reference ReferenceGenerator::create_reference(VehicleState state, DriverCommand command)
-{
-    Reference ref;
-    ref.yaw_rate = generate_reference_yaw_rate(state, command);
-    ref.sideslip_angle = generate_reference_sideslip_angle(state, command);
-    return ref;
-}
+ReferenceGenerator::ReferenceGenerator(YawRateReferenceGenerator* yaw_rate_generator,
+                                       SideslipReferenceGenerator* sideslip_generator) : 
+    yaw_rate_generator_(yaw_rate_generator),
+    sideslip_generator_(sideslip_generator) {}
 
-double ReferenceGenerator::generate_reference_sideslip_angle(VehicleState state, DriverCommand command)
-{
-    double reference_yaw_rate = generate_reference_yaw_rate(state, command);
-
-    double sideslip_angle = (car_params_.front_axle_distance / state.velocity_x -
-                             (car_params_.mass * state.acceleration_x * state.velocity_x /
-                              (car_params_.cornering_stiffness_rear *
-                               (car_params_.front_axle_distance + car_params_.rear_axle_distance)))) *
-                            reference_yaw_rate;
-
-    return sideslip_angle;
+Reference ReferenceGenerator::create_reference(VehicleState state, DriverCommand command) {
+    double reference_yaw_rate = yaw_rate_generator_->generate_reference_yaw_rate(state, command);
+    double reference_sideslip = sideslip_generator_->generate_reference_sideslip(state, command, reference_yaw_rate);
+    Reference reference;
+    reference.yaw_rate = reference_yaw_rate;
+    reference.sideslip_angle = reference_sideslip;
+    return reference;
 }
