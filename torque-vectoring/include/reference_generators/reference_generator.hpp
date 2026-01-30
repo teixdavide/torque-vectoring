@@ -1,8 +1,8 @@
 #pragma once
-#include "car_parameters.hpp"
-#include "reference.hpp"
-#include "yaw_rate_reference_generator.hpp"
-#include "sideslip_reference_generator.hpp"
+#include "data_structures/car_parameters.hpp"
+#include "data_structures/reference.hpp"
+#include "reference_generators/yaw_rate_reference_generators/yaw_rate_reference_generator.hpp"
+#include "reference_generators/sideslip_reference_generators/sideslip_reference_generator.hpp"
 
 class ReferenceGenerator {
   public:

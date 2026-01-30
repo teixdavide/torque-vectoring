@@ -1,3 +1,5 @@
+#pragma once
+
 struct VehicleState {
   double yaw_rate;
   double sideslip_angle;

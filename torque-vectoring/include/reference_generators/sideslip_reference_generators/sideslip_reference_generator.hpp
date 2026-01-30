@@ -1,7 +1,7 @@
 #pragma once
-#include "vehicle_state.hpp"
-#include "driver_command.hpp"
-#include "car_parameters.hpp"
+#include "data_structures/vehicle_state.hpp"
+#include "data_structures/driver_command.hpp"
+#include "data_structures/car_parameters.hpp"
 
 class SideslipReferenceGenerator {
   public:

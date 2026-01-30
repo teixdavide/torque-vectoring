@@ -1,3 +1,5 @@
+#pragma once
+
 struct CarParameters {
   double front_axle_distance;
   double rear_axle_distance;

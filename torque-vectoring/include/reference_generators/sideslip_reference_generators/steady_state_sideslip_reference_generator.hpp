@@ -1,4 +1,4 @@
-#include "sideslip_reference_generator.hpp"
+#include "data_structures/sideslip_reference_generator.hpp"
 
 class SteadyStateSideslipReferenceGenerator : public SideslipReferenceGenerator {
   public:

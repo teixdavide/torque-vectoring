@@ -1,4 +1,4 @@
-#include "include/reference_generators/reference_generator.hpp"
+#include "reference_generators/reference_generator.hpp"
 
 ReferenceGenerator::ReferenceGenerator(YawRateReferenceGenerator* yaw_rate_generator,
                                        SideslipReferenceGenerator* sideslip_generator) : 

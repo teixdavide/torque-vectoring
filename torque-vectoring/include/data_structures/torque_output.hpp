@@ -1,3 +1,5 @@
+#pragma once
+
 struct TorqueOutput {
   double rl_torque;
   double rr_torque;

@@ -1,4 +1,4 @@
-#include "steady_state_sideslip_reference_generator.hpp"
+#include "reference_generators/sideslip_reference_generators/steady_state_sideslip_reference_generator.hpp"
 
 SteadyStateSideslipReferenceGenerator::SteadyStateSideslipReferenceGenerator(const CarParameters& car_parameters)
     : car_parameters_(car_parameters) {}
