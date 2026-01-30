@@ -12,6 +12,7 @@ struct CarParameters {
   double outer_steering_ratio;
   double cornering_stiffness_front;
   double cornering_stiffness_rear;
+  double max_lateral_acceleration;
 
   struct TireParameters {
     double lateral_stiffness_factor;

@@ -6,5 +6,5 @@
 class YawRateReferenceGenerator {
   public:
     virtual ~YawRateReferenceGenerator() = default;
-    virtual double generate_reference_yaw_rate(VehicleState state, DriverCommand command);
+    virtual double generate_reference_yaw_rate(VehicleState state, DriverCommand command) = 0;
 };
