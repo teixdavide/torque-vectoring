@@ -1,0 +1,52 @@
+name: Colcon Build and Test
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          
+      - name: Install colcon
+        run: |
+          python -m pip install --upgrade pip
+          pip install colcon-common-extensions
+          
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cmake build-essential
+          
+      - name: Create colcon workspace
+        run: |
+          mkdir -p colcon_ws/src
+          cp -r torque-vectoring colcon_ws/src/
+          
+      - name: Build with colcon
+        run: |
+          cd colcon_ws
+          colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release
+          
+      - name: Test with colcon
+        run: |
+          cd colcon_ws
+          colcon test
+          
+      - name: Show test results
+        run: |
+          cd colcon_ws
+          colcon test-result --verbose
