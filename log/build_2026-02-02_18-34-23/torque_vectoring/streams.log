@@ -1,0 +1,47 @@
+[0.764s] Invoking command in '/home/runner/work/torque-vectoring/torque-vectoring/build/torque_vectoring': PATH=/opt/microsoft/powershell/7:${PATH} PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} /usr/local/bin/cmake --build /home/runner/work/torque-vectoring/torque-vectoring/build/torque_vectoring -- -j2 -l2
+[0.786s] [ 26%] Built target torque_vectoring
+[0.790s] [ 40%] Built target gtest
+[0.805s] [ 53%] Built target gtest_main
+[0.807s] [ 66%] Built target gmock
+[0.824s] [ 80%] Built target gmock_main
+[0.825s] [ 86%] Building CXX object CMakeFiles/reference_generator_tests.dir/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp.o
+[1.398s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:12:9: warning: C++ designated initializers only available with ‘-std=c++20’ or ‘-std=gnu++20’ [-Wc++20-extensions]
+[1.398s]    12 |         .mass = 269.6,                     // kg
+[1.398s]       |         ^
+[1.399s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:13:9: warning: C++ designated initializers only available with ‘-std=c++20’ or ‘-std=gnu++20’ [-Wc++20-extensions]
+[1.399s]    13 |         .front_axle_distance = 1.20,       // m
+[1.399s]       |         ^
+[1.399s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:14:9: warning: C++ designated initializers only available with ‘-std=c++20’ or ‘-std=gnu++20’ [-Wc++20-extensions]
+[1.399s]    14 |         .rear_axle_distance = 1.20,        // m
+[1.399s]       |         ^
+[1.399s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:15:9: warning: C++ designated initializers only available with ‘-std=c++20’ or ‘-std=gnu++20’ [-Wc++20-extensions]
+[1.399s]    15 |         .cornering_stiffness_front = 127,  // N/rad
+[1.400s]       |         ^
+[1.400s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:16:9: warning: C++ designated initializers only available with ‘-std=c++20’ or ‘-std=gnu++20’ [-Wc++20-extensions]
+[1.400s]    16 |         .cornering_stiffness_rear = 127,   // N/rad
+[1.400s]       |         ^
+[1.400s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:17:9: warning: C++ designated initializers only available with ‘-std=c++20’ or ‘-std=gnu++20’ [-Wc++20-extensions]
+[1.400s]    17 |         .max_lateral_acceleration = 1.48 * 9.81 // m/s^2
+[1.400s]       |         ^
+[1.401s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5: warning: missing initializer for member ‘CarParameters::front_axle_distance’ [-Wmissing-field-initializers]
+[1.401s]    18 |     };
+[1.401s]       |     ^
+[1.401s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5: warning: missing initializer for member ‘CarParameters::rear_axle_distance’ [-Wmissing-field-initializers]
+[1.401s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5: warning: missing initializer for member ‘CarParameters::front_track_width’ [-Wmissing-field-initializers]
+[1.401s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5: warning: missing initializer for member ‘CarParameters::rear_track_width’ [-Wmissing-field-initializers]
+[1.401s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5: warning: missing initializer for member ‘CarParameters::center_of_gravity_height’ [-Wmissing-field-initializers]
+[1.401s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5: warning: missing initializer for member ‘CarParameters::moment_of_inertia_z’ [-Wmissing-field-initializers]
+[1.402s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5: warning: missing initializer for member ‘CarParameters::wheel_radius’ [-Wmissing-field-initializers]
+[1.402s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5: warning: missing initializer for member ‘CarParameters::gear_ratio’ [-Wmissing-field-initializers]
+[1.402s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5: warning: missing initializer for member ‘CarParameters::inner_steering_ratio’ [-Wmissing-field-initializers]
+[1.402s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5: warning: missing initializer for member ‘CarParameters::outer_steering_ratio’ [-Wmissing-field-initializers]
+[1.402s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5: warning: missing initializer for member ‘CarParameters::cornering_stiffness_front’ [-Wmissing-field-initializers]
+[1.402s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5: warning: missing initializer for member ‘CarParameters::cornering_stiffness_rear’ [-Wmissing-field-initializers]
+[1.402s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5: warning: missing initializer for member ‘CarParameters::max_lateral_acceleration’ [-Wmissing-field-initializers]
+[1.403s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5: warning: missing initializer for member ‘CarParameters::tire_parameters’ [-Wmissing-field-initializers]
+[1.403s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5: warning: missing initializer for member ‘CarParameters::aerodynamics_parameters’ [-Wmissing-field-initializers]
+[1.403s] /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5: error: designator order for field ‘CarParameters::front_axle_distance’ does not match declaration order in ‘CarParameters’
+[1.559s] gmake[2]: *** [CMakeFiles/reference_generator_tests.dir/build.make:93: CMakeFiles/reference_generator_tests.dir/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp.o] Error 1
+[1.559s] gmake[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/reference_generator_tests.dir/all] Error 2
+[1.559s] gmake: *** [Makefile:146: all] Error 2
+[1.560s] Invoked command in '/home/runner/work/torque-vectoring/torque-vectoring/build/torque_vectoring' returned '2': PATH=/opt/microsoft/powershell/7:${PATH} PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} /usr/local/bin/cmake --build /home/runner/work/torque-vectoring/torque-vectoring/build/torque_vectoring -- -j2 -l2

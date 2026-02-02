@@ -1,0 +1,6 @@
+[ 26%] Built target torque_vectoring
+[ 40%] Built target gtest
+[ 53%] Built target gtest_main
+[ 66%] Built target gmock
+[ 80%] Built target gmock_main
+[ 86%] Building CXX object CMakeFiles/reference_generator_tests.dir/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp.o

@@ -1,0 +1,311 @@
+[0.000000] (-) TimerEvent: {}
+[0.000360] (torque_vectoring) JobQueued: {'identifier': 'torque_vectoring', 'dependencies': OrderedDict()}
+[0.000412] (torque_vectoring) JobStarted: {'identifier': 'torque_vectoring'}
+[0.099286] (-) TimerEvent: {}
+[0.199575] (-) TimerEvent: {}
+[0.299872] (-) TimerEvent: {}
+[0.400136] (-) TimerEvent: {}
+[0.500419] (-) TimerEvent: {}
+[0.600777] (-) TimerEvent: {}
+[0.701073] (-) TimerEvent: {}
+[0.801388] (-) TimerEvent: {}
+[0.901718] (-) TimerEvent: {}
+[1.001995] (-) TimerEvent: {}
+[1.102267] (-) TimerEvent: {}
+[1.202547] (-) TimerEvent: {}
+[1.302825] (-) TimerEvent: {}
+[1.403080] (-) TimerEvent: {}
+[1.503359] (-) TimerEvent: {}
+[1.603673] (-) TimerEvent: {}
+[1.703929] (-) TimerEvent: {}
+[1.804185] (-) TimerEvent: {}
+[1.904442] (-) TimerEvent: {}
+[2.004744] (-) TimerEvent: {}
+[2.105008] (-) TimerEvent: {}
+[2.205272] (-) TimerEvent: {}
+[2.305539] (-) TimerEvent: {}
+[2.405856] (-) TimerEvent: {}
+[2.506133] (-) TimerEvent: {}
+[2.606390] (-) TimerEvent: {}
+[2.706677] (-) TimerEvent: {}
+[2.806934] (-) TimerEvent: {}
+[2.907226] (-) TimerEvent: {}
+[3.007534] (-) TimerEvent: {}
+[3.107839] (-) TimerEvent: {}
+[3.208171] (-) TimerEvent: {}
+[3.308497] (-) TimerEvent: {}
+[3.408781] (-) TimerEvent: {}
+[3.509047] (-) TimerEvent: {}
+[3.609324] (-) TimerEvent: {}
+[3.709636] (-) TimerEvent: {}
+[3.809930] (-) TimerEvent: {}
+[3.910414] (-) TimerEvent: {}
+[4.010711] (-) TimerEvent: {}
+[4.112542] (-) TimerEvent: {}
+[4.212882] (-) TimerEvent: {}
+[4.313167] (-) TimerEvent: {}
+[4.413418] (-) TimerEvent: {}
+[4.513718] (-) TimerEvent: {}
+[4.597578] (torque_vectoring) JobProgress: {'identifier': 'torque_vectoring', 'progress': 'cmake'}
+[4.598125] (torque_vectoring) Command: {'cmd': ['/usr/local/bin/cmake', '/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring', '-DCMAKE_INSTALL_PREFIX=/home/runner/work/torque-vectoring/torque-vectoring/install/torque_vectoring'], 'cwd': '/home/runner/work/torque-vectoring/torque-vectoring/build/torque_vectoring', 'env': OrderedDict({'ANDROID_NDK_ROOT': '/usr/local/lib/android/sdk/ndk/27.3.13750724', 'PWD': '/home/runner/work/torque-vectoring/torque-vectoring', 'CONDA': '/usr/share/miniconda', 'HOMEBREW_NO_AUTO_UPDATE': '1', 'SWIFT_PATH': '/usr/share/swift/usr/bin', 'COLCON': '1', 'GITHUB_DOWNLOADS_URL': 'https://api.github.com/internal/user-attachments/assets', 'COPILOT_AGENT_MCP_SERVER_TEMP': '/home/runner/work/_temp/mcp-server', 'COPILOT_API_URL': 'https://api.githubcopilot.com', 'COPILOT_FEATURE_FLAGS': 'copilot_swe_agent_firewall_enabled_by_default,copilot_swe_agent_vision,copilot_swe_agent_parallel_tool_execution,copilot_swe_agent_playwright_lazy_start,copilot_swe_agent_enable_security_tool,copilot_swe_agent_code_review,copilot_swe_agent_validation_agent_dependencies,copilot_swe_agent_secret_scanning_hook,copilot_swe_agent_enable_dependabot_checker,copilot_swe_agent_use_non_blocking_callbacks,copilot_swe_agent_unified_task_tool,copilot_swe_agent_snippy_annotations,copilot-feature-agentic-memory', 'GITHUB_REF_NAME': 'copilot/run-tests-with-colcon', 'GITHUB_WORKSPACE': '/home/runner/work/torque-vectoring/torque-vectoring', 'GITHUB_REPOSITORY_OWNER_ID': '114567030', 'ANT_HOME': '/usr/share/ant', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'COPILOT_AGENT_INJECTED_SECRET_NAMES': '', 'SELENIUM_JAR_PATH': '/usr/share/java/selenium-server.jar', 'GITHUB_ACTOR_ID': '198982749', 'LANG': 'C.UTF-8', 'ImageVersion': '20260126.10.1', 'GITHUB_ACTION_REPOSITORY': '', 'GITHUB_ACTIONS': 'true', 'COPILOT_JOB_EVENT_TYPE': 'repo_agents', 'GITHUB_BASE_REF': '', 'SHOULD_CONTINUE': 'true', 'DOTNET_SKIP_FIRST_TIME_EXPERIENCE': '1', 'COPILOT_AGENT_PR_COMMIT_COUNT': '0', 'ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE': '/opt/actionarchivecache', 'GITHUB_HEAD_REF': '', 'GHCUP_INSTALL_BASE_PREFIX': '/usr/local', 'SGX_AESM_ADDR': '1', 'COPILOT_AGENT_FIREWALL_RULESET_ALLOW_LIST': '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', 'GOROOT_1_23_X64': '/opt/hostedtoolcache/go/1.23.12/x64', 'COPILOT_AGENT_BASE_COMMIT': 'main', 'COPILOT_AGENT_CALLBACK_URL': 'https://api.githubcopilot.com/agents/swe/agent', 'COPILOT_AGENT_ISSUE_NUMBER': '0', 'CAROOT': '/home/runner/work/_temp/runtime-logs/mkcert', 'GITHUB_REF': 'refs/heads/copilot/run-tests-with-colcon', 'CI': 'true', 'GITHUB_JOB': 'copilot', 'GITHUB_REPOSITORY_ID': '1143474840', 'USER': 'runner', 'ANDROID_NDK_HOME': '/usr/local/lib/android/sdk/ndk/27.3.13750724', 'GITHUB_RUN_NUMBER': '1', 'RUNNER_ENVIRONMENT': 'github-hosted', 'GITHUB_WORKFLOW_REF': 'teixdavide/torque-vectoring/dynamic/copilot-swe-agent/copilot@refs/heads/copilot/run-tests-with-colcon', 'GOROOT_1_24_X64': '/opt/hostedtoolcache/go/1.24.12/x64', 'GITHUB_ACTOR': 'copilot-swe-agent[bot]', 'SHELL': '/bin/bash', 'DOTNET_MULTILEVEL_LOOKUP': '0', 'AZURE_EXTENSION_DIR': '/opt/az/azcliextensions', 'VCPKG_INSTALLATION_ROOT': '/usr/local/share/vcpkg', 'NODE_EXTRA_CA_CERTS': '/home/runner/work/_temp/runtime-logs/mkcert/rootCA.pem', 'GITHUB_REPOSITORY': 'teixdavide/torque-vectoring', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/0/bus', 'JAVA_HOME_17_X64': '/usr/lib/jvm/temurin-17-jdk-amd64', 'RUNNER_WORKSPACE': '/home/runner/work/torque-vectoring', 'JAVA_HOME_11_X64': '/usr/lib/jvm/temurin-11-jdk-amd64', 'POWERSHELL_DISTRIBUTION_CHANNEL': 'GitHub-Actions-ubuntu24', 'GITHUB_API_URL': 'https://api.github.com', 'COPILOT_AGENT_SOURCE_ENVIRONMENT': 'production', 'MAIL': '/var/mail/runner', 'RUNNER_TEMP': '/home/runner/work/_temp', 'BOOTSTRAP_HASKELL_NONINTERACTIVE': '1', 'GITHUB_UPLOADS_URL': 'https://uploads.github.com/user-attachments/assets', 'GITHUB_REF_TYPE': 'branch', 'HOME': '/home/runner', 'RUNNER_OS': 'Linux', 'GRADLE_HOME': '/usr/share/gradle-9.3.0', 'ANDROID_NDK_LATEST_HOME': '/usr/local/lib/android/sdk/ndk/29.0.14206865', 'PIPX_HOME': '/opt/pipx', 'ANDROID_HOME': '/usr/local/lib/android/sdk', 'ANDROID_SDK_ROOT': '/usr/local/lib/android/sdk', 'GOROOT_1_25_X64': '/opt/hostedtoolcache/go/1.25.6/x64', 'SUDO_USER': 'runner', 'COPILOT_AGENT_CONTENT_FILTER_MODE': '', 'DOTNET_SYSTEM_NET_DISABLEIPV6': '1', 'ACCEPT_EULA': 'Y', 'COPILOT_AGENT_BRANCH_NAME': 'copilot/run-tests-with-colcon', 'GITHUB_SHA': 'c082b2a1ceb64d26345c95f88d9facad331e2862', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/system.slice/hosted-compute-agent.service/memory.pressure', 'GITHUB_WORKFLOW': 'dynamic/copilot-swe-agent/copilot', 'CHROMEWEBDRIVER': '/usr/local/share/chromedriver-linux64', 'RUNNER_NAME': 'GitHub Actions 1000000000', 'SSL_CERT_DIR': '/etc/ssl/certs', 'SHLVL': '3', 'RUNNER_TRACKING_ID': 'github_8dc47fc5-c74a-4be0-96ba-0657aaff2ca7', 'XDG_SESSION_CLASS': 'background', 'COPILOT_AGENT_RUNTIME_VERSION': 'runtime-copilot-e359665b1c47b5b74237a94d20006edf2a3f73ca', 'ENABLE_RUNNER_TRACING': 'true', 'BLACKBIRD_MODE': 'disabled', 'JAVA_HOME_8_X64': '/usr/lib/jvm/temurin-8-jdk-amd64', 'COPILOT_EXPERIMENTS': '', 'JAVA_HOME_25_X64': '/usr/lib/jvm/temurin-25-jdk-amd64', 'OLDPWD': '/home/runner/work/torque-vectoring/torque-vectoring', 'REQUESTS_CA_BUNDLE': '/etc/ssl/certs/ca-certificates.crt', 'CHROME_BIN': '/usr/bin/google-chrome', 'GITHUB_OUTPUT': '/home/runner/work/_temp/_runner_file_commands/set_output_9a2192c8-9495-4646-abf6-ce278cdc1d28', 'SUDO_GID': '1001', 'SECRET_SCANNING_URL': 'https://scanning-api.github.com/api/v1/scan/multipart', 'COPILOT_AGENT_FIREWALL_ENABLE_RULESET_ALLOW_LIST': 'true', 'JOURNAL_STREAM': '9:12797', 'COPILOT_AGENT_COMMIT_LOGIN': 'copilot-swe-agent[bot]', 'LOGNAME': 'runner', 'INVOCATION_ID': '849cba450a9343e28743e5c84c521e08', 'JAVA_HOME': '/usr/lib/jvm/temurin-17-jdk-amd64', 'GITHUB_RETENTION_DAYS': '90', 'SSL_CERT_FILE': '/etc/ssl/certs/ca-certificates.crt', 'COPILOT_AGENT_PR_NUMBER': '', 'COPILOT_AGENT_START_TIME_SEC': '1770057173', 'RUNNER_ARCH': 'X64', 'DEBIAN_FRONTEND': 'noninteractive', 'GITHUB_WORKFLOW_SHA': 'c082b2a1ceb64d26345c95f88d9facad331e2862', 'AGENT_TOOLSDIRECTORY': '/opt/hostedtoolcache', 'COPILOT_USE_ASYNC_SESSIONS': 'false', 'SUDO_UID': '1001', 'GITHUB_GRAPHQL_URL': 'https://api.github.com/graphql', 'GECKOWEBDRIVER': '/usr/local/share/gecko_driver', 'PIPX_BIN_DIR': '/opt/pipx_bin', 'HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS': '3650', 'XDG_CONFIG_HOME': '/home/runner/.config', 'XDG_SESSION_TYPE': 'unspecified', 'GITHUB_EVENT_PATH': '/home/runner/work/_temp/_github_workflow/event.json', 'JAVA_HOME_21_X64': '/usr/lib/jvm/temurin-21-jdk-amd64', 'GITHUB_SERVER_URL': 'https://github.com', 'GITHUB_ACTION_REF': '', 'SYSTEMD_EXEC_PID': '1864', 'COPILOT_USE_SESSIONS': 'true', 'GITHUB_ENV': '/home/runner/work/_temp/_runner_file_commands/set_env_9a2192c8-9495-4646-abf6-ce278cdc1d28', 'GITHUB_STATE': '/home/runner/work/_temp/_runner_file_commands/save_state_9a2192c8-9495-4646-abf6-ce278cdc1d28', '_': '/home/runner/.local/bin/colcon', 'NVM_DIR': '/home/runner/.nvm', 'COPILOT_AGENT_COMMIT_EMAIL': '198982749+Copilot@users.noreply.github.com', 'FIREWALL_RULESET_CONTENT': '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', 'GITHUB_STEP_SUMMARY': '/home/runner/work/_temp/_runner_file_commands/step_summary_9a2192c8-9495-4646-abf6-ce278cdc1d28', 'GOROOT_1_22_X64': '/opt/hostedtoolcache/go/1.22.12/x64', 'PSModulePath': '/home/runner/.local/share/powershell/Modules:/root/.local/share/powershell/Modules:/usr/local/share/powershell/Modules:/opt/microsoft/powershell/7/Modules:/usr/share/az_14.6.0', 'COPILOT_AGENT_ACTION': 'fix', 'COPILOT_AGENT_DEBUG': 'false', 'XDG_RUNTIME_DIR': '/run/user/1001', 'GITHUB_RUN_ID': '21602526421', 'GITHUB_PATH': '/home/runner/work/_temp/_runner_file_commands/add_path_9a2192c8-9495-4646-abf6-ce278cdc1d28', 'COPILOT_AGENT_ONLINE_EVALUATION_DISABLED': 'false', 'GITHUB_RUN_ATTEMPT': '1', 'COPILOT_AGENT_TIMEOUT_MIN': '59', 'EDGEWEBDRIVER': '/usr/local/share/edge_driver', 'ACTIONS_ORCHESTRATION_ID': '7c76a523-72bb-466d-ac71-38b1f5630c9e.copilot.__default', 'SUDO_COMMAND': '/usr/bin/su -c /home/runner/work/_temp/runtime-logs/wrapper.sh', 'GITHUB_EVENT_NAME': 'dynamic', 'DOTNET_NOLOGO': '1', 'RUNNER_TOOL_CACHE': '/opt/hostedtoolcache', 'ImageOS': 'ubuntu24', 'GITHUB_REF_PROTECTED': 'false', 'COPILOT_AGENT_FIREWALL_LOG_FILE': '/home/runner/work/_temp/runtime-logs/fw.jsonl', 'CPD_SAVE_TRAJECTORY_OUTPUT': '/home/runner/work/_temp/copilot-developer-action-main/dist/trajectory.md', 'XDG_SESSION_ID': 'c1', 'PATH': '/opt/microsoft/powershell/7:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'TERM': 'xterm-color', 'COPILOT_MCP_ENABLED': 'true', 'COPILOT_EXPERIMENT_ASSIGNMENT_CONTEXT': '', 'GITHUB_REPOSITORY_OWNER': 'teixdavide', 'GITHUB_ACTION': '__run_10', 'CURL_CA_BUNDLE': '/etc/ssl/certs/ca-certificates.crt', 'GITHUB_TRIGGERING_ACTOR': 'copilot-swe-agent[bot]', 'ANDROID_NDK': '/usr/local/lib/android/sdk/ndk/27.3.13750724'}), 'shell': False}
+[4.613790] (-) TimerEvent: {}
+[4.714035] (-) TimerEvent: {}
+[4.814325] (-) TimerEvent: {}
+[4.849756] (torque_vectoring) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[4.865905] (torque_vectoring) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[4.914449] (-) TimerEvent: {}
+[4.963360] (torque_vectoring) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.981402] (torque_vectoring) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.982108] (torque_vectoring) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.983020] (torque_vectoring) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.014569] (-) TimerEvent: {}
+[5.021144] (torque_vectoring) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/local/share/cmake-3.31/Modules/FetchContent.cmake:1373 (message):\n'}
+[5.021368] (torque_vectoring) StderrLine: {'line': b'  The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is\n'}
+[5.021520] (torque_vectoring) StderrLine: {'line': b"  not set.  The policy's OLD behavior will be used.  When using a URL\n"}
+[5.021639] (torque_vectoring) StderrLine: {'line': b'  download, the timestamps of extracted files should preferably be that of\n'}
+[5.021749] (torque_vectoring) StderrLine: {'line': b'  the time of extraction, otherwise code that depends on the extracted\n'}
+[5.021846] (torque_vectoring) StderrLine: {'line': b'  contents might not be rebuilt if the URL changes.  The OLD behavior\n'}
+[5.021946] (torque_vectoring) StderrLine: {'line': b'  preserves the timestamps from the archive instead, but this is usually not\n'}
+[5.022119] (torque_vectoring) StderrLine: {'line': b'  what you want.  Update your project to the NEW behavior or specify the\n'}
+[5.022236] (torque_vectoring) StderrLine: {'line': b'  DOWNLOAD_EXTRACT_TIMESTAMP option with a value of true to avoid this\n'}
+[5.022340] (torque_vectoring) StderrLine: {'line': b'  robustness issue.\n'}
+[5.022443] (torque_vectoring) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[5.022583] (torque_vectoring) StderrLine: {'line': b'  CMakeLists.txt:35 (FetchContent_Declare)\n'}
+[5.022688] (torque_vectoring) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[5.022791] (torque_vectoring) StderrLine: {'line': b'\x1b[0m\n'}
+[5.114678] (-) TimerEvent: {}
+[5.214968] (-) TimerEvent: {}
+[5.315260] (-) TimerEvent: {}
+[5.415550] (-) TimerEvent: {}
+[5.515841] (-) TimerEvent: {}
+[5.616138] (-) TimerEvent: {}
+[5.716417] (-) TimerEvent: {}
+[5.816765] (-) TimerEvent: {}
+[5.917080] (-) TimerEvent: {}
+[5.919799] (torque_vectoring) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[5.929272] (torque_vectoring) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.983845] (torque_vectoring) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.001428] (torque_vectoring) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.001899] (torque_vectoring) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.002433] (torque_vectoring) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.017165] (-) TimerEvent: {}
+[6.020953] (torque_vectoring) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.100110] (torque_vectoring) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[6.101777] (torque_vectoring) StdoutLine: {'line': b'-- Found Threads: TRUE\n'}
+[6.115412] (torque_vectoring) StdoutLine: {'line': b'-- Configuring done (1.4s)\n'}
+[6.117249] (-) TimerEvent: {}
+[6.142154] (torque_vectoring) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[6.151517] (torque_vectoring) StdoutLine: {'line': b'-- Build files have been written to: /home/runner/work/torque-vectoring/torque-vectoring/build/torque_vectoring\n'}
+[6.157248] (torque_vectoring) CommandEnded: {'returncode': 0}
+[6.157979] (torque_vectoring) JobProgress: {'identifier': 'torque_vectoring', 'progress': 'build'}
+[6.158546] (torque_vectoring) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/runner/work/torque-vectoring/torque-vectoring/build/torque_vectoring', '--', '-j2', '-l2'], 'cwd': '/home/runner/work/torque-vectoring/torque-vectoring/build/torque_vectoring', 'env': OrderedDict({'ANDROID_NDK_ROOT': '/usr/local/lib/android/sdk/ndk/27.3.13750724', 'PWD': '/home/runner/work/torque-vectoring/torque-vectoring', 'CONDA': '/usr/share/miniconda', 'HOMEBREW_NO_AUTO_UPDATE': '1', 'SWIFT_PATH': '/usr/share/swift/usr/bin', 'COLCON': '1', 'GITHUB_DOWNLOADS_URL': 'https://api.github.com/internal/user-attachments/assets', 'COPILOT_AGENT_MCP_SERVER_TEMP': '/home/runner/work/_temp/mcp-server', 'COPILOT_API_URL': 'https://api.githubcopilot.com', 'COPILOT_FEATURE_FLAGS': 'copilot_swe_agent_firewall_enabled_by_default,copilot_swe_agent_vision,copilot_swe_agent_parallel_tool_execution,copilot_swe_agent_playwright_lazy_start,copilot_swe_agent_enable_security_tool,copilot_swe_agent_code_review,copilot_swe_agent_validation_agent_dependencies,copilot_swe_agent_secret_scanning_hook,copilot_swe_agent_enable_dependabot_checker,copilot_swe_agent_use_non_blocking_callbacks,copilot_swe_agent_unified_task_tool,copilot_swe_agent_snippy_annotations,copilot-feature-agentic-memory', 'GITHUB_REF_NAME': 'copilot/run-tests-with-colcon', 'GITHUB_WORKSPACE': '/home/runner/work/torque-vectoring/torque-vectoring', 'GITHUB_REPOSITORY_OWNER_ID': '114567030', 'ANT_HOME': '/usr/share/ant', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'COPILOT_AGENT_INJECTED_SECRET_NAMES': '', 'SELENIUM_JAR_PATH': '/usr/share/java/selenium-server.jar', 'GITHUB_ACTOR_ID': '198982749', 'LANG': 'C.UTF-8', 'ImageVersion': '20260126.10.1', 'GITHUB_ACTION_REPOSITORY': '', 'GITHUB_ACTIONS': 'true', 'COPILOT_JOB_EVENT_TYPE': 'repo_agents', 'GITHUB_BASE_REF': '', 'SHOULD_CONTINUE': 'true', 'DOTNET_SKIP_FIRST_TIME_EXPERIENCE': '1', 'COPILOT_AGENT_PR_COMMIT_COUNT': '0', 'ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE': '/opt/actionarchivecache', 'GITHUB_HEAD_REF': '', 'GHCUP_INSTALL_BASE_PREFIX': '/usr/local', 'SGX_AESM_ADDR': '1', 'COPILOT_AGENT_FIREWALL_RULESET_ALLOW_LIST': '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', 'GOROOT_1_23_X64': '/opt/hostedtoolcache/go/1.23.12/x64', 'COPILOT_AGENT_BASE_COMMIT': 'main', 'COPILOT_AGENT_CALLBACK_URL': 'https://api.githubcopilot.com/agents/swe/agent', 'COPILOT_AGENT_ISSUE_NUMBER': '0', 'CAROOT': '/home/runner/work/_temp/runtime-logs/mkcert', 'GITHUB_REF': 'refs/heads/copilot/run-tests-with-colcon', 'CI': 'true', 'GITHUB_JOB': 'copilot', 'GITHUB_REPOSITORY_ID': '1143474840', 'USER': 'runner', 'ANDROID_NDK_HOME': '/usr/local/lib/android/sdk/ndk/27.3.13750724', 'GITHUB_RUN_NUMBER': '1', 'RUNNER_ENVIRONMENT': 'github-hosted', 'GITHUB_WORKFLOW_REF': 'teixdavide/torque-vectoring/dynamic/copilot-swe-agent/copilot@refs/heads/copilot/run-tests-with-colcon', 'GOROOT_1_24_X64': '/opt/hostedtoolcache/go/1.24.12/x64', 'GITHUB_ACTOR': 'copilot-swe-agent[bot]', 'SHELL': '/bin/bash', 'DOTNET_MULTILEVEL_LOOKUP': '0', 'AZURE_EXTENSION_DIR': '/opt/az/azcliextensions', 'VCPKG_INSTALLATION_ROOT': '/usr/local/share/vcpkg', 'NODE_EXTRA_CA_CERTS': '/home/runner/work/_temp/runtime-logs/mkcert/rootCA.pem', 'GITHUB_REPOSITORY': 'teixdavide/torque-vectoring', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/0/bus', 'JAVA_HOME_17_X64': '/usr/lib/jvm/temurin-17-jdk-amd64', 'RUNNER_WORKSPACE': '/home/runner/work/torque-vectoring', 'JAVA_HOME_11_X64': '/usr/lib/jvm/temurin-11-jdk-amd64', 'POWERSHELL_DISTRIBUTION_CHANNEL': 'GitHub-Actions-ubuntu24', 'GITHUB_API_URL': 'https://api.github.com', 'COPILOT_AGENT_SOURCE_ENVIRONMENT': 'production', 'MAIL': '/var/mail/runner', 'RUNNER_TEMP': '/home/runner/work/_temp', 'BOOTSTRAP_HASKELL_NONINTERACTIVE': '1', 'GITHUB_UPLOADS_URL': 'https://uploads.github.com/user-attachments/assets', 'GITHUB_REF_TYPE': 'branch', 'HOME': '/home/runner', 'RUNNER_OS': 'Linux', 'GRADLE_HOME': '/usr/share/gradle-9.3.0', 'ANDROID_NDK_LATEST_HOME': '/usr/local/lib/android/sdk/ndk/29.0.14206865', 'PIPX_HOME': '/opt/pipx', 'ANDROID_HOME': '/usr/local/lib/android/sdk', 'ANDROID_SDK_ROOT': '/usr/local/lib/android/sdk', 'GOROOT_1_25_X64': '/opt/hostedtoolcache/go/1.25.6/x64', 'SUDO_USER': 'runner', 'COPILOT_AGENT_CONTENT_FILTER_MODE': '', 'DOTNET_SYSTEM_NET_DISABLEIPV6': '1', 'ACCEPT_EULA': 'Y', 'COPILOT_AGENT_BRANCH_NAME': 'copilot/run-tests-with-colcon', 'GITHUB_SHA': 'c082b2a1ceb64d26345c95f88d9facad331e2862', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/system.slice/hosted-compute-agent.service/memory.pressure', 'GITHUB_WORKFLOW': 'dynamic/copilot-swe-agent/copilot', 'CHROMEWEBDRIVER': '/usr/local/share/chromedriver-linux64', 'RUNNER_NAME': 'GitHub Actions 1000000000', 'SSL_CERT_DIR': '/etc/ssl/certs', 'SHLVL': '3', 'RUNNER_TRACKING_ID': 'github_8dc47fc5-c74a-4be0-96ba-0657aaff2ca7', 'XDG_SESSION_CLASS': 'background', 'COPILOT_AGENT_RUNTIME_VERSION': 'runtime-copilot-e359665b1c47b5b74237a94d20006edf2a3f73ca', 'ENABLE_RUNNER_TRACING': 'true', 'BLACKBIRD_MODE': 'disabled', 'JAVA_HOME_8_X64': '/usr/lib/jvm/temurin-8-jdk-amd64', 'COPILOT_EXPERIMENTS': '', 'JAVA_HOME_25_X64': '/usr/lib/jvm/temurin-25-jdk-amd64', 'OLDPWD': '/home/runner/work/torque-vectoring/torque-vectoring', 'REQUESTS_CA_BUNDLE': '/etc/ssl/certs/ca-certificates.crt', 'CHROME_BIN': '/usr/bin/google-chrome', 'GITHUB_OUTPUT': '/home/runner/work/_temp/_runner_file_commands/set_output_9a2192c8-9495-4646-abf6-ce278cdc1d28', 'SUDO_GID': '1001', 'SECRET_SCANNING_URL': 'https://scanning-api.github.com/api/v1/scan/multipart', 'COPILOT_AGENT_FIREWALL_ENABLE_RULESET_ALLOW_LIST': 'true', 'JOURNAL_STREAM': '9:12797', 'COPILOT_AGENT_COMMIT_LOGIN': 'copilot-swe-agent[bot]', 'LOGNAME': 'runner', 'INVOCATION_ID': '849cba450a9343e28743e5c84c521e08', 'JAVA_HOME': '/usr/lib/jvm/temurin-17-jdk-amd64', 'GITHUB_RETENTION_DAYS': '90', 'SSL_CERT_FILE': '/etc/ssl/certs/ca-certificates.crt', 'COPILOT_AGENT_PR_NUMBER': '', 'COPILOT_AGENT_START_TIME_SEC': '1770057173', 'RUNNER_ARCH': 'X64', 'DEBIAN_FRONTEND': 'noninteractive', 'GITHUB_WORKFLOW_SHA': 'c082b2a1ceb64d26345c95f88d9facad331e2862', 'AGENT_TOOLSDIRECTORY': '/opt/hostedtoolcache', 'COPILOT_USE_ASYNC_SESSIONS': 'false', 'SUDO_UID': '1001', 'GITHUB_GRAPHQL_URL': 'https://api.github.com/graphql', 'GECKOWEBDRIVER': '/usr/local/share/gecko_driver', 'PIPX_BIN_DIR': '/opt/pipx_bin', 'HOMEBREW_CLEANUP_PERIODIC_FULL_DAYS': '3650', 'XDG_CONFIG_HOME': '/home/runner/.config', 'XDG_SESSION_TYPE': 'unspecified', 'GITHUB_EVENT_PATH': '/home/runner/work/_temp/_github_workflow/event.json', 'JAVA_HOME_21_X64': '/usr/lib/jvm/temurin-21-jdk-amd64', 'GITHUB_SERVER_URL': 'https://github.com', 'GITHUB_ACTION_REF': '', 'SYSTEMD_EXEC_PID': '1864', 'COPILOT_USE_SESSIONS': 'true', 'GITHUB_ENV': '/home/runner/work/_temp/_runner_file_commands/set_env_9a2192c8-9495-4646-abf6-ce278cdc1d28', 'GITHUB_STATE': '/home/runner/work/_temp/_runner_file_commands/save_state_9a2192c8-9495-4646-abf6-ce278cdc1d28', '_': '/home/runner/.local/bin/colcon', 'NVM_DIR': '/home/runner/.nvm', 'COPILOT_AGENT_COMMIT_EMAIL': '198982749+Copilot@users.noreply.github.com', 'FIREWALL_RULESET_CONTENT': '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', 'GITHUB_STEP_SUMMARY': '/home/runner/work/_temp/_runner_file_commands/step_summary_9a2192c8-9495-4646-abf6-ce278cdc1d28', 'GOROOT_1_22_X64': '/opt/hostedtoolcache/go/1.22.12/x64', 'PSModulePath': '/home/runner/.local/share/powershell/Modules:/root/.local/share/powershell/Modules:/usr/local/share/powershell/Modules:/opt/microsoft/powershell/7/Modules:/usr/share/az_14.6.0', 'COPILOT_AGENT_ACTION': 'fix', 'COPILOT_AGENT_DEBUG': 'false', 'XDG_RUNTIME_DIR': '/run/user/1001', 'GITHUB_RUN_ID': '21602526421', 'GITHUB_PATH': '/home/runner/work/_temp/_runner_file_commands/add_path_9a2192c8-9495-4646-abf6-ce278cdc1d28', 'COPILOT_AGENT_ONLINE_EVALUATION_DISABLED': 'false', 'GITHUB_RUN_ATTEMPT': '1', 'COPILOT_AGENT_TIMEOUT_MIN': '59', 'EDGEWEBDRIVER': '/usr/local/share/edge_driver', 'ACTIONS_ORCHESTRATION_ID': '7c76a523-72bb-466d-ac71-38b1f5630c9e.copilot.__default', 'SUDO_COMMAND': '/usr/bin/su -c /home/runner/work/_temp/runtime-logs/wrapper.sh', 'GITHUB_EVENT_NAME': 'dynamic', 'DOTNET_NOLOGO': '1', 'RUNNER_TOOL_CACHE': '/opt/hostedtoolcache', 'ImageOS': 'ubuntu24', 'GITHUB_REF_PROTECTED': 'false', 'COPILOT_AGENT_FIREWALL_LOG_FILE': '/home/runner/work/_temp/runtime-logs/fw.jsonl', 'CPD_SAVE_TRAJECTORY_OUTPUT': '/home/runner/work/_temp/copilot-developer-action-main/dist/trajectory.md', 'XDG_SESSION_ID': 'c1', 'PATH': '/opt/microsoft/powershell/7:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'TERM': 'xterm-color', 'COPILOT_MCP_ENABLED': 'true', 'COPILOT_EXPERIMENT_ASSIGNMENT_CONTEXT': '', 'GITHUB_REPOSITORY_OWNER': 'teixdavide', 'GITHUB_ACTION': '__run_10', 'CURL_CA_BUNDLE': '/etc/ssl/certs/ca-certificates.crt', 'GITHUB_TRIGGERING_ACTOR': 'copilot-swe-agent[bot]', 'ANDROID_NDK': '/usr/local/lib/android/sdk/ndk/27.3.13750724'}), 'shell': False}
+[6.183446] (torque_vectoring) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/torque_vectoring.dir/src/reference_generators/reference_generator.cpp.o\x1b[0m\n'}
+[6.183700] (torque_vectoring) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[6.217363] (-) TimerEvent: {}
+[6.234079] (torque_vectoring) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/torque_vectoring.dir/src/reference_generators/sideslip_reference_generators/steady_state_sideslip_reference_generator.cpp.o\x1b[0m\n'}
+[6.249610] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/src/reference_generators/sideslip_reference_generators/steady_state_sideslip_reference_generator.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual double SteadyStateSideslipReferenceGenerator::\x1b[01;32m\x1b[Kgenerate_reference_sideslip\x1b[m\x1b[K(VehicleState, DriverCommand, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.249823] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/src/reference_generators/sideslip_reference_generators/steady_state_sideslip_reference_generator.cpp:6:109:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcommand\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.249959] (torque_vectoring) StderrLine: {'line': b'    6 | teadyStateSideslipReferenceGenerator::generate_reference_sideslip(VehicleState state, \x1b[01;35m\x1b[KDriverCommand command\x1b[m\x1b[K, double reference_yaw_rate) {\n'}
+[6.250062] (torque_vectoring) StderrLine: {'line': b'      |                                                                                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[6.250164] (torque_vectoring) StderrLine: {'line': b'\n'}
+[6.273169] (torque_vectoring) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/torque_vectoring.dir/src/reference_generators/yaw_rate_reference_generators/steady_state_yaw_rate_reference_generator.cpp.o\x1b[0m\n'}
+[6.282097] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/src/reference_generators/yaw_rate_reference_generators/steady_state_yaw_rate_reference_generator.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual double SteadyStateYawRateReferenceGenerator::\x1b[01;32m\x1b[Kgenerate_reference_yaw_rate\x1b[m\x1b[K(VehicleState, DriverCommand)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.282323] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/src/reference_generators/yaw_rate_reference_generators/steady_state_yaw_rate_reference_generator.cpp:26:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Klf\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.283343] (torque_vectoring) StderrLine: {'line': b'   26 |     double \x1b[01;35m\x1b[Klf\x1b[m\x1b[K = car_parameters_.front_axle_distance;\n'}
+[6.283496] (torque_vectoring) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.283611] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/src/reference_generators/yaw_rate_reference_generators/steady_state_yaw_rate_reference_generator.cpp:27:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Klr\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.283730] (torque_vectoring) StderrLine: {'line': b'   27 |     double \x1b[01;35m\x1b[Klr\x1b[m\x1b[K = car_parameters_.rear_axle_distance;\n'}
+[6.283820] (torque_vectoring) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.283902] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/src/reference_generators/yaw_rate_reference_generators/steady_state_yaw_rate_reference_generator.cpp:28:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KCf\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.283987] (torque_vectoring) StderrLine: {'line': b'   28 |     double \x1b[01;35m\x1b[KCf\x1b[m\x1b[K = car_parameters_.cornering_stiffness_front;\n'}
+[6.284070] (torque_vectoring) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.284155] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/src/reference_generators/yaw_rate_reference_generators/steady_state_yaw_rate_reference_generator.cpp:29:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KCr\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.284256] (torque_vectoring) StderrLine: {'line': b'   29 |     double \x1b[01;35m\x1b[KCr\x1b[m\x1b[K = car_parameters_.cornering_stiffness_rear;\n'}
+[6.284349] (torque_vectoring) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.316007] (torque_vectoring) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX static library libtorque_vectoring.a\x1b[0m\n'}
+[6.317477] (-) TimerEvent: {}
+[6.417751] (-) TimerEvent: {}
+[6.518027] (-) TimerEvent: {}
+[6.618289] (-) TimerEvent: {}
+[6.718577] (-) TimerEvent: {}
+[6.818917] (-) TimerEvent: {}
+[6.919487] (-) TimerEvent: {}
+[7.019845] (-) TimerEvent: {}
+[7.120173] (-) TimerEvent: {}
+[7.220528] (-) TimerEvent: {}
+[7.321084] (-) TimerEvent: {}
+[7.421505] (-) TimerEvent: {}
+[7.521839] (-) TimerEvent: {}
+[7.622182] (-) TimerEvent: {}
+[7.722776] (-) TimerEvent: {}
+[7.823116] (-) TimerEvent: {}
+[7.923495] (-) TimerEvent: {}
+[8.024042] (-) TimerEvent: {}
+[8.124377] (-) TimerEvent: {}
+[8.224924] (-) TimerEvent: {}
+[8.325248] (-) TimerEvent: {}
+[8.425808] (-) TimerEvent: {}
+[8.526140] (-) TimerEvent: {}
+[8.626450] (-) TimerEvent: {}
+[8.726784] (-) TimerEvent: {}
+[8.827322] (-) TimerEvent: {}
+[8.927667] (-) TimerEvent: {}
+[9.028192] (-) TimerEvent: {}
+[9.128547] (-) TimerEvent: {}
+[9.229061] (-) TimerEvent: {}
+[9.329374] (-) TimerEvent: {}
+[9.429935] (-) TimerEvent: {}
+[9.530241] (-) TimerEvent: {}
+[9.630546] (-) TimerEvent: {}
+[9.730870] (-) TimerEvent: {}
+[9.831383] (-) TimerEvent: {}
+[9.931710] (-) TimerEvent: {}
+[10.032235] (-) TimerEvent: {}
+[10.041935] (torque_vectoring) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX static library ../../../lib/libgtest.a\x1b[0m\n'}
+[10.132351] (-) TimerEvent: {}
+[10.232663] (-) TimerEvent: {}
+[10.332935] (-) TimerEvent: {}
+[10.433221] (-) TimerEvent: {}
+[10.533521] (-) TimerEvent: {}
+[10.633813] (-) TimerEvent: {}
+[10.734102] (-) TimerEvent: {}
+[10.834394] (-) TimerEvent: {}
+[10.934724] (-) TimerEvent: {}
+[11.035001] (-) TimerEvent: {}
+[11.135282] (-) TimerEvent: {}
+[11.235567] (-) TimerEvent: {}
+[11.335868] (-) TimerEvent: {}
+[11.436162] (-) TimerEvent: {}
+[11.536481] (-) TimerEvent: {}
+[11.636775] (-) TimerEvent: {}
+[11.737062] (-) TimerEvent: {}
+[11.837353] (-) TimerEvent: {}
+[11.937668] (-) TimerEvent: {}
+[12.037980] (-) TimerEvent: {}
+[12.138274] (-) TimerEvent: {}
+[12.238565] (-) TimerEvent: {}
+[12.338860] (-) TimerEvent: {}
+[12.439144] (-) TimerEvent: {}
+[12.539422] (-) TimerEvent: {}
+[12.639739] (-) TimerEvent: {}
+[12.740010] (-) TimerEvent: {}
+[12.840285] (-) TimerEvent: {}
+[12.940546] (-) TimerEvent: {}
+[13.040816] (-) TimerEvent: {}
+[13.141098] (-) TimerEvent: {}
+[13.241365] (-) TimerEvent: {}
+[13.341674] (-) TimerEvent: {}
+[13.441960] (-) TimerEvent: {}
+[13.542252] (-) TimerEvent: {}
+[13.642558] (-) TimerEvent: {}
+[13.742859] (-) TimerEvent: {}
+[13.843143] (-) TimerEvent: {}
+[13.943410] (-) TimerEvent: {}
+[14.043712] (-) TimerEvent: {}
+[14.143983] (-) TimerEvent: {}
+[14.217777] (torque_vectoring) StdoutLine: {'line': b'[ 40%] Built target torque_vectoring\n'}
+[14.231206] (torque_vectoring) StdoutLine: {'line': b'[ 40%] Built target gtest\n'}
+[14.241545] (torque_vectoring) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o\x1b[0m\n'}
+[14.243503] (torque_vectoring) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[14.244055] (-) TimerEvent: {}
+[14.345120] (-) TimerEvent: {}
+[14.446664] (-) TimerEvent: {}
+[14.548538] (-) TimerEvent: {}
+[14.648857] (-) TimerEvent: {}
+[14.750545] (-) TimerEvent: {}
+[14.850897] (-) TimerEvent: {}
+[14.954537] (-) TimerEvent: {}
+[15.054871] (-) TimerEvent: {}
+[15.155209] (-) TimerEvent: {}
+[15.255540] (-) TimerEvent: {}
+[15.355884] (-) TimerEvent: {}
+[15.456226] (-) TimerEvent: {}
+[15.556531] (-) TimerEvent: {}
+[15.585206] (torque_vectoring) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX static library ../../../lib/libgtest_main.a\x1b[0m\n'}
+[15.657540] (-) TimerEvent: {}
+[15.720340] (torque_vectoring) StdoutLine: {'line': b'[ 60%] Built target gtest_main\n'}
+[15.757691] (-) TimerEvent: {}
+[15.858056] (-) TimerEvent: {}
+[15.958553] (-) TimerEvent: {}
+[16.058932] (-) TimerEvent: {}
+[16.159685] (-) TimerEvent: {}
+[16.260025] (-) TimerEvent: {}
+[16.360579] (-) TimerEvent: {}
+[16.460924] (-) TimerEvent: {}
+[16.561477] (-) TimerEvent: {}
+[16.579068] (torque_vectoring) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX static library ../../../lib/libgmock.a\x1b[0m\n'}
+[16.661549] (-) TimerEvent: {}
+[16.672171] (torque_vectoring) StdoutLine: {'line': b'[ 66%] Built target gmock\n'}
+[16.682984] (torque_vectoring) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o\x1b[0m\n'}
+[16.685513] (torque_vectoring) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/reference_generator_tests.dir/test/reference_generators/ref_gen_test.cpp.o\x1b[0m\n'}
+[16.761661] (-) TimerEvent: {}
+[16.862569] (-) TimerEvent: {}
+[16.963263] (-) TimerEvent: {}
+[17.064763] (-) TimerEvent: {}
+[17.165137] (-) TimerEvent: {}
+[17.266686] (-) TimerEvent: {}
+[17.367056] (-) TimerEvent: {}
+[17.469542] (-) TimerEvent: {}
+[17.569903] (-) TimerEvent: {}
+[17.670551] (-) TimerEvent: {}
+[17.770899] (-) TimerEvent: {}
+[17.871270] (-) TimerEvent: {}
+[17.971657] (-) TimerEvent: {}
+[18.072285] (-) TimerEvent: {}
+[18.129545] (torque_vectoring) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking CXX static library ../../../lib/libgmock_main.a\x1b[0m\n'}
+[18.173551] (-) TimerEvent: {}
+[18.255627] (torque_vectoring) StdoutLine: {'line': b'[ 86%] Built target gmock_main\n'}
+[18.259258] (torque_vectoring) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object CMakeFiles/reference_generator_tests.dir/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp.o\x1b[0m\n'}
+[18.275515] (-) TimerEvent: {}
+[18.375832] (-) TimerEvent: {}
+[18.476451] (-) TimerEvent: {}
+[18.577046] (-) TimerEvent: {}
+[18.677653] (-) TimerEvent: {}
+[18.780539] (-) TimerEvent: {}
+[18.880897] (-) TimerEvent: {}
+[18.981242] (-) TimerEvent: {}
+[19.081848] (-) TimerEvent: {}
+[19.161672] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:12:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.161919] (torque_vectoring) StderrLine: {'line': b'   12 |         \x1b[01;35m\x1b[K.\x1b[m\x1b[Kmass = 269.6,                     // kg\n'}
+[19.162060] (torque_vectoring) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[19.162193] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:13:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.162318] (torque_vectoring) StderrLine: {'line': b'   13 |         \x1b[01;35m\x1b[K.\x1b[m\x1b[Kfront_axle_distance = 1.20,       // m\n'}
+[19.162451] (torque_vectoring) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[19.164597] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:14:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.164774] (torque_vectoring) StderrLine: {'line': b'   14 |         \x1b[01;35m\x1b[K.\x1b[m\x1b[Krear_axle_distance = 1.20,        // m\n'}
+[19.164908] (torque_vectoring) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[19.165036] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:15:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.165165] (torque_vectoring) StderrLine: {'line': b'   15 |         \x1b[01;35m\x1b[K.\x1b[m\x1b[Kcornering_stiffness_front = 127,  // N/rad\n'}
+[19.165289] (torque_vectoring) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[19.165403] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:16:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.165573] (torque_vectoring) StderrLine: {'line': b'   16 |         \x1b[01;35m\x1b[K.\x1b[m\x1b[Kcornering_stiffness_rear = 127,   // N/rad\n'}
+[19.165710] (torque_vectoring) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[19.165841] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:17:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KC++ designated initializers only available with \xe2\x80\x98\x1b[01m\x1b[K-std=c++20\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K-std=gnu++20\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions\x07-Wc++20-extensions\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.165974] (torque_vectoring) StderrLine: {'line': b'   17 |         \x1b[01;35m\x1b[K.\x1b[m\x1b[Kmax_lateral_acceleration = 1.48 * 9.81 // m/s^2\n'}
+[19.166093] (torque_vectoring) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[19.166220] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KCarParameters::front_axle_distance\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.166363] (torque_vectoring) StderrLine: {'line': b'   18 |     \x1b[01;35m\x1b[K}\x1b[m\x1b[K;\n'}
+[19.168522] (torque_vectoring) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[19.168677] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KCarParameters::rear_axle_distance\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.168824] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KCarParameters::front_track_width\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.168957] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KCarParameters::rear_track_width\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.169098] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KCarParameters::center_of_gravity_height\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.169236] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KCarParameters::moment_of_inertia_z\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.169377] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KCarParameters::wheel_radius\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.169546] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KCarParameters::gear_ratio\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.169693] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KCarParameters::inner_steering_ratio\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.169833] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KCarParameters::outer_steering_ratio\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.169932] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KCarParameters::cornering_stiffness_front\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.170031] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KCarParameters::cornering_stiffness_rear\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.170149] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KCarParameters::max_lateral_acceleration\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.170273] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KCarParameters::tire_parameters\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.170403] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[KCarParameters::aerodynamics_parameters\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.172591] (torque_vectoring) StderrLine: {'line': b'\x1b[01m\x1b[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdesignator order for field \xe2\x80\x98\x1b[01m\x1b[KCarParameters::front_axle_distance\x1b[m\x1b[K\xe2\x80\x99 does not match declaration order in \xe2\x80\x98\x1b[01m\x1b[KCarParameters\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.181932] (-) TimerEvent: {}
+[19.282399] (-) TimerEvent: {}
+[19.363956] (torque_vectoring) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/reference_generator_tests.dir/build.make:93: CMakeFiles/reference_generator_tests.dir/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp.o] Error 1\n'}
+[19.364236] (torque_vectoring) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/reference_generator_tests.dir/all] Error 2\n'}
+[19.364438] (torque_vectoring) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[19.365974] (torque_vectoring) CommandEnded: {'returncode': 2}
+[19.366372] (torque_vectoring) JobEnded: {'identifier': 'torque_vectoring', 'rc': 2}
+[19.376480] (-) EventReactorShutdown: {}

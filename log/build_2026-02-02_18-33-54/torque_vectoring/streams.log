@@ -1,0 +1,112 @@
+[4.599s] Invoking command in '/home/runner/work/torque-vectoring/torque-vectoring/build/torque_vectoring': PATH=/opt/microsoft/powershell/7:${PATH} PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} /usr/local/bin/cmake /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring -DCMAKE_INSTALL_PREFIX=/home/runner/work/torque-vectoring/torque-vectoring/install/torque_vectoring
+[4.850s] -- The CXX compiler identification is GNU 13.3.0
+[4.866s] -- Detecting CXX compiler ABI info
+[4.963s] -- Detecting CXX compiler ABI info - done
+[4.981s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.982s] -- Detecting CXX compile features
+[4.983s] -- Detecting CXX compile features - done
+[5.021s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.31/Modules/FetchContent.cmake:1373 (message):
+[5.021s]   The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is
+[5.021s]   not set.  The policy's OLD behavior will be used.  When using a URL
+[5.021s]   download, the timestamps of extracted files should preferably be that of
+[5.021s]   the time of extraction, otherwise code that depends on the extracted
+[5.021s]   contents might not be rebuilt if the URL changes.  The OLD behavior
+[5.022s]   preserves the timestamps from the archive instead, but this is usually not
+[5.022s]   what you want.  Update your project to the NEW behavior or specify the
+[5.022s]   DOWNLOAD_EXTRACT_TIMESTAMP option with a value of true to avoid this
+[5.022s]   robustness issue.
+[5.022s] Call Stack (most recent call first):
+[5.022s]   CMakeLists.txt:35 (FetchContent_Declare)
+[5.022s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[5.022s] [0m
+[5.920s] -- The C compiler identification is GNU 13.3.0
+[5.929s] -- Detecting C compiler ABI info
+[5.984s] -- Detecting C compiler ABI info - done
+[6.001s] -- Check for working C compiler: /usr/bin/cc - skipped
+[6.002s] -- Detecting C compile features
+[6.002s] -- Detecting C compile features - done
+[6.021s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.100s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.101s] -- Found Threads: TRUE
+[6.115s] -- Configuring done (1.4s)
+[6.142s] -- Generating done (0.0s)
+[6.151s] -- Build files have been written to: /home/runner/work/torque-vectoring/torque-vectoring/build/torque_vectoring
+[6.157s] Invoked command in '/home/runner/work/torque-vectoring/torque-vectoring/build/torque_vectoring' returned '0': PATH=/opt/microsoft/powershell/7:${PATH} PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} /usr/local/bin/cmake /home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring -DCMAKE_INSTALL_PREFIX=/home/runner/work/torque-vectoring/torque-vectoring/install/torque_vectoring
+[6.159s] Invoking command in '/home/runner/work/torque-vectoring/torque-vectoring/build/torque_vectoring': PATH=/opt/microsoft/powershell/7:${PATH} PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} /usr/local/bin/cmake --build /home/runner/work/torque-vectoring/torque-vectoring/build/torque_vectoring -- -j2 -l2
+[6.183s] [  6%] [32mBuilding CXX object CMakeFiles/torque_vectoring.dir/src/reference_generators/reference_generator.cpp.o[0m
+[6.183s] [ 13%] [32mBuilding CXX object _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[6.234s] [ 20%] [32mBuilding CXX object CMakeFiles/torque_vectoring.dir/src/reference_generators/sideslip_reference_generators/steady_state_sideslip_reference_generator.cpp.o[0m
+[6.249s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/src/reference_generators/sideslip_reference_generators/steady_state_sideslip_reference_generator.cpp:[m[K In member function ‘[01m[Kvirtual double SteadyStateSideslipReferenceGenerator::[01;32m[Kgenerate_reference_sideslip[m[K(VehicleState, DriverCommand, double)[m[K’:
+[6.250s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/src/reference_generators/sideslip_reference_generators/steady_state_sideslip_reference_generator.cpp:6:109:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcommand[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.250s]     6 | teadyStateSideslipReferenceGenerator::generate_reference_sideslip(VehicleState state, [01;35m[KDriverCommand command[m[K, double reference_yaw_rate) {
+[6.250s]       |                                                                                       [01;35m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+[6.250s] 
+[6.273s] [ 26%] [32mBuilding CXX object CMakeFiles/torque_vectoring.dir/src/reference_generators/yaw_rate_reference_generators/steady_state_yaw_rate_reference_generator.cpp.o[0m
+[6.282s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/src/reference_generators/yaw_rate_reference_generators/steady_state_yaw_rate_reference_generator.cpp:[m[K In member function ‘[01m[Kvirtual double SteadyStateYawRateReferenceGenerator::[01;32m[Kgenerate_reference_yaw_rate[m[K(VehicleState, DriverCommand)[m[K’:
+[6.282s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/src/reference_generators/yaw_rate_reference_generators/steady_state_yaw_rate_reference_generator.cpp:26:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.283s]    26 |     double [01;35m[Klf[m[K = car_parameters_.front_axle_distance;
+[6.283s]       |            [01;35m[K^~[m[K
+[6.283s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/src/reference_generators/yaw_rate_reference_generators/steady_state_yaw_rate_reference_generator.cpp:27:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.283s]    27 |     double [01;35m[Klr[m[K = car_parameters_.rear_axle_distance;
+[6.283s]       |            [01;35m[K^~[m[K
+[6.284s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/src/reference_generators/yaw_rate_reference_generators/steady_state_yaw_rate_reference_generator.cpp:28:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KCf[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.284s]    28 |     double [01;35m[KCf[m[K = car_parameters_.cornering_stiffness_front;
+[6.284s]       |            [01;35m[K^~[m[K
+[6.284s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/src/reference_generators/yaw_rate_reference_generators/steady_state_yaw_rate_reference_generator.cpp:29:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KCr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.284s]    29 |     double [01;35m[KCr[m[K = car_parameters_.cornering_stiffness_rear;
+[6.284s]       |            [01;35m[K^~[m[K
+[6.316s] [ 33%] [32m[1mLinking CXX static library libtorque_vectoring.a[0m
+[10.042s] [ 40%] [32m[1mLinking CXX static library ../../../lib/libgtest.a[0m
+[14.218s] [ 40%] Built target torque_vectoring
+[14.231s] [ 40%] Built target gtest
+[14.241s] [ 46%] [32mBuilding CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[14.243s] [ 53%] [32mBuilding CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[15.585s] [ 60%] [32m[1mLinking CXX static library ../../../lib/libgtest_main.a[0m
+[15.720s] [ 60%] Built target gtest_main
+[16.579s] [ 66%] [32m[1mLinking CXX static library ../../../lib/libgmock.a[0m
+[16.672s] [ 66%] Built target gmock
+[16.683s] [ 73%] [32mBuilding CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[16.685s] [ 80%] [32mBuilding CXX object CMakeFiles/reference_generator_tests.dir/test/reference_generators/ref_gen_test.cpp.o[0m
+[18.129s] [ 86%] [32m[1mLinking CXX static library ../../../lib/libgmock_main.a[0m
+[18.255s] [ 86%] Built target gmock_main
+[18.259s] [ 93%] [32mBuilding CXX object CMakeFiles/reference_generator_tests.dir/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp.o[0m
+[19.161s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:12:9:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+[19.162s]    12 |         [01;35m[K.[m[Kmass = 269.6,                     // kg
+[19.162s]       |         [01;35m[K^[m[K
+[19.162s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:13:9:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+[19.162s]    13 |         [01;35m[K.[m[Kfront_axle_distance = 1.20,       // m
+[19.164s]       |         [01;35m[K^[m[K
+[19.164s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:14:9:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+[19.164s]    14 |         [01;35m[K.[m[Krear_axle_distance = 1.20,        // m
+[19.165s]       |         [01;35m[K^[m[K
+[19.165s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:15:9:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+[19.165s]    15 |         [01;35m[K.[m[Kcornering_stiffness_front = 127,  // N/rad
+[19.165s]       |         [01;35m[K^[m[K
+[19.165s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:16:9:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+[19.165s]    16 |         [01;35m[K.[m[Kcornering_stiffness_rear = 127,   // N/rad
+[19.165s]       |         [01;35m[K^[m[K
+[19.166s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:17:9:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wc++20-extensions-Wc++20-extensions]8;;[m[K]
+[19.166s]    17 |         [01;35m[K.[m[Kmax_lateral_acceleration = 1.48 * 9.81 // m/s^2
+[19.166s]       |         [01;35m[K^[m[K
+[19.166s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KCarParameters::front_axle_distance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.168s]    18 |     [01;35m[K}[m[K;
+[19.168s]       |     [01;35m[K^[m[K
+[19.168s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KCarParameters::rear_axle_distance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.169s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KCarParameters::front_track_width[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.169s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KCarParameters::rear_track_width[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.169s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KCarParameters::center_of_gravity_height[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.169s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KCarParameters::moment_of_inertia_z[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.169s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KCarParameters::wheel_radius[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.169s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KCarParameters::gear_ratio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.169s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KCarParameters::inner_steering_ratio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.169s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KCarParameters::outer_steering_ratio[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.170s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KCarParameters::cornering_stiffness_front[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.170s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KCarParameters::cornering_stiffness_rear[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.170s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KCarParameters::max_lateral_acceleration[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.170s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KCarParameters::tire_parameters[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.172s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[KCarParameters::aerodynamics_parameters[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.172s] [01m[K/home/runner/work/torque-vectoring/torque-vectoring/torque-vectoring/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp:18:5:[m[K [01;31m[Kerror: [m[Kdesignator order for field ‘[01m[KCarParameters::front_axle_distance[m[K’ does not match declaration order in ‘[01m[KCarParameters[m[K’
+[19.364s] gmake[2]: *** [CMakeFiles/reference_generator_tests.dir/build.make:93: CMakeFiles/reference_generator_tests.dir/test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp.o] Error 1
+[19.364s] gmake[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/reference_generator_tests.dir/all] Error 2
+[19.364s] gmake: *** [Makefile:146: all] Error 2
+[19.366s] Invoked command in '/home/runner/work/torque-vectoring/torque-vectoring/build/torque_vectoring' returned '2': PATH=/opt/microsoft/powershell/7:${PATH} PSModulePath=/home/runner/.local/share/powershell/Modules:${PSModulePath} /usr/local/bin/cmake --build /home/runner/work/torque-vectoring/torque-vectoring/build/torque_vectoring -- -j2 -l2
