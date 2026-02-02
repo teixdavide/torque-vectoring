@@ -1,4 +1,4 @@
-#include "steady_state_yaw_rate_reference_generator.hpp"
+#include "reference_generators/yaw_rate_reference_generators/steady_state_yaw_rate_reference_generator.hpp"
 
 SteadyStateYawRateReferenceGenerator::SteadyStateYawRateReferenceGenerator(
                                                 const CarParameters& car_params, 

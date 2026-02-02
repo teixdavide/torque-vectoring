@@ -1,5 +1,5 @@
 #pragma once
-#include "yaw_rate_reference_generator.hpp"
+#include "reference_generators/yaw_rate_reference_generators/yaw_rate_reference_generator.hpp"
 #include "data_structures/car_parameters.hpp"
 
 class SteadyStateYawRateReferenceGenerator : public YawRateReferenceGenerator {
