@@ -9,9 +9,17 @@ class SteadyStateYawRateReferenceGeneratorTest : public ::testing::Test {
 protected:
     // Updated car parameters
     CarParameters car_params = {
-        .mass = 269.6,                     // kg
         .front_axle_distance = 1.20,       // m
         .rear_axle_distance = 1.20,        // m
+        .front_track_width = 0.0,
+        .rear_track_width = 0.0,
+        .center_of_gravity_height = 0.0,
+        .mass = 269.6,                     // kg
+        .moment_of_inertia_z = 0.0,
+        .wheel_radius = 0.0,
+        .gear_ratio = 0.0,
+        .inner_steering_ratio = 0.0,
+        .outer_steering_ratio = 0.0,
         .cornering_stiffness_front = 127,  // N/rad
         .cornering_stiffness_rear = 127,   // N/rad
         .max_lateral_acceleration = 1.48 * 9.81 // m/s^2
