@@ -47,6 +47,7 @@ jobs:
           colcon test
           
       - name: Show test results
+        if: always()
         run: |
           cd colcon_ws
-          colcon test-result --verbose
+          colcon test-result --all --verbose
