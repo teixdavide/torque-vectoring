@@ -50,6 +50,7 @@ endif()
 add_executable(reference_generator_tests
     test/reference_generators/ref_gen_test.cpp
     test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp
+    test/reference_generators/ss_ss_ref_gen/ss_ss_ref_gen_test.cpp
 )
 
 target_link_libraries(reference_generator_tests
