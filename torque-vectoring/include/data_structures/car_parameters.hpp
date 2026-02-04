@@ -16,6 +16,10 @@ struct CarParameters {
   double cornering_stiffness_rear;
   double max_lateral_acceleration;
 
+  double max_drive_torque;
+  double max_brake_torque;
+  double max_yaw_moment;
+
   struct TireParameters {
     double lateral_stiffness_factor;
     double shape_factor;

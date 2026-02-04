@@ -14,6 +14,8 @@ add_library(torque_vectoring
     src/reference_generators/reference_generator.cpp
     src/reference_generators/sideslip_reference_generators/steady_state_sideslip_reference_generator.cpp
     src/reference_generators/yaw_rate_reference_generators/steady_state_yaw_rate_reference_generator.cpp
+
+    src/high_level_controllers/pid_controller.cpp
 )
 
 target_include_directories(torque_vectoring
@@ -47,20 +49,21 @@ if(CMAKE_BUILD_TYPE STREQUAL "Debug")
 endif()
 
 
-add_executable(reference_generator_tests
+add_executable(tv_tests
     test/reference_generators/ref_gen_test.cpp
     test/reference_generators/yr_ref_gen/ss_yr_ref_gen_test.cpp
     test/reference_generators/ss_ss_ref_gen/ss_ss_ref_gen_test.cpp
+    test/high_level_controllers/pid_controller_test.cpp
 )
 
-target_link_libraries(reference_generator_tests
+target_link_libraries(tv_tests
     PRIVATE
         torque_vectoring
         gtest_main
         gmock
 )
 
-target_include_directories(reference_generator_tests
+target_include_directories(tv_tests
     PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/include
         ${gtest_SOURCE_DIR}/include
@@ -68,14 +71,14 @@ target_include_directories(reference_generator_tests
 )
 
 
-target_compile_options(reference_generator_tests
+target_compile_options(tv_tests
     PRIVATE -Wall -Wextra -Wpedantic
 )
 
 include(GoogleTest)
 
-gtest_discover_tests(reference_generator_tests
+gtest_discover_tests(tv_tests
     TIMEOUT 0   # disables timeout
 )
 
-gtest_discover_tests(reference_generator_tests)
+gtest_discover_tests(tv_tests)

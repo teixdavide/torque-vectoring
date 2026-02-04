@@ -23,10 +23,6 @@ double SteadyStateYawRateReferenceGenerator::generate_reference_yaw_rate (
     
     // Needed parameters
     double L = car_parameters_.front_axle_distance + car_parameters_.rear_axle_distance;
-    double lf = car_parameters_.front_axle_distance;
-    double lr = car_parameters_.rear_axle_distance;
-    double Cf = car_parameters_.cornering_stiffness_front;
-    double Cr = car_parameters_.cornering_stiffness_rear;
     double V = state.velocity_x;
     double delta = command.steering;
 
