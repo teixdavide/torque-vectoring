@@ -22,6 +22,10 @@ class HighLevelController {
     explicit HighLevelController(const CarParameters& car_params) 
         : car_params_(car_params) {};
 
+    /**
+     * @brief Destroy the High Level Controller object
+     * 
+     */
     virtual ~HighLevelController() = default;
 
     /**
