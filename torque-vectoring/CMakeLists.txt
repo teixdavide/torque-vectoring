@@ -14,8 +14,8 @@ add_library(torque_vectoring
     src/reference_generators/reference_generator.cpp
     src/reference_generators/sideslip_reference_generators/steady_state_sideslip_reference_generator.cpp
     src/reference_generators/yaw_rate_reference_generators/steady_state_yaw_rate_reference_generator.cpp
-
     src/high_level_controllers/pid_controller.cpp
+    src/low_level_controllers/simple_approach.cpp
 )
 
 target_include_directories(torque_vectoring
