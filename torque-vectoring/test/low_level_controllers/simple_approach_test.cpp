@@ -10,29 +10,25 @@
  */
 class SimpleApproachTest : public ::testing::Test {
 protected:
-    CarParameters car_params = {
-        .mass = 269.6,
-        .front_axle_distance = 1.20,
-        .rear_axle_distance = 1.20,
-        .cornering_stiffness_front = 127,
-        .cornering_stiffness_rear = 127,
-        .max_lateral_acceleration = 1.48 * 9.81,
-        .max_yaw_moment = 150.0,
-        .max_drive_torque = 400.0,
-        .max_brake_torque = 300.0
-    };
+
+    CarParameters car_params{};
+
+    void SetUp() override
+    {
+        car_params.mass = 269.6;
+        car_params.front_axle_distance = 1.20;
+        car_params.rear_axle_distance = 1.20;
+        car_params.cornering_stiffness_front = 127;
+        car_params.cornering_stiffness_rear = 127;
+        car_params.max_lateral_acceleration = 1.48 * 9.81;
+        car_params.max_yaw_moment = 150.0;
+        car_params.max_drive_torque = 400.0;
+        car_params.max_brake_torque = 300.0;
+    }
 };
 
 /**
  * @brief Test: Zero yaw moment produces equal torque distribution on rear wheels.
- *
- * If no yaw moment is requested, the controller should split total torque
- * evenly between left and right rear wheels.
- *
- * This verifies:
- *  - No unintended bias
- *  - Correct base torque split (T/2, T/2)
- *  - Front wheels receive zero torque
  */
 TEST_F(SimpleApproachTest, ZeroYawMomentProducesEqualRearSplit) {
     SimpleApproach controller(car_params);
@@ -51,16 +47,6 @@ TEST_F(SimpleApproachTest, ZeroYawMomentProducesEqualRearSplit) {
 
 /**
  * @brief Test: Positive yaw moment increases left rear torque.
- *
- * According to the implementation:
- *     delta = yaw_moment / rear_axle_distance
- *
- * RL = T/2 + delta
- * RR = T/2 - delta
- *
- * This test verifies:
- *  - Correct computation of delta torque
- *  - Proper directional torque adjustment
  */
 TEST_F(SimpleApproachTest, PositiveYawMomentAddsToLeftRear) {
     SimpleApproach controller(car_params);
@@ -79,13 +65,6 @@ TEST_F(SimpleApproachTest, PositiveYawMomentAddsToLeftRear) {
 
 /**
  * @brief Test: Negative yaw moment increases right rear torque.
- *
- * Ensures sign correctness in yaw moment handling.
- * A negative yaw moment must invert the torque bias.
- *
- * This verifies:
- *  - Correct sign propagation
- *  - No accidental inversion in formula
  */
 TEST_F(SimpleApproachTest, NegativeYawMomentAddsToRightRear) {
     SimpleApproach controller(car_params);
@@ -104,16 +83,6 @@ TEST_F(SimpleApproachTest, NegativeYawMomentAddsToRightRear) {
 
 /**
  * @brief Test: Rear torque sum equals total requested torque.
- *
- * Since:
- *     RL = T/2 + delta
- *     RR = T/2 - delta
- *
- * Their sum must always equal T.
- *
- * This verifies:
- *  - No torque is artificially created or destroyed
- *  - Mathematical consistency of the allocator
  */
 TEST_F(SimpleApproachTest, TotalRearTorqueIsConserved) {
     SimpleApproach controller(car_params);
@@ -131,17 +100,6 @@ TEST_F(SimpleApproachTest, TotalRearTorqueIsConserved) {
 
 /**
  * @brief Test: Pure yaw moment generation with zero total torque.
- *
- * If total torque is zero but yaw moment is nonzero:
- *
- *     RL = +delta
- *     RR = -delta
- *
- * This produces a pure moment without longitudinal acceleration.
- *
- * This verifies:
- *  - Correct handling of edge case
- *  - Controller supports moment-only actuation
  */
 TEST_F(SimpleApproachTest, ZeroTotalTorqueStillProducesYawSplit) {
     SimpleApproach controller(car_params);
@@ -157,4 +115,3 @@ TEST_F(SimpleApproachTest, ZeroTotalTorqueStillProducesYawSplit) {
     EXPECT_DOUBLE_EQ(output.rl_torque, delta);
     EXPECT_DOUBLE_EQ(output.rr_torque, -delta);
 }
-

@@ -4,18 +4,8 @@
 
 class PIDControllerTest : public ::testing::Test {
 protected:
-    CarParameters car_params = {
-        .mass = 269.6,
-        .front_axle_distance = 1.20,
-        .rear_axle_distance = 1.20,
-        .cornering_stiffness_front = 127,
-        .cornering_stiffness_rear = 127,
-        .max_lateral_acceleration = 1.48 * 9.81,
-        .max_yaw_moment = 150.0,
-        .max_drive_torque = 400.0,
-        .max_brake_torque = 300.0
-    };
 
+    CarParameters car_params{};
     VehicleState state{};
     Reference reference{};
     DriverCommand command{};
@@ -25,6 +15,19 @@ protected:
     const double kd = 0.5;
     const double dt = 0.01;
     const double integral_limit = 5.0;
+
+    void SetUp() override
+    {
+        car_params.mass = 269.6;
+        car_params.front_axle_distance = 1.20;
+        car_params.rear_axle_distance = 1.20;
+        car_params.cornering_stiffness_front = 127;
+        car_params.cornering_stiffness_rear = 127;
+        car_params.max_lateral_acceleration = 1.48 * 9.81;
+        car_params.max_yaw_moment = 150.0;
+        car_params.max_drive_torque = 400.0;
+        car_params.max_brake_torque = 300.0;
+    }
 };
 
 /**
@@ -72,6 +75,7 @@ TEST_F(PIDControllerTest, IntegralTermAccumulates) {
 
     for (int i = 0; i < 10; ++i) {
         expected_integral += (reference.yaw_rate - state.yaw_rate) * dt;
+
         auto request = controller.compute_control(state, reference, command);
 
         EXPECT_NEAR(request.yaw_moment, ki * expected_integral, 1e-6);
@@ -108,6 +112,7 @@ TEST_F(PIDControllerTest, DerivativeTermRespondsToErrorChange) {
     controller.compute_control(state, reference, command);
 
     reference.yaw_rate = 1.0;
+
     auto request = controller.compute_control(state, reference, command);
 
     double expected_derivative =

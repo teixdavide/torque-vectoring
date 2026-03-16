@@ -7,17 +7,23 @@
 
 class SteadyStateSideslipReferenceGeneratorTest : public ::testing::Test {
 protected:
-    CarParameters car_params = {
-        .mass = 269.6,                     // kg
-        .front_axle_distance = 1.20,       // m
-        .rear_axle_distance = 1.20,        // m
-        .cornering_stiffness_front = 127,  // N/rad (unused here)
-        .cornering_stiffness_rear = 127,   // N/rad
-        .max_lateral_acceleration = 1.48 * 9.81 // m/s^2
-    };
 
+    CarParameters car_params{};
     VehicleState state{};
     DriverCommand command{};
+
+    void SetUp() override
+    {
+        car_params.mass = 269.6;
+        car_params.front_axle_distance = 1.20;
+        car_params.rear_axle_distance = 1.20;
+        car_params.cornering_stiffness_front = 127;
+        car_params.cornering_stiffness_rear = 127;
+        car_params.max_lateral_acceleration = 1.48 * 9.81;
+        car_params.max_yaw_moment = 150.0;
+        car_params.max_drive_torque = 400.0;
+        car_params.max_brake_torque = 300.0;
+    }
 };
 
 /**
