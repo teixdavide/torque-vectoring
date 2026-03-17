@@ -47,7 +47,11 @@ TorqueVectoringNode::TorqueVectoringNode()
     // --- Initialize torque vectoring ---
     auto yaw_rate_generator = std::make_shared<SteadyStateYawRateReferenceGenerator>(car_params_);
     auto sideslip_generator = std::make_shared<SteadyStateSideslipReferenceGenerator>(car_params_);
-    auto reference_generator = std::make_shared<ReferenceGenerator>(yaw_rate_generator.get(), sideslip_generator.get());
+
+    auto reference_generator = std::make_shared<ReferenceGenerator>(
+        yaw_rate_generator,  // pass raw pointer to ReferenceGenerator
+        sideslip_generator
+    );
     auto low_level_controller = std::make_shared<SimpleApproach>(car_params_);
     auto high_level_controller = std::make_shared<PIDController>(car_params_, 1.0, 0.1, 0.01, 0.01, 10.0);
     
@@ -57,6 +61,8 @@ TorqueVectoringNode::TorqueVectoringNode()
     timer_ = this->create_wall_timer(
         std::chrono::milliseconds(10),
         std::bind(&TorqueVectoringNode::controlLoop, this));
+
+    RCLCPP_INFO(this->get_logger(), "Finished constructor");
 }
 
 // --- Callbacks ---
@@ -90,6 +96,8 @@ void TorqueVectoringNode::accelCallback(const geometry_msgs::msg::Vector3::Share
 // --- Control loop ---
 void TorqueVectoringNode::controlLoop()
 {
+    if (state_.velocity_x <= 0) return;
+
     auto output = torque_vectoring_->compute_control(state_, command_);
 
     geometry_msgs::msg::Vector3 torque_msg;

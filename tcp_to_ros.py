@@ -9,6 +9,7 @@ from geometry_msgs.msg import Vector3
 HOST = '0.0.0.0'
 PORT = 20000
 BUFFER_SIZE = 4096
+VEL_X = 0
 
 
 class TCPBridge(Node):
@@ -70,6 +71,7 @@ class TCPBridge(Node):
 
                 yaw = Float64()
                 yaw.data = values[1]
+                VEL_X = values[2]
 
                 self.yawrate_pub.publish(yaw)
 
@@ -79,7 +81,7 @@ class TCPBridge(Node):
                 vx, vy, ax, ay = values[1:5]
 
                 vel = Vector3()
-                vel.x = vx
+                vel.x = VEL_X
                 vel.y = vy
 
                 acc = Vector3()

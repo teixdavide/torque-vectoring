@@ -1,3 +1,4 @@
+#pragma once
 #include "reference_generators/sideslip_reference_generators/sideslip_reference_generator.hpp"
 
 /**

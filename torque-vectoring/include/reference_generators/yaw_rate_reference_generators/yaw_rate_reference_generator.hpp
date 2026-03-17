@@ -10,11 +10,6 @@
 class YawRateReferenceGenerator {
   public:
     /**
-     * @brief Destroy the Yaw Rate Reference Generator object
-     * 
-     */
-    virtual ~YawRateReferenceGenerator() = default;
-    /**
      * @brief Generate a reference yaw rate based on the vehicle state and driver command
      * 
      * @param state Current VehicleState
@@ -22,4 +17,6 @@ class YawRateReferenceGenerator {
      * @return double Reference yaw rate
      */
     virtual double generate_reference_yaw_rate(VehicleState state, DriverCommand command) = 0;
+
+    virtual ~YawRateReferenceGenerator() = default;
 };
