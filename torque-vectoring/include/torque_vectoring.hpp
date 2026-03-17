@@ -13,7 +13,6 @@ class TorqueVectoring {
                              std::shared_ptr<HighLevelController> high_level_controller);
 
     TorqueOutput compute_control(const VehicleState& state,
-                                           const Reference& reference,
                                            const DriverCommand& driver_command);
 
   private:

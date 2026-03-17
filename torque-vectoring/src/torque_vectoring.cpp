@@ -9,7 +9,6 @@ TorqueVectoring::TorqueVectoring(const CarParameters& car_params,
       high_level_controller_(high_level_controller) {}
 
 TorqueOutput TorqueVectoring::compute_control(const VehicleState& state,
-                                           const Reference& reference,
                                            const DriverCommand& driver_command) {
 
     Reference desired_reference = reference_generator_->create_reference(state, driver_command);

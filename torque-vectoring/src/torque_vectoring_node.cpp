@@ -1,4 +1,9 @@
-#include "TorqueVectoringNode.hpp"
+#include "torque_vectoring_node.hpp"
+#include "reference_generators/yaw_rate_reference_generators/steady_state_yaw_rate_reference_generator.hpp"
+#include "reference_generators/sideslip_reference_generators/steady_state_sideslip_reference_generator.hpp"
+#include "low_level_controllers/simple_approach.hpp"
+#include "high_level_controllers/pid_controller.hpp"
+
 
 TorqueVectoringNode::TorqueVectoringNode()
 : Node("torque_vectoring_node")
@@ -40,7 +45,13 @@ TorqueVectoringNode::TorqueVectoringNode()
     car_params_.max_brake_torque = 300.0;
 
     // --- Initialize torque vectoring ---
-    torque_vectoring_ = std::make_shared<TorqueVectoring>(car_params_);
+    auto yaw_rate_generator = std::make_shared<SteadyStateYawRateReferenceGenerator>(car_params_);
+    auto sideslip_generator = std::make_shared<SteadyStateSideslipReferenceGenerator>(car_params_);
+    auto reference_generator = std::make_shared<ReferenceGenerator>(yaw_rate_generator.get(), sideslip_generator.get());
+    auto low_level_controller = std::make_shared<SimpleApproach>(car_params_);
+    auto high_level_controller = std::make_shared<PIDController>(car_params_, 1.0, 0.1, 0.01, 0.01, 10.0);
+    
+    torque_vectoring_ = std::make_shared<TorqueVectoring>(car_params_, reference_generator, low_level_controller, high_level_controller);
 
     // --- Timer ---
     timer_ = this->create_wall_timer(
@@ -79,7 +90,7 @@ void TorqueVectoringNode::accelCallback(const geometry_msgs::msg::Vector3::Share
 // --- Control loop ---
 void TorqueVectoringNode::controlLoop()
 {
-    auto output = torque_vectoring_->compute(state_, command_);
+    auto output = torque_vectoring_->compute_control(state_, command_);
 
     geometry_msgs::msg::Vector3 torque_msg;
 
