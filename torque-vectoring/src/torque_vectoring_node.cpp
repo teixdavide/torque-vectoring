@@ -33,6 +33,18 @@ TorqueVectoringNode::TorqueVectoringNode()
     torque_pub_ = this->create_publisher<geometry_msgs::msg::Vector3>(
         "/vehicle/wheel_torques", 10);
 
+    yaw_rate_ref_pub_ = this->create_publisher<std_msgs::msg::Float64>(
+        "/vehicle/yaw_rate_reference", 10);
+
+    sideslip_ref_pub_ = this->create_publisher<std_msgs::msg::Float64>(
+        "/vehicle/sideslip_reference", 10);
+
+    yaw_moment_request_pub_ = this->create_publisher<std_msgs::msg::Float64>(
+        "/vehicle/yaw_moment_request", 10); 
+
+    total_torque_request_pub_ = this->create_publisher<std_msgs::msg::Float64>(
+        "/vehicle/total_torque_request", 10);
+
     // --- Car parameters ---
     car_params_.mass = 269.6;
     car_params_.front_axle_distance = 1.20;
@@ -53,7 +65,7 @@ TorqueVectoringNode::TorqueVectoringNode()
         sideslip_generator
     );
     auto low_level_controller = std::make_shared<SimpleApproach>(car_params_);
-    auto high_level_controller = std::make_shared<PIDController>(car_params_, 1.0, 0.1, 0.01, 0.01, 10.0);
+    auto high_level_controller = std::make_shared<PIDController>(car_params_, 119.52, 3855.6, 0.0, 0.01, 10.0);
     
     torque_vectoring_ = std::make_shared<TorqueVectoring>(car_params_, reference_generator, low_level_controller, high_level_controller);
 
@@ -98,15 +110,32 @@ void TorqueVectoringNode::controlLoop()
 {
     if (state_.velocity_x <= 0) return;
 
-    auto output = torque_vectoring_->compute_control(state_, command_);
+    // Unpack the tuple returned by compute_control
+    auto [torque_output, reference, yaw_request] = torque_vectoring_->compute_control(state_, command_);
 
     geometry_msgs::msg::Vector3 torque_msg;
 
-    torque_msg.x = output.rl_torque;
-    torque_msg.y = output.rr_torque;
-    torque_msg.z = output.fl_torque + output.fr_torque; // front torque sum
+    torque_msg.x = torque_output.rl_torque;
+    torque_msg.y = torque_output.rr_torque;
 
     torque_pub_->publish(torque_msg);
+
+    // Publish reference and request for debugging/analysis
+    std_msgs::msg::Float64 yaw_rate_ref_msg;
+    yaw_rate_ref_msg.data = reference.yaw_rate;
+    yaw_rate_ref_pub_->publish(yaw_rate_ref_msg);
+
+    std_msgs::msg::Float64 sideslip_ref_msg;
+    sideslip_ref_msg.data = reference.sideslip_angle;
+    sideslip_ref_pub_->publish(sideslip_ref_msg);
+
+    std_msgs::msg::Float64 yaw_moment_request_msg;
+    yaw_moment_request_msg.data = yaw_request.yaw_moment;
+    yaw_moment_request_pub_->publish(yaw_moment_request_msg);
+
+    std_msgs::msg::Float64 total_torque_request_msg;
+    total_torque_request_msg.data = yaw_request.total_torque;
+    total_torque_request_pub_->publish(total_torque_request_msg);
 }
 
 // --- main ---

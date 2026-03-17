@@ -32,6 +32,10 @@ private:
 
     // Publisher
     rclcpp::Publisher<geometry_msgs::msg::Vector3>::SharedPtr torque_pub_;
+    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr yaw_rate_ref_pub_;
+    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr sideslip_ref_pub_;
+    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr yaw_moment_request_pub_;
+    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr total_torque_request_pub_;
 
     // Timer for control loop
     rclcpp::TimerBase::SharedPtr timer_;
