@@ -46,15 +46,17 @@ TorqueVectoringNode::TorqueVectoringNode()
         "/vehicle/total_torque_request", 10);
 
     // --- Car parameters ---
-    car_params_.mass = 269.6;
-    car_params_.front_axle_distance = 1.20;
+    car_params_.mass = 250.048;
+    car_params_.front_axle_distance = 0.873;
     car_params_.rear_axle_distance = 1.20;
-    car_params_.cornering_stiffness_front = 127;
-    car_params_.cornering_stiffness_rear = 127;
+    car_params_.front_track_width = 1.2;
+    car_params_.rear_track_width = 1.2;
+    car_params_.cornering_stiffness_front = 15714;
+    car_params_.cornering_stiffness_rear = 0.717;
     car_params_.max_lateral_acceleration = 1.48 * 9.81;
     car_params_.max_yaw_moment = 150.0;
-    car_params_.max_drive_torque = 400.0;
-    car_params_.max_brake_torque = 300.0;
+    car_params_.max_drive_torque = 63.2 * 13; // 63.2 Nm per wheel, 13 is the gear ratio
+    car_params_.max_brake_torque = 63.2 * 13;
 
     // --- Initialize torque vectoring ---
     auto yaw_rate_generator = std::make_shared<SteadyStateYawRateReferenceGenerator>(car_params_);
@@ -85,7 +87,7 @@ void TorqueVectoringNode::throttleCallback(const std_msgs::msg::Float64::SharedP
 
 void TorqueVectoringNode::steeringCallback(const std_msgs::msg::Float64::SharedPtr msg)
 {
-    command_.steering = msg->data;
+    command_.steering = msg->data * 0.17255;
 }
 
 void TorqueVectoringNode::yawRateCallback(const std_msgs::msg::Float64::SharedPtr msg)
