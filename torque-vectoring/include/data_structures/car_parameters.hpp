@@ -9,7 +9,7 @@ struct CarParameters {
   double rear_axle_distance = 0.0; ///< Distance from CG to rear axle
   double front_track_width = 0.0; ///< Front track width
   double rear_track_width = 0.0;  ///< Rear track width
-  double center_of_gravity_height = 0.0; ///< Height of the center of gravity
+  double center_of_gravity_height = 0.208; ///< Height of the center of gravity
   double mass = 0.0; ///< Vehicle mass
   double moment_of_inertia_z = 0.0; ///< Yaw moment of inertia
   double wheel_radius = 0.0; ///< Wheel radius

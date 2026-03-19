@@ -129,7 +129,7 @@ class TCPBridge(Node):
             data = np.array(msg.data, dtype=np.float64)
 
             # Optional: add flag for Simulink parsing
-            packet = np.concatenate(([10.0], data))  # flag=10
+            packet = data  # flag=10
 
             self.client_out.sendall(packet.tobytes())
 
