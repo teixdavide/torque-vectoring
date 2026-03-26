@@ -1,0 +1,5778 @@
+Model {
+  Name			  "MySelectorCtrlMapping_RTW"
+  Version		  10.3
+  SavedCharacterEncoding  "UTF-8"
+  ModelUUID		  "727ea68f-1a30-45cc-9528-48b8443b7e2b"
+  GraphicalInterface {
+    NumRootInports	    1
+    Inport {
+      Name		      "FromCM"
+      BusObject		      "cmSelectorCtrlMappingIn"
+      OutputFunctionCall      "off"
+      SampleTime	      "-1"
+      UnitExpr		      "inherit"
+    }
+    NumRootOutports	    1
+    Outport {
+      Name		      "ToCM"
+      BusObject		      "cmSelectorCtrlMappingOut"
+      BusOutputAsStruct	      "off"
+      UnitExpr		      "inherit"
+    }
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.0"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+    NumProvidedFunctions    0
+    NumRequiredFunctions    0
+    NumResetEvents	    0
+    HasInitializeEvent	    0
+    HasTerminateEvent	    0
+    PreCompExecutionDomainType "Unset"
+    IsExportFunctionModel   0
+    SimulinkSubDomainType   "Simulink"
+    NumParameterArguments   0
+    NumExternalFileReferences 2
+    ExternalFileReference {
+      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+      Path		      "MySelectorCtrlMapping_RTW/Get DigitalSelectorCtrl 0 Signal/Compare To Constant"
+      SID		      "18"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+      Path		      "MySelectorCtrlMapping_RTW/Get DigitalSelectorCtrl 1 Signal/Compare To Constant1"
+      SID		      "24"
+      Type		      "LIBRARY_BLOCK"
+    }
+    OrderedModelArguments   1
+  }
+  slcheck_filter_plugin	  "on"
+  SLCCPlugin		  "on"
+  AnimationPlugin	  "on"
+  DiagnosticSuppressor	  "on"
+  LogicAnalyzerPlugin	  "on"
+  WebScopes_FoundationPlugin "on"
+  SimscapeModelParametersPlugin	"on"
+  NotesPlugin		  "on"
+  Description		  "CarMaker Plug-in Model Target"
+  PreLoadFcn		  "vehicle = 'Car'; if ~length(which('cmself')), cmenv; end\nMySelectorCtrlMapping_RTW_bus"
+  EnableAccessToBaseWorkspace on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  InitFcn		  "vehicle = 'Car'; if ~length(which('cmself')), cmenv; end\nMySelectorCtrlMapping_RTW_bus"
+  LastSavedArchitecture	  "glnxa64"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [924.0, 167.0, 792.0, 726.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[1]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+	Minimized		"On"
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	IsTabbed		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[680.0, 489.0]
+	ZoomFactor		[1.0]
+	Offset			[-60.03746262501312, 159.45506470741611]
+	SceneRectInView		[-60.03746262501312, 159.45506470741611, 680.0, 489.0]
+      }
+      Array {
+	Type			"Simulink.DockComponentInfo"
+	Dimension		2
+	Object {
+	  $ObjectID		  6
+	  Type			  "Simulink:Editor:ReferencedFiles"
+	  ID			  "Referenced Files"
+	  Visible		  [0]
+	  CreateCallback	  ""
+	  UserData		  "{\"filterShowRefModels\":\"true\",\"filterShowRefSubs\":\"true\",\"filterShowOnlyDirtyFiles\":\"false\"}\n"
+	  Floating		  [0]
+	  DockPosition		  "Left"
+	  Width			  [640]
+	  Height		  [480]
+	  Minimized		  "Unset"
+	}
+	Object {
+	  $ObjectID		  7
+	  Type			  "GLUE2:PropertyInspector"
+	  ID			  "Property Inspector"
+	  Visible		  [1]
+	  CreateCallback	  ""
+	  UserData		  ""
+	  Floating		  [0]
+	  DockPosition		  "Right"
+	  Width			  [640]
+	  Height		  [480]
+	  Minimized		  "On"
+	}
+	PropName		"DockComponentsInfo"
+      }
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABeAP////sAAABgAFMAaQBtAHUAb"
+      "ABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZ"
+      "QBzAAAAAAD/////AAAAhgD///8AAAABAAAAAAAAAAD8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAd"
+      "ABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA////AAACzgAAAiYAAAABAAAAAgAAAAEAAAAC/"
+      "AAAAAMAAAAAAAAAAQAAADYAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAEwAZQBmAHQDAAAAAP////8AAAAAA"
+      "AAAAAAAAAEAAAABAAAAOABjAG8AbABsAGEAcABzAGkAYgBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIAUgBpAGcAaAB0AwAAAAD/////AAAAA"
+      "AAAAAAAAAADAAAAAQAAADoAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAEIAbwB0AHQAbwBtAAAAAAD/////A"
+      "AAAAAAAAAA="
+      Array {
+	Type			"Cell"
+	Dimension		0
+	PropName		"PersistedApps"
+      }
+      WindowUuid	      "911a9d64-1af2-48fc-86ee-79e738216ac5"
+    }
+    BDUuid		    "1e1847f6-162c-49d3-8ebe-300f847a6a4e"
+  }
+  HideAutomaticNames	  on
+  SequenceViewerTimePrecision 3
+  SequenceViewerHistory	  1000
+  Created		  "Tue May 14 10:18:25 2024"
+  Creator		  "IPG"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "IPG"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Oct 25 10:49:12 2024"
+  RTWModifiedTimeStamp	  651754134
+  ModelVersionFormat	  "%<AutoIncrement:1.0>"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowAllPropagatedSignalLabels	off
+  PortDataTypeDisplayFormat "AliasTypeOnly"
+  ShowEditTimeErrors	  on
+  ShowEditTimeWarnings	  on
+  ShowEditTimeAdvisorChecks off
+  ShowPortUnits		  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  VariantCondition	  off
+  ShowLinearizationAnnotations on
+  ShowVisualizeInsertedRTB on
+  ShowMarkup		  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  BlockVariantConditionDataTip off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  FunctionConnectors	  off
+  ScheduleConnectors	  on
+  BrowserLookUnderMasks	  off
+  MultithreadedSim	  "auto"
+  SimulationMode	  "normal"
+  SILPILModeSetting	  "automated"
+  SILPILSystemUnderTest	  "topmodel"
+  SILPILSimulationModeTopModel "normal"
+  SILPILSimulationModeModelRef "normal"
+  SimTabSimulationMode	  "normal"
+  CodeVerificationMode	  "software-in-the-loop (sil)"
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  EnablePacing		  off
+  PacingRate		  1
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    8
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "MySelectorCtrlMapping_RTW"
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "MySelectorCtrlMapping_RTW"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigSignalOutputPortIndex 0
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  VariantFading		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  OrderedModelArguments	  on
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      9
+      Version		      "21.0.0"
+      DisabledProps	      []
+      Description	      ""
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  10
+	  Version		  "21.0.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  Components		  []
+	  StartTime		  "0.0"
+	  StopTime		  "inf"
+	  AbsTol		  "auto"
+	  AutoScaleAbsTol	  on
+	  FixedStep		  "0.001"
+	  InitialStep		  "auto"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  EnableMultiTasking	  off
+	  ConcurrentTasks	  off
+	  SolverName		  "ode1"
+	  SolverJacobianMethodControl "auto"
+	  DaesscMode		  "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "Auto"
+	  SolverInfoToggleStatus  off
+	  IsAutoAppliedInSIP	  off
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	  SampleTimeProperty	  []
+	  DecoupledContinuousIntegration off
+	  MinimalZcImpactIntegration off
+	  ODENIntegrationMethod	  "ode3"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  11
+	  Version		  "21.0.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  Components		  []
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveOperatingPoint	  off
+	  SaveFormat		  "Dataset"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  VisualizeSimOutput	  on
+	  StreamToWorkspace	  off
+	  StreamVariableName	  "streamout"
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  on
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	  LoggingToFile		  off
+	  DatasetSignalFormat	  "timeseries"
+	  LoggingFileName	  "out.mat"
+	  LoggingIntervals	  "[-inf, inf]"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  12
+	  Version		  "21.0.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    9
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    Cell		    "EfficientTunableParamExpr"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  Components		  []
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  DefaultParameterBehavior "Tunable"
+	  UseDivisionForNetSlopeComputation "off"
+	  GainParamInheritBuiltInType off
+	  UseFloatMulNetSlope	  off
+	  InheritOutputTypeSmallerThanSingle off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  CachingGlobalReferences off
+	  GlobalBufferReuse	  on
+	  StrengthReduction	  off
+	  AdvancedOptControl	  ""
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  BitwiseOrLogicalOp	  "Same as modeled"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  PassReuseOutputArgsThreshold 12
+	  ExpressionDepthLimit	  128
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  LifeSpan		  "auto"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "off"
+	  AccelVerboseBuild	  off
+	  OptimizeBlockOrder	  "off"
+	  OptimizeDataStoreBuffers on
+	  BusAssignmentInplaceUpdate on
+	  DifferentSizesBufferReuse off
+	  UseRowMajorAlgorithm	  off
+	  OptimizationLevel	  "level2"
+	  OptimizationPriority	  "Balanced"
+	  OptimizationCustomize	  on
+	  LabelGuidedReuse	  off
+	  MultiThreadedLoops	  off
+	  DenormalBehavior	  "GradualUnderflow"
+	  EfficientTunableParamExpr off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  13
+	  Version		  "21.0.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "UseOnlyExistingSharedCode"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  Components		  []
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  StringTruncationChecking "error"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Simplified"
+	  MergeDetectMultiDrivingBlocksExec "error"
+	  CheckExecutionContextPreStartOutputMsg off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  ExportedTasksRateTransMsg "none"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  FcnCallInpInsideContextMsg "error"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  UseOnlyExistingSharedCode "error"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "error"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  AllowSymbolicDim	  on
+	  RowMajorDimensionSupport off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceNoExplicitFinalValueMsg	"none"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "none"
+	  OperatingPointInterfaceChecksumMismatchMsg "warning"
+	  NonCurrentReleaseOperatingPointMsg "error"
+	  ChecksumConsistencyForSSReuse	"none"
+	  PregeneratedLibrarySubsystemCodeDiagnostic "warning"
+	  MatchCodeGenerationContextForUpdateDiagram "none"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  SymbolicDimMinMaxWarning "warning"
+	  LossOfSymbolicDimsSimulationWarning "warning"
+	  LossOfSymbolicDimsCodeGenerationWarning "error"
+	  SymbolicDimsDataTypeCodeGenerationDiagnostic "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "error"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "error"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnreachableExecutionPathDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	  SFOutputUsedAsStateInMooreChartDiag "error"
+	  SFTemporalDelaySmallerThanSampleTimeDiag "warning"
+	  SFSelfTransitionDiag	  "warning"
+	  SFExecutionAtInitializationDiag "warning"
+	  SFMachineParentedDataDiag "error"
+	  IntegerSaturationMsg	  "warning"
+	  AllowedUnitSystems	  "all"
+	  UnitsInconsistencyMsg	  "warning"
+	  AllowAutomaticUnitConversions	on
+	  RCSCRenamedMsg	  "warning"
+	  RCSCObservableMsg	  "warning"
+	  ForceCombineOutputUpdateInSim	off
+	  UnitDatabase		  ""
+	  UnderSpecifiedDimensionMsg "none"
+	  DebugExecutionForFMUViaOutOfProcess off
+	  ArithmeticOperatorsInVariantConditions "error"
+	  VariantConditionMismatch "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  14
+	  Version		  "21.0.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  Components		  []
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  64
+	  ProdBitPerSizeT	  64
+	  ProdBitPerPtrDiffT	  64
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "Float"
+	  ProdIntDivRoundTo	  "Zero"
+	  ProdEndianess		  "LittleEndian"
+	  ProdWordSize		  64
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "Intel->x86-64 (Windows64)"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetBitPerSizeT	  32
+	  TargetBitPerPtrDiffT	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	  UseEmbeddedCoderFeatures on
+	  UseSimulinkCoderFeatures on
+	  HardwareBoardFeatureSet "EmbeddedCoderHSP"
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  15
+	  Version		  "21.0.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  Components		  []
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  EnableRefExpFcnMdlSchedulingChecks on
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelDependencies	  ""
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel on
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  16
+	  Version		  "21.0.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  Components		  []
+	  SimCustomSourceCode	  ""
+	  SimCustomHeaderCode	  ""
+	  SimCustomInitializer	  ""
+	  SimCustomTerminator	  ""
+	  SimReservedNameArray	  []
+	  SimUserSources	  ""
+	  SimUserIncludeDirs	  ""
+	  SimUserLibraries	  ""
+	  SimUserDefines	  ""
+	  SimCustomCompilerFlags  ""
+	  SimCustomLinkerFlags	  ""
+	  SFSimEcho		  on
+	  SimCtrlC		  on
+	  SimIntegrity		  "on"
+	  SimUseLocalCustomCode	  on
+	  SimParseCustomCode	  on
+	  SimAnalyzeCustomCode	  off
+	  SimDebugExecutionForCustomCode off
+	  SimGenImportedTypeDefs  off
+	  ModelFunctionsGlobalVisibility "on"
+	  CompileTimeRecursionLimit 50
+	  EnableRuntimeRecursion  on
+	  MATLABDynamicMemAlloc	  on
+	  MATLABDynamicMemAllocThreshold 65536
+	  LegacyBehaviorForPersistentVarInContinuousTime off
+	  CustomCodeFunctionArrayLayout	[]
+	  DefaultCustomCodeFunctionArrayLayout "NotSpecified"
+	  CustomCodeUndefinedFunction "FilterOut"
+	  CustomCodeGlobalsAsFunctionIO	off
+	  DefaultCustomCodeDeterministicFunctions "None"
+	  CustomCodeDeterministicFunctions ""
+	  SimHardwareAcceleration "generic"
+	  SimTargetLang		  "C"
+	  GPUAcceleration	  off
+	  SimGPUMallocThreshold	  200
+	  SimGPUStackLimitPerThread 1024
+	  SimGPUErrorChecks	  off
+	  SimGPUCustomComputeCapability	""
+	  SimGPUCompilerFlags	  ""
+	  SimDLTargetLibrary	  "mkl-dnn"
+	  SimDLAutoTuning	  on
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  17
+	  Version		  "21.0.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    17
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateMissedCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    Cell		    "CodeStackProfiling"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  "CarMaker Plug-in Model Target"
+	  SystemTargetFile	  "CarMaker.tlc"
+	  HardwareBoard		  "None"
+	  ShowCustomHardwareApp	  off
+	  ShowEmbeddedHardwareApp off
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "CarMaker_unix-win64.tmf"
+	  PostCodeGenCommand	  ""
+	  GenerateReport	  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  RTWBuildHooks		  []
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  RTWUseLocalCustomCode	  on
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomDefine		  ""
+	  CustomBLASCallback	  ""
+	  CustomLAPACKCallback	  ""
+	  CustomFFTCallback	  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  CustomToolchainOptions  []
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation "off"
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  GenerateGPUCode	  "None"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  GenerateMissedCodeReplacementReport off
+	  RTWCompilerOptimization "off"
+	  ObjectivePriorities	  []
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  SharedConstantsCachingThreshold 1024
+	  GPUKernelNamePrefix	  ""
+	  GPUDeviceID		  -1
+	  GPUMallocMode		  "discrete"
+	  GPUMallocThreshold	  200
+	  GPUStackLimitPerThread  1024
+	  GPUcuBLAS		  on
+	  GPUcuSOLVER		  on
+	  GPUcuFFT		  on
+	  GPUErrorChecks	  off
+	  GPUComputeCapability	  "3.5"
+	  GPUCustomComputeCapability ""
+	  GPUCompilerFlags	  ""
+	  GPUMaximumBlocksPerKernel 0
+	  DLTargetLibrary	  "none"
+	  DLAutoTuning		  on
+	  DLArmComputeVersion	  "19.05"
+	  DLArmComputeArch	  "unspecified"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      18
+	      Version		      "21.0.0"
+	      Array {
+		Type			"Cell"
+		Dimension		28
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"BlockCommentType"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrModelFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"CustomSymbolStrEmxType"
+		Cell			"CustomSymbolStrEmxFcn"
+		Cell			"CustomUserTokenString"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      Description	      ""
+	      Components	      []
+	      Comment		      ""
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      CommentStyle	      "Auto"
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      MaxIdLength	      127
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      MangleLength	      1
+	      SharedChecksumLength    8
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrModelFcn "$R$N"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      CustomSymbolStrEmxType  "emxArray_$M$N"
+	      CustomSymbolStrEmxFcn   "emx$M$N"
+	      CustomUserTokenString   ""
+	      CustomCommentsFcn	      ""
+	      DefineNamingRule	      "None"
+	      DefineNamingFcn	      ""
+	      ParamNamingRule	      "None"
+	      ParamNamingFcn	      ""
+	      SignalNamingRule	      "None"
+	      SignalNamingFcn	      ""
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      BlockCommentType	      "BlockPathComment"
+	      StateflowObjectComments off
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifierFile  ""
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	      ReservedNameArray	      []
+	      EnumMemberNameClash     "error"
+	    }
+	    Simulink.STFCustomTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      19
+	      Version		      "21.0.0"
+	      Array {
+		Type			"Cell"
+		Dimension		20
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"ExistingSharedCode"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"ParenthesesLevel"
+		Cell			"ERTMultiwordTypeDef"
+		Cell			"MultiwordTypeDef"
+		Cell			"RemoveDisableFunc"
+		Cell			"RemoveResetFunc"
+		Cell			"PreserveStateflowLocalDataDimensions"
+		Cell			"ModelReferenceCompliant"
+		PropName		"DisabledProps"
+	      }
+	      Description	      ""
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "NOT IN USE"
+	      TargetLangStandard      "C99 (ISO)"
+	      CodeReplacementLibrary  "None"
+	      UtilityFuncGeneration   "Auto"
+	      MultiwordTypeDef	      "System defined"
+	      MultiwordLength	      2048
+	      DynamicStringBufferSize 256
+	      GenerateFullHeader      on
+	      InferredTypesCompatibility off
+	      ExistingSharedCode      ""
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant off
+	      CompOptLevelCompliant   off
+	      ConcurrentExecutionCompliant off
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      GroupInternalDataByFunction off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      CodeInterfacePackaging  "Reusable function"
+	      PurelyIntegerCode	      off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      RemoveDisableFunc	      off
+	      RemoveResetFunc	      off
+	      SupportVariableSizeSignals off
+	      ParenthesesLevel	      "Nominal"
+	      CastingMode	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      MDXCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      on
+	      UseToolchainInfoCompliant	off
+	      GenerateSharedConstants on
+	      CoderGroups	      []
+	      AccessMethods	      []
+	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
+	      LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
+	      LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
+	      ArrayLayout	      "Column-major"
+	      UnsupportedSFcnMsg      "error"
+	      ERTHeaderFileRootName   "$R$E"
+	      ERTSourceFileRootName   "$R$E"
+	      ERTDataFileRootName     "$R_data"
+	      SystemTargetFile	      "CarMaker.tlc"
+	      Array {
+		Type			"Handle"
+		Dimension		1
+		Simulink.GRTTargetCC {
+		  $BackupClass		  "Simulink.TargetCC"
+		  $ObjectID		  20
+		  Version		  "21.0.0"
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    20
+		    Cell		    "IncludeMdlTerminateFcn"
+		    Cell		    "SuppressErrorStatus"
+		    Cell		    "ERTCustomFileBanners"
+		    Cell		    "GenerateSampleERTMain"
+		    Cell		    "ExistingSharedCode"
+		    Cell		    "GenerateTestInterfaces"
+		    Cell		    "ModelStepFunctionPrototypeControlCompliant"
+		    Cell		    "GenerateAllocFcn"
+		    Cell		    "PurelyIntegerCode"
+		    Cell		    "SupportComplex"
+		    Cell		    "SupportAbsoluteTime"
+		    Cell		    "SupportContinuousTime"
+		    Cell		    "SupportNonInlinedSFcns"
+		    Cell		    "ParenthesesLevel"
+		    Cell		    "ERTMultiwordTypeDef"
+		    Cell		    "MultiwordTypeDef"
+		    Cell		    "RemoveDisableFunc"
+		    Cell		    "RemoveResetFunc"
+		    Cell		    "PreserveStateflowLocalDataDimensions"
+		    Cell		    "ModelReferenceCompliant"
+		    PropName		    "DisabledProps"
+		  }
+		  Description		  ""
+		  Components		  []
+		  TargetFcnLib		  "ansi_tfl_table_tmw.mat"
+		  TargetLibSuffix	  ""
+		  TargetPreCompLibLocation ""
+		  GenFloatMathFcnCalls	  "NOT IN USE"
+		  TargetLangStandard	  "C99 (ISO)"
+		  CodeReplacementLibrary  "None"
+		  UtilityFuncGeneration	  "Auto"
+		  MultiwordTypeDef	  "System defined"
+		  MultiwordLength	  2048
+		  DynamicStringBufferSize 256
+		  GenerateFullHeader	  on
+		  InferredTypesCompatibility off
+		  ExistingSharedCode	  ""
+		  GenerateSampleERTMain	  off
+		  GenerateTestInterfaces  off
+		  ModelReferenceCompliant on
+		  ParMdlRefBuildCompliant off
+		  CompOptLevelCompliant	  off
+		  ConcurrentExecutionCompliant off
+		  IncludeMdlTerminateFcn  on
+		  CombineOutputUpdateFcns on
+		  CombineSignalStateStructs off
+		  GroupInternalDataByFunction off
+		  SuppressErrorStatus	  off
+		  IncludeFileDelimiter	  "Auto"
+		  ERTCustomFileBanners	  off
+		  SupportAbsoluteTime	  on
+		  LogVarNameModifier	  "rt_"
+		  MatFileLogging	  on
+		  CodeInterfacePackaging  "Reusable function"
+		  PurelyIntegerCode	  off
+		  SupportNonFinite	  on
+		  SupportComplex	  on
+		  SupportContinuousTime	  on
+		  SupportNonInlinedSFcns  on
+		  RemoveDisableFunc	  off
+		  RemoveResetFunc	  off
+		  SupportVariableSizeSignals off
+		  ParenthesesLevel	  "Nominal"
+		  CastingMode		  "Nominal"
+		  MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+		  ModelStepFunctionPrototypeControlCompliant off
+		  CPPClassGenCompliant	  off
+		  AutosarCompliant	  off
+		  MDXCompliant		  off
+		  GRTInterface		  off
+		  GenerateAllocFcn	  on
+		  UseToolchainInfoCompliant off
+		  GenerateSharedConstants on
+		  CoderGroups		  []
+		  AccessMethods		  []
+		  LookupTableObjectStructAxisOrder "1,2,3,4,..."
+		  LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
+		  LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
+		  ArrayLayout		  "Column-major"
+		  UnsupportedSFcnMsg	  "error"
+		  ERTHeaderFileRootName	  "$R$E"
+		  ERTSourceFileRootName	  "$R$E"
+		  ERTDataFileRootName	  "$R_data"
+		  UseMalloc		  off
+		  ExtMode		  off
+		  ExtModeStaticAlloc	  off
+		  ExtModeTesting	  off
+		  ExtModeStaticAllocSize  1000000
+		  ExtModeTransport	  0
+		  ExtModeMexFile	  "ext_comm"
+		  ExtModeMexArgs	  ""
+		  ExtModeIntrfLevel	  "Level1"
+		  RTWCAPISignals	  off
+		  RTWCAPIParams		  off
+		  RTWCAPIStates		  off
+		  RTWCAPIRootIO		  off
+		  GenerateASAP2		  off
+		  MultiInstanceErrorCode  "Error"
+		}
+		PropName		"Components"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"HilMatIncPath"
+		Value			""
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"HilProjDir"
+		Value			".."
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"HilProjHookup"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"HilProjMake"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"HilMainModel"
+		Value			""
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"HilSymbols"
+		Value			""
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"HilUsrCFlags"
+		Value			""
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"HilVerboseMake"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType__CarMaker_1HilVehicleType"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "Car"
+		  Value			  1
+		  String		  "Motorcycle"
+		  Value			  2
+		  String		  "Truck"
+		}
+		Name			"HilVehicleType"
+		Value			"Car"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType__CarMaker_1HilWrapperType"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "Aero"
+		  Value			  1
+		  String		  "Brake"
+		  Value			  2
+		  String		  "Environment"
+		  Value			  3
+		  String		  "HydBrakeSystem"
+		  Value			  4
+		  String		  "HydBrakeControl"
+		  Value			  5
+		  String		  "AirBrakeSystem"
+		  Value			  6
+		  String		  "AirBrakeControl"
+		  Value			  7
+		  String		  "PowerTrain"
+		  Value			  8
+		  String		  "PowerTrainXWD"
+		  Value			  9
+		  String		  "PTBattery"
+		  Value			  10
+		  String		  "PTBatteryCU"
+		  Value			  11
+		  String		  "PTClutch"
+		  Value			  12
+		  String		  "PTControl"
+		  Value			  13
+		  String		  "PTControlOSM"
+		  Value			  14
+		  String		  "PTDriveLine"
+		  Value			  15
+		  String		  "PTDriveLineXWD"
+		  Value			  16
+		  String		  "PTEngine"
+		  Value			  17
+		  String		  "PTEngineCU"
+		  Value			  18
+		  String		  "PTGearBox"
+		  Value			  19
+		  String		  "PTGenCoupling"
+		  Value			  20
+		  String		  "PTMotor"
+		  Value			  21
+		  String		  "PTMotorCU"
+		  Value			  22
+		  String		  "PTPowerSupply"
+		  Value			  23
+		  String		  "PTTransmCU"
+		  Value			  24
+		  String		  "Steering"
+		  Value			  25
+		  String		  "SuspExtFrcs"
+		  Value			  26
+		  String		  "SuspEF_Spring"
+		  Value			  27
+		  String		  "SuspEF_Damper"
+		  Value			  28
+		  String		  "SuspEF_Buffer"
+		  Value			  29
+		  String		  "SuspEF_Stabi"
+		  Value			  30
+		  String		  "Susp_FrcSystem"
+		  Value			  31
+		  String		  "Susp_SpringSystem"
+		  Value			  32
+		  String		  "Susp_Spring"
+		  Value			  33
+		  String		  "Susp_ParasiticEffects"
+		  Value			  34
+		  String		  "Susp_DamperSystem"
+		  Value			  35
+		  String		  "Susp_Damper"
+		  Value			  36
+		  String		  "Susp_TopMount"
+		  Value			  37
+		  String		  "Susp_BufferSystem"
+		  Value			  38
+		  String		  "Susp_Buffer"
+		  Value			  39
+		  String		  "Susp_StabiSystem"
+		  Value			  40
+		  String		  "Susp_Stabi"
+		  Value			  41
+		  String		  "SuspControl"
+		  Value			  42
+		  String		  "SuspKnC"
+		  Value			  43
+		  String		  "TireCPI"
+		  Value			  44
+		  String		  "TireCPMod"
+		  Value			  45
+		  String		  "TireSTI"
+		  Value			  46
+		  String		  "UserDriver"
+		  Value			  47
+		  String		  "Vehicle_Car"
+		  Value			  48
+		  String		  "VehicleControl"
+		  Value			  49
+		  String		  "VhclOperator"
+		  Value			  50
+		  String		  "SelectorCtrlMapping"
+		  Value			  51
+		  String		  "Plain"
+		  Value			  52
+		  String		  "Generic"
+		  Value			  53
+		  String		  "PTUniversalMC"
+		  Value			  54
+		  String		  "PTInverter"
+		}
+		Name			"HilWrapperType"
+		Value			"SelectorCtrlMapping"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"HilDescription"
+		Value			MySelectorCtrlMapping_RTW
+	      }
+	      CustomProperty {
+		DataType		"int32"
+		Name			"HilParamId"
+		Value			1
+	      }
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	SlCovCC.ConfigComp {
+	  $ObjectID		  21
+	  Version		  "21.0.0"
+	  DisabledProps		  []
+	  Description		  "Simulink Coverage Configuration Component"
+	  Components		  []
+	  Name			  "Simulink Coverage"
+	  CovEnable		  off
+	  CovScope		  "EntireSystem"
+	  CovIncludeTopModel	  on
+	  RecordCoverage	  off
+	  CovPath		  "/"
+	  CovSaveName		  "covdata"
+	  CovCompData		  ""
+	  CovMetricSettings	  "dwe"
+	  CovFilter		  ""
+	  CovHTMLOptions	  ""
+	  CovNameIncrementing	  off
+	  CovForceBlockReductionOff on
+	  CovEnableCumulative	  on
+	  CovSaveCumulativeToWorkspaceVar off
+	  CovSaveSingleToWorkspaceVar off
+	  CovCumulativeVarName	  "covCumulativeData"
+	  CovCumulativeReport	  off
+	  CovSaveOutputData	  on
+	  CovOutputDir		  "slcov_output/$ModelName$"
+	  CovDataFileName	  "$ModelName$_cvdata"
+	  CovReportOnPause	  on
+	  CovModelRefEnable	  "off"
+	  CovModelRefExcluded	  ""
+	  CovExternalEMLEnable	  on
+	  CovSFcnEnable		  on
+	  CovBoundaryAbsTol	  1e-05
+	  CovBoundaryRelTol	  0.01
+	  CovUseTimeInterval	  off
+	  CovStartTime		  0
+	  CovStopTime		  0
+	  CovMcdcMode		  "Masking"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    [ 0, 0, 0, 0 ]
+      ExtraOptions	      ""
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    9
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    22
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NameLocation	    "bottom"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    HideAutomaticName	    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "left"
+    VerticalAlignment	    "top"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    MarkupType		    "model"
+    UseDisplayTextAsClickCallback off
+    AnnotationType	    "note_annotation"
+    FixedHeight		    off
+    FixedWidth		    off
+    Interpreter		    "off"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "opaque"
+    RunInitForIconRedraw    "analyze"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      ActionPort
+      InitializeStates	      "held"
+      PropagateVarSize	      "Only when execution is resumed"
+      DisallowConstTsAndPrmTs off
+      ActionPortLabel	      "Action"
+    }
+    Block {
+      BlockType		      BusCreator
+      DisplayOption	      "none"
+      OutDataTypeStr	      "Inherit: auto"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      BusSelector
+      OutputAsBus	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      IconDisplay	      "Port number"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      Unit		      "inherit"
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Merge
+      Inputs		      "2"
+      InitialOutput	      "[]"
+      AllowUnequalInputPortWidths off
+      InputPortOffsets	      "[]"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      IconDisplay	      "Port number"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      Unit		      "inherit"
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      EnsureOutportIsVirtual  off
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+      MustResolveToSignalObject	off
+      OutputWhenUnConnected   off
+      OutputWhenUnconnectedValue "0"
+      VectorParamsAs1DForOutWhenUnconnected on
+    }
+    Block {
+      BlockType		      RateTransition
+      Integrity		      on
+      Deterministic	      on
+      InitialCondition	      "0"
+      OutPortSampleTimeOpt    "Specify"
+      OutPortSampleTimeMultiple	"1"
+      OutPortSampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      ScheduleAs	      "Sample time"
+      SystemSampleTime	      "-1"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      FunctionWithSeparateData off
+      MatchGraphicalInterface off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      Opaque		      off
+      MaskHideContents	      off
+      SFBlockType	      "NONE"
+      Variant		      off
+      VariantControlMode      "expression"
+      VariantActivationTime   "update diagram"
+      AllowZeroVariantControls off
+      PropagateVariantConditions off
+      TreatAsGroupedWhenPropagatingVariantConditions on
+      ContentPreviewEnabled   off
+      IsWebBlock	      off
+      IsInjectorSS	      off
+      Latency		      "0"
+      AutoFrameSizeCalculation off
+      IsWebBlockPanel	      off
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      AllowDiffInputSizes     off
+    }
+    Block {
+      BlockType		      SwitchCase
+      CaseConditions	      "{1}"
+      ShowDefaultCase	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+  }
+  System {
+    Name		    "MySelectorCtrlMapping_RTW"
+    Location		    [924, 167, 1716, 893]
+    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
+    Open		    on
+    PortBlocksUseCompactNotation off
+    SetExecutionDomain	    off
+    ExecutionDomainType	    "Deduce"
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "225"
+    SimulinkSubDomain	    "Simulink"
+    Block {
+      BlockType		      Inport
+      Name		      "FromCM"
+      SID		      "1"
+      Position		      [-160, 260, -140, 270]
+      ZOrder		      1
+      BackgroundColor	      "cyan"
+      OutDataTypeStr	      "Bus: cmSelectorCtrlMappingIn"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      SID		      "14"
+      Position		      [525, 400, 555, 430]
+      ZOrder		      53
+      Value		      "0"
+    }
+    Block {
+      BlockType		      SwitchCase
+      Name		      "Current Selector Control"
+      SID		      "15"
+      Ports		      [1, 6]
+      Position		      [30, 312, 115, 568]
+      ZOrder		      54
+      CaseConditions	      "{-9, -1, 0, 1, 2, 3}"
+      ShowDefaultCase	      off
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Get DigitalSelectorCtrl 0 Signal"
+      SID		      "16"
+      Ports		      [1, 1]
+      Position		      [490, 264, 590, 306]
+      ZOrder		      58
+      RequestExecContextInheritance off
+      System {
+	Name			"Get DigitalSelectorCtrl 0 Signal"
+	Location		[0, 0, 1920, 1200]
+	SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+	Open			off
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"125"
+	SimulinkSubDomain	"Simulink"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  "17"
+	  Position		  [110, 103, 140, 117]
+	  ZOrder		  -1
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Compare\nTo Constant"
+	  SID			  "18"
+	  Ports			  [1, 1]
+	  Position		  [200, 67, 250, 93]
+	  ZOrder		  25
+	  LibraryVersion	  "1.0"
+	  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+	  SourceType		  "Compare To Constant"
+	  SourceProductBaseCode	  "SL"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  relop			  "=="
+	  const			  "-999"
+	  OutDataTypeStr	  "boolean"
+	  ZeroCross		  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant2"
+	  SID			  "19"
+	  Position		  [260, 35, 290, 65]
+	  ZOrder		  27
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch1"
+	  SID			  "20"
+	  Position		  [320, 34, 360, 126]
+	  ZOrder		  26
+	  Criteria		  "u2 ~= 0"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  "21"
+	  Position		  [390, 73, 420, 87]
+	  ZOrder		  -2
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "Compare\nTo Constant"
+	  SrcPort		  1
+	  DstBlock		  "Switch1"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Constant2"
+	  SrcPort		  1
+	  DstBlock		  "Switch1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  Points		  [18, 0]
+	  Branch {
+	    ZOrder		    4
+	    DstBlock		    "Switch1"
+	    DstPort		    3
+	  }
+	  Branch {
+	    ZOrder		    5
+	    Points		    [0, -30]
+	    DstBlock		    "Compare\nTo Constant"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "Switch1"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Get DigitalSelectorCtrl 1 Signal"
+      SID		      "22"
+      Ports		      [1, 1]
+      Position		      [490, 329, 590, 371]
+      ZOrder		      57
+      RequestExecContextInheritance off
+      System {
+	Name			"Get DigitalSelectorCtrl 1 Signal"
+	Location		[0, 0, 1920, 1200]
+	SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+	Open			off
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"125"
+	SimulinkSubDomain	"Simulink"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  "23"
+	  Position		  [115, 113, 145, 127]
+	  ZOrder		  -1
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Compare\nTo Constant1"
+	  SID			  "24"
+	  Ports			  [1, 1]
+	  Position		  [190, 107, 240, 133]
+	  ZOrder		  29
+	  LibraryVersion	  "1.0"
+	  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+	  SourceType		  "Compare To Constant"
+	  SourceProductBaseCode	  "SL"
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  ContentPreviewEnabled	  on
+	  relop			  "=="
+	  const			  "-999"
+	  OutDataTypeStr	  "boolean"
+	  ZeroCross		  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant3"
+	  SID			  "25"
+	  Position		  [255, 75, 285, 105]
+	  ZOrder		  31
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant4"
+	  SID			  "26"
+	  Position		  [255, 135, 285, 165]
+	  ZOrder		  32
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch2"
+	  SID			  "27"
+	  Position		  [320, 75, 370, 165]
+	  ZOrder		  30
+	  Criteria		  "u2 ~= 0"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  "28"
+	  Position		  [410, 113, 440, 127]
+	  ZOrder		  -2
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "Compare\nTo Constant1"
+	  SrcPort		  1
+	  DstBlock		  "Switch2"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Constant3"
+	  SrcPort		  1
+	  DstBlock		  "Switch2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Constant4"
+	  SrcPort		  1
+	  DstBlock		  "Switch2"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Compare\nTo Constant1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Switch2"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Get DigitalSelectorCtrl Values"
+      SID		      "29"
+      Ports		      [7, 1]
+      Position		      [335, 325, 455, 565]
+      ZOrder		      56
+      RequestExecContextInheritance off
+      System {
+	Name			"Get DigitalSelectorCtrl Values"
+	Location		[0, 0, 1920, 1200]
+	SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+	Open			off
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SimulinkSubDomain	"Simulink"
+	Block {
+	  BlockType		  Inport
+	  Name			  "SelectorCtrl_trg"
+	  SID			  "30"
+	  Position		  [110, 83, 140, 97]
+	  ZOrder		  -1
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "SelectorCtrl_P"
+	  SID			  "31"
+	  Position		  [110, 133, 140, 147]
+	  ZOrder		  1
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "SelectorCtrl_R"
+	  SID			  "32"
+	  Position		  [110, 183, 140, 197]
+	  ZOrder		  2
+	  Port			  "3"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "SelectorCtrl_N"
+	  SID			  "33"
+	  Position		  [110, 233, 140, 247]
+	  ZOrder		  3
+	  Port			  "4"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "SelectorCtr_D"
+	  SID			  "34"
+	  Position		  [110, 283, 140, 297]
+	  ZOrder		  4
+	  Port			  "5"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "SelectorCtrl_M"
+	  SID			  "35"
+	  Position		  [110, 333, 140, 347]
+	  ZOrder		  5
+	  Port			  "6"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "SelectorCtrl_S"
+	  SID			  "36"
+	  Position		  [110, 383, 140, 397]
+	  ZOrder		  6
+	  Port			  "7"
+	}
+	Block {
+	  BlockType		  Merge
+	  Name			  "Merge"
+	  SID			  "37"
+	  Ports			  [6, 1]
+	  Position		  [475, 110, 530, 520]
+	  ZOrder		  25
+	  Inputs		  "6"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem"
+	  SID			  "38"
+	  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [335, 123, 415, 157]
+	  ZOrder		  19
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  ContentPreviewEnabled	  on
+	  System {
+	    Name		    "Switch Case Action\nSubsystem"
+	    Location		    [0, 0, 1920, 1200]
+	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "SelectorCtrl_trg"
+	      SID		      "39"
+	      Position		      [45, 143, 75, 157]
+	      ZOrder		      -1
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "SelectorCtrl_P"
+	      SID		      "40"
+	      Position		      [170, -85, 229, -57]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Merge
+	      Name		      "Merge"
+	      SID		      "41"
+	      Ports		      [6, 1]
+	      Position		      [560, 3, 625, 342]
+	      ZOrder		      15
+	      Inputs		      "6"
+	    }
+	    Block {
+	      BlockType		      SwitchCase
+	      Name		      "Switch Case"
+	      SID		      "42"
+	      Ports		      [1, 6]
+	      Position		      [125, -18, 280, 313]
+	      ZOrder		      1
+	      CaseConditions	      "{-9,-1, 0, 1, 2, 3}"
+	      ShowDefaultCase	      off
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem"
+	      SID		      "43"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [430, 18, 500, 52]
+	      ZOrder		      14
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "44"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "45"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "46"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem1"
+	      SID		      "47"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [430, 73, 500, 107]
+	      ZOrder		      16
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem1"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "48"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "49"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "2"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "50"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem2"
+	      SID		      "51"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [430, 128, 500, 162]
+	      ZOrder		      17
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem2"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "52"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "53"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "54"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem3"
+	      SID		      "55"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [430, 183, 500, 217]
+	      ZOrder		      18
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem3"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "56"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "57"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "58"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem4"
+	      SID		      "59"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [430, 238, 500, 272]
+	      ZOrder		      19
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem4"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "60"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "61"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "3"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "62"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem5"
+	      SID		      "63"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [430, 293, 500, 327]
+	      ZOrder		      20
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem5"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "64"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "65"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "2"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "66"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "67"
+	      Position		      [690, 168, 720, 182]
+	      ZOrder		      -3
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "SelectorCtrl_trg"
+	      SrcPort		      1
+	      DstBlock		      "Switch Case"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      1
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Merge"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "Switch Case Action\nSubsystem"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      2
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem1"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "Switch Case Action\nSubsystem1"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      3
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem2"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      4
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem3"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      5
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem4"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      10
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      6
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem5"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      11
+	      SrcBlock		      "Switch Case Action\nSubsystem2"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      12
+	      SrcBlock		      "Switch Case Action\nSubsystem3"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      13
+	      SrcBlock		      "Switch Case Action\nSubsystem4"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      5
+	    }
+	    Line {
+	      ZOrder		      14
+	      SrcBlock		      "Switch Case Action\nSubsystem5"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      6
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem1"
+	  SID			  "68"
+	  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [335, 193, 415, 227]
+	  ZOrder		  20
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  ContentPreviewEnabled	  on
+	  System {
+	    Name		    "Switch Case Action\nSubsystem1"
+	    Location		    [0, 0, 1920, 1200]
+	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "150"
+	    SimulinkSubDomain	    "Simulink"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "SelectorCtrl_trg"
+	      SID		      "69"
+	      Position		      [135, 78, 165, 92]
+	      ZOrder		      -1
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "SelectorCtrl_R"
+	      SID		      "70"
+	      Position		      [255, -200, 314, -172]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Merge
+	      Name		      "Merge"
+	      SID		      "71"
+	      Ports		      [6, 1]
+	      Position		      [645, -62, 710, 277]
+	      ZOrder		      23
+	      Inputs		      "6"
+	    }
+	    Block {
+	      BlockType		      SwitchCase
+	      Name		      "Switch Case"
+	      SID		      "72"
+	      Ports		      [1, 6]
+	      Position		      [210, -83, 365, 248]
+	      ZOrder		      21
+	      CaseConditions	      "{-9,-1, 0, 1, 2, 3}"
+	      ShowDefaultCase	      off
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem"
+	      SID		      "73"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [515, -47, 585, -13]
+	      ZOrder		      22
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "74"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "75"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "-999"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "76"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem1"
+	      SID		      "77"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [515, 8, 585, 42]
+	      ZOrder		      24
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem1"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "78"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "79"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "80"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem2"
+	      SID		      "81"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [515, 63, 585, 97]
+	      ZOrder		      25
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem2"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "82"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "83"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "-1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "84"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem3"
+	      SID		      "85"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [515, 118, 585, 152]
+	      ZOrder		      26
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem3"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "86"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "87"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "-2"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "88"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem4"
+	      SID		      "89"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [515, 173, 585, 207]
+	      ZOrder		      27
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem4"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "90"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "91"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "3"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "92"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem5"
+	      SID		      "93"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [515, 228, 585, 262]
+	      ZOrder		      28
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem5"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "94"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "95"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "3"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "96"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "97"
+	      Position		      [770, 103, 800, 117]
+	      ZOrder		      -3
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Switch Case Action\nSubsystem1"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      5
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem4"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      3
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem2"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "SelectorCtrl_trg"
+	      SrcPort		      1
+	      DstBlock		      "Switch Case"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      1
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "Merge"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "Switch Case Action\nSubsystem3"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "Switch Case Action\nSubsystem4"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      5
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      4
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem3"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      10
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      6
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem5"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      11
+	      SrcBlock		      "Switch Case Action\nSubsystem2"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      12
+	      SrcBlock		      "Switch Case Action\nSubsystem5"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      6
+	    }
+	    Line {
+	      ZOrder		      13
+	      SrcBlock		      "Switch Case Action\nSubsystem"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      14
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      2
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem1"
+	      DstPort		      ifaction
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem2"
+	  SID			  "98"
+	  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [335, 263, 415, 297]
+	  ZOrder		  21
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  ContentPreviewEnabled	  on
+	  System {
+	    Name		    "Switch Case Action\nSubsystem2"
+	    Location		    [0, 0, 1920, 1200]
+	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "SelectorCtrl_trg"
+	      SID		      "99"
+	      Position		      [-45, 78, -15, 92]
+	      ZOrder		      -1
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "SelectorCtrl_N"
+	      SID		      "100"
+	      Position		      [145, -190, 204, -162]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Merge
+	      Name		      "Merge"
+	      SID		      "101"
+	      Ports		      [6, 1]
+	      Position		      [455, -62, 520, 277]
+	      ZOrder		      36
+	      Inputs		      "6"
+	    }
+	    Block {
+	      BlockType		      SwitchCase
+	      Name		      "Switch Case"
+	      SID		      "102"
+	      Ports		      [1, 6]
+	      Position		      [20, -83, 175, 248]
+	      ZOrder		      29
+	      CaseConditions	      "{-9,-1, 0, 1, 2, 3}"
+	      ShowDefaultCase	      off
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem"
+	      SID		      "103"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [325, -47, 395, -13]
+	      ZOrder		      30
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "104"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "105"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "-999"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "106"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem1"
+	      SID		      "107"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [325, 8, 395, 42]
+	      ZOrder		      31
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem1"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "108"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "109"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "110"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem2"
+	      SID		      "111"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [325, 63, 395, 97]
+	      ZOrder		      32
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem2"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "112"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "113"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "114"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem3"
+	      SID		      "115"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [325, 118, 395, 152]
+	      ZOrder		      33
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem3"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "116"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "117"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "-1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "118"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem4"
+	      SID		      "119"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [325, 173, 395, 207]
+	      ZOrder		      34
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem4"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "120"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "121"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "3"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "122"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem5"
+	      SID		      "123"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [325, 228, 395, 262]
+	      ZOrder		      35
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem5"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "124"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "125"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "-2"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "126"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "127"
+	      Position		      [580, 103, 610, 117]
+	      ZOrder		      -3
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      1
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      6
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem5"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Switch Case Action\nSubsystem2"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      5
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem4"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "SelectorCtrl_trg"
+	      SrcPort		      1
+	      DstBlock		      "Switch Case"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "Switch Case Action\nSubsystem1"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "Switch Case Action\nSubsystem5"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      6
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "Switch Case Action\nSubsystem4"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      5
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      4
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem3"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      10
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      2
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem1"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      11
+	      SrcBlock		      "Switch Case Action\nSubsystem3"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      12
+	      SrcBlock		      "Switch Case Action\nSubsystem"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      13
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      3
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem2"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      14
+	      SrcBlock		      "Merge"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem3"
+	  SID			  "128"
+	  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [335, 333, 415, 367]
+	  ZOrder		  22
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  ContentPreviewEnabled	  on
+	  System {
+	    Name		    "Switch Case Action\nSubsystem3"
+	    Location		    [0, 0, 1920, 1200]
+	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "SelectorCtrl_trg"
+	      SID		      "129"
+	      Position		      [-165, 78, -135, 92]
+	      ZOrder		      -1
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "SelectorCtrl_D"
+	      SID		      "130"
+	      Position		      [170, -170, 229, -142]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Merge
+	      Name		      "Merge"
+	      SID		      "131"
+	      Ports		      [6, 1]
+	      Position		      [350, -62, 415, 277]
+	      ZOrder		      44
+	      Inputs		      "6"
+	    }
+	    Block {
+	      BlockType		      SwitchCase
+	      Name		      "Switch Case"
+	      SID		      "132"
+	      Ports		      [1, 6]
+	      Position		      [-85, -83, 70, 248]
+	      ZOrder		      37
+	      CaseConditions	      "{-9,-1, 0, 1, 2, 3}"
+	      ShowDefaultCase	      off
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem"
+	      SID		      "133"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [220, -47, 290, -13]
+	      ZOrder		      38
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "134"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "135"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "-999"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "136"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem1"
+	      SID		      "137"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [220, 8, 290, 42]
+	      ZOrder		      39
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem1"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "138"
+		  Position		  [375, -15, 434, 13]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "139"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "2"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "140"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem2"
+	      SID		      "141"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [220, 63, 290, 97]
+	      ZOrder		      40
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem2"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "142"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "143"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "144"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem3"
+	      SID		      "145"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [220, 118, 290, 152]
+	      ZOrder		      41
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem3"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "146"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "147"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "148"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem4"
+	      SID		      "149"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [220, 173, 290, 207]
+	      ZOrder		      42
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem4"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "150"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "151"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "3"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "152"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem5"
+	      SID		      "153"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [220, 228, 290, 262]
+	      ZOrder		      43
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem5"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "154"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "155"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "-1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "156"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "157"
+	      Position		      [470, 103, 500, 117]
+	      ZOrder		      -3
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Switch Case Action\nSubsystem2"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Switch Case Action\nSubsystem1"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      5
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem4"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "Switch Case Action\nSubsystem"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      4
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem3"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      2
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem1"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "SelectorCtrl_trg"
+	      SrcPort		      1
+	      DstBlock		      "Switch Case"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "Switch Case Action\nSubsystem3"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      1
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      10
+	      SrcBlock		      "Switch Case Action\nSubsystem5"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      6
+	    }
+	    Line {
+	      ZOrder		      11
+	      SrcBlock		      "Switch Case Action\nSubsystem4"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      5
+	    }
+	    Line {
+	      ZOrder		      12
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      6
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem5"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      13
+	      SrcBlock		      "Merge"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      14
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      3
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem2"
+	      DstPort		      ifaction
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem4"
+	  SID			  "158"
+	  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [335, 403, 415, 437]
+	  ZOrder		  23
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  ContentPreviewEnabled	  on
+	  System {
+	    Name		    "Switch Case Action\nSubsystem4"
+	    Location		    [0, 0, 1920, 1200]
+	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "SelectorCtrl_trg"
+	      SID		      "159"
+	      Position		      [75, 78, 105, 92]
+	      ZOrder		      -1
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "SelectorCtrl_M"
+	      SID		      "160"
+	      Position		      [170, 15, 229, 43]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "161"
+	      Position		      [325, 78, 355, 92]
+	      ZOrder		      -3
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "SelectorCtrl_trg"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem5"
+	  SID			  "162"
+	  Ports			  [1, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [335, 473, 415, 507]
+	  ZOrder		  24
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  ContentPreviewEnabled	  on
+	  System {
+	    Name		    "Switch Case Action\nSubsystem5"
+	    Location		    [0, 0, 1920, 1200]
+	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "125"
+	    SimulinkSubDomain	    "Simulink"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "SelectorCtrl_trg"
+	      SID		      "163"
+	      Position		      [125, 78, 155, 92]
+	      ZOrder		      -1
+	    }
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "SelectorCtrl_S"
+	      SID		      "164"
+	      Position		      [230, -240, 289, -212]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Merge
+	      Name		      "Merge"
+	      SID		      "165"
+	      Ports		      [6, 1]
+	      Position		      [645, -62, 710, 277]
+	      ZOrder		      52
+	      Inputs		      "6"
+	    }
+	    Block {
+	      BlockType		      SwitchCase
+	      Name		      "Switch Case"
+	      SID		      "166"
+	      Ports		      [1, 6]
+	      Position		      [210, -83, 365, 248]
+	      ZOrder		      45
+	      CaseConditions	      "{-9,-1, 0, 1, 2, 3}"
+	      ShowDefaultCase	      off
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem"
+	      SID		      "167"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [515, -47, 585, -13]
+	      ZOrder		      46
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "168"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "169"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "-999"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "170"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem1"
+	      SID		      "171"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [515, 8, 585, 42]
+	      ZOrder		      47
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem1"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "172"
+		  Position		  [375, -15, 434, 13]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "173"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "2"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "174"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem2"
+	      SID		      "175"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [515, 63, 585, 97]
+	      ZOrder		      48
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem2"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "176"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "177"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "178"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem3"
+	      SID		      "179"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [515, 118, 585, 152]
+	      ZOrder		      49
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem3"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "180"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "181"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "-1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "182"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem4"
+	      SID		      "183"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [515, 173, 585, 207]
+	      ZOrder		      50
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem4"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "184"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "185"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "3"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "186"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Switch Case Action\nSubsystem5"
+	      SID		      "187"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [515, 228, 585, 262]
+	      ZOrder		      51
+	      TreatAsAtomicUnit	      on
+	      RequestExecContextInheritance off
+	      ContentPreviewEnabled   on
+	      System {
+		Name			"Switch Case Action\nSubsystem5"
+		Location		[0, 0, 1920, 1200]
+		SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SimulinkSubDomain	"Simulink"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "188"
+		  Position		  [170, -85, 229, -57]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "189"
+		  Position		  [365, 130, 395, 160]
+		  ZOrder		  2
+		  Value			  "0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  "190"
+		  Position		  [615, 138, 645, 152]
+		  ZOrder		  -3
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "191"
+	      Position		      [755, 103, 785, 117]
+	      ZOrder		      -3
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Switch Case Action\nSubsystem2"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      5
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem4"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Switch Case Action\nSubsystem3"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "Switch Case Action\nSubsystem5"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      6
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Merge"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "Switch Case Action\nSubsystem"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      2
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem1"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      3
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem2"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      9
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      1
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      10
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      6
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem5"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      11
+	      SrcBlock		      "Switch Case Action\nSubsystem4"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      5
+	    }
+	    Line {
+	      ZOrder		      12
+	      SrcBlock		      "Switch Case"
+	      SrcPort		      4
+	      Points		      [180, 0]
+	      DstBlock		      "Switch Case Action\nSubsystem3"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      ZOrder		      13
+	      SrcBlock		      "Switch Case Action\nSubsystem1"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      14
+	      SrcBlock		      "SelectorCtrl_trg"
+	      SrcPort		      1
+	      DstBlock		      "Switch Case"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  "192"
+	  Position		  [600, 308, 630, 322]
+	  ZOrder		  -2
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "SelectorCtrl_trg"
+	  SrcPort		  1
+	  Points		  [131, 0; 0, 50]
+	  Branch {
+	    ZOrder		    2
+	    Points		    [0, 70]
+	    Branch {
+	      ZOrder		      3
+	      Points		      [0, 70]
+	      Branch {
+		ZOrder			4
+		Points			[0, 70]
+		Branch {
+		  ZOrder		  5
+		  Points		  [0, 70]
+		  Branch {
+		    ZOrder		    6
+		    Points		    [0, 70]
+		    DstBlock		    "Switch Case Action\nSubsystem5"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    7
+		    DstBlock		    "Switch Case Action\nSubsystem4"
+		    DstPort		    1
+		  }
+		}
+		Branch {
+		  ZOrder		  8
+		  DstBlock		  "Switch Case Action\nSubsystem3"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		ZOrder			9
+		DstBlock		"Switch Case Action\nSubsystem2"
+		DstPort			1
+	      }
+	    }
+	    Branch {
+	      ZOrder		      10
+	      DstBlock		      "Switch Case Action\nSubsystem1"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    ZOrder		    11
+	    DstBlock		    "Switch Case Action\nSubsystem"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  12
+	  SrcBlock		  "SelectorCtrl_R"
+	  SrcPort		  1
+	  Points		  [63, 0; 0, -13; 167, 0]
+	  DstBlock		  "Switch Case Action\nSubsystem1"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  13
+	  SrcBlock		  "SelectorCtrl_N"
+	  SrcPort		  1
+	  Points		  [230, 0]
+	  DstBlock		  "Switch Case Action\nSubsystem2"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  14
+	  SrcBlock		  "SelectorCtrl_P"
+	  SrcPort		  1
+	  Points		  [71, 0; 0, -32]
+	  DstBlock		  "Switch Case Action\nSubsystem"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  15
+	  SrcBlock		  "SelectorCtr_D"
+	  SrcPort		  1
+	  Points		  [70, 0; 0, 25; 160, 0]
+	  DstBlock		  "Switch Case Action\nSubsystem3"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  16
+	  SrcBlock		  "SelectorCtrl_M"
+	  SrcPort		  1
+	  Points		  [71, 0; 0, 45; 159, 0]
+	  DstBlock		  "Switch Case Action\nSubsystem4"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  17
+	  SrcBlock		  "SelectorCtrl_S"
+	  SrcPort		  1
+	  Points		  [70, 0; 0, 65; 160, 0]
+	  DstBlock		  "Switch Case Action\nSubsystem5"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  18
+	  SrcBlock		  "Switch Case Action\nSubsystem"
+	  SrcPort		  1
+	  DstBlock		  "Merge"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  19
+	  SrcBlock		  "Switch Case Action\nSubsystem1"
+	  SrcPort		  1
+	  DstBlock		  "Merge"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  20
+	  SrcBlock		  "Switch Case Action\nSubsystem2"
+	  SrcPort		  1
+	  DstBlock		  "Merge"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  21
+	  SrcBlock		  "Switch Case Action\nSubsystem3"
+	  SrcPort		  1
+	  DstBlock		  "Merge"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  22
+	  SrcBlock		  "Switch Case Action\nSubsystem4"
+	  SrcPort		  1
+	  DstBlock		  "Merge"
+	  DstPort		  5
+	}
+	Line {
+	  ZOrder		  23
+	  SrcBlock		  "Switch Case Action\nSubsystem5"
+	  SrcPort		  1
+	  DstBlock		  "Merge"
+	  DstPort		  6
+	}
+	Line {
+	  ZOrder		  24
+	  SrcBlock		  "Merge"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      BusSelector
+      Name		      "IF_In_Selector"
+      SID		      "2"
+      Ports		      [1, 2]
+      Position		      [-115, 225, -105, 305]
+      ZOrder		      2
+      BackgroundColor	      "cyan"
+      OutputSignals	      "SelectorCtrlAction,VC_SelectorCtrl_in"
+      Port {
+	PortNumber		1
+	Name			"<SelectorCtrlAction>"
+      }
+      Port {
+	PortNumber		2
+	Name			"<VC_SelectorCtrl_in>"
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "IF_Out_Selector"
+      SID		      "5"
+      Ports		      [4, 1]
+      Position		      [640, 191, 810, 444]
+      ZOrder		      5
+      BackgroundColor	      "cyan"
+      UserDataPersistent      on
+      UserData		      "DataTag0"
+      OpenFcn		      "cmSignalSelect('SignalSelection_CB',gcb)"
+      RequestExecContextInheritance off
+      ContentPreviewEnabled   on
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		23
+	$ClassName		"Simulink.Mask"
+	Type			"Signal Selection"
+	Description		"Signal Selection Block"
+      }
+      System {
+	Name			"IF_Out_Selector"
+	Location		[100, 100, 1300, 600]
+	SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+	Open			off
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SimulinkSubDomain	"Simulink"
+	Block {
+	  BlockType		  Inport
+	  Name			  "DM_SelectorCtrl_out"
+	  SID			  "222"
+	  Position		  [800, 20, 815, 30]
+	  ZOrder		  9
+	  BackgroundColor	  "red"
+	  Port {
+	    PortNumber		    1
+	    Name		    "DM_SelectorCtrl_out"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "DigitalSelectorCtrl.d0"
+	  SID			  "223"
+	  Position		  [580, 50, 595, 60]
+	  ZOrder		  10
+	  BackgroundColor	  "red"
+	  Port			  "2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "d0"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "DigitalSelectorCtrl.d1"
+	  SID			  "224"
+	  Position		  [580, 80, 595, 90]
+	  ZOrder		  11
+	  BackgroundColor	  "red"
+	  Port			  "3"
+	  Port {
+	    PortNumber		    1
+	    Name		    "d1"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "DigitalSelectorCtrl.d2"
+	  SID			  "225"
+	  Position		  [580, 110, 595, 120]
+	  ZOrder		  12
+	  BackgroundColor	  "red"
+	  Port			  "4"
+	  Port {
+	    PortNumber		    1
+	    Name		    "d2"
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "DigitalSelectorCtrl"
+	  SID			  "10"
+	  Ports			  [3, 1]
+	  Position		  [800, 50, 815, 110]
+	  ZOrder		  5
+	  Inputs		  "3"
+	  InheritFromInputs	  on
+	  Port {
+	    PortNumber		    1
+	    Name		    "DigitalSelectorCtrl"
+	  }
+	}
+	Block {
+	  BlockType		  RateTransition
+	  Name			  "RateTransition"
+	  SID			  "6"
+	  Position		  [1080, 15, 1140, 35]
+	  ZOrder		  1
+	  OutPortSampleTime	  "str2num(get_param(bdroot,'FixedStep'))"
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "cmSelectorCtrlMappingOut"
+	  SID			  "8"
+	  Ports			  [2, 1]
+	  Position		  [1020, 20, 1035, 60]
+	  ZOrder		  3
+	  Inputs		  "2"
+	  InheritFromInputs	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "ToCM"
+	  SID			  "7"
+	  Position		  [1160, 20, 1180, 30]
+	  ZOrder		  2
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "RateTransition"
+	  SrcPort		  1
+	  DstBlock		  "ToCM"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  Labels		  [0, 0]
+	  SrcBlock		  "cmSelectorCtrlMappingOut"
+	  SrcPort		  1
+	  Points		  [18, 0; 0, -15]
+	  DstBlock		  "RateTransition"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "DigitalSelectorCtrl"
+	  ZOrder		  4
+	  Labels		  [0, 0]
+	  SrcBlock		  "DigitalSelectorCtrl"
+	  SrcPort		  1
+	  Points		  [71, 0; 0, -30]
+	  DstBlock		  "cmSelectorCtrlMappingOut"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "DM_SelectorCtrl_out"
+	  ZOrder		  8
+	  Labels		  [0, 0]
+	  SrcBlock		  "DM_SelectorCtrl_out"
+	  SrcPort		  1
+	  DstBlock		  "cmSelectorCtrlMappingOut"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "d0"
+	  ZOrder		  9
+	  Labels		  [0, 0]
+	  SrcBlock		  "DigitalSelectorCtrl.d0"
+	  SrcPort		  1
+	  DstBlock		  "DigitalSelectorCtrl"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "d1"
+	  ZOrder		  10
+	  Labels		  [0, 0]
+	  SrcBlock		  "DigitalSelectorCtrl.d1"
+	  SrcPort		  1
+	  DstBlock		  "DigitalSelectorCtrl"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "d2"
+	  ZOrder		  11
+	  Labels		  [0, 0]
+	  SrcBlock		  "DigitalSelectorCtrl.d2"
+	  SrcPort		  1
+	  DstBlock		  "DigitalSelectorCtrl"
+	  DstPort		  3
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "SelectorCtrlAction2SelectorCtrl_trg"
+      SID		      "193"
+      Ports		      [1, 1]
+      Position		      [30, 224, 180, 266]
+      ZOrder		      55
+      RequestExecContextInheritance off
+      System {
+	Name			"SelectorCtrlAction2SelectorCtrl_trg"
+	Location		[0, 0, 1920, 1200]
+	SystemRect		[0.000000, 0.000000, 0.000000, 0.000000]
+	Open			off
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SimulinkSubDomain	"Simulink"
+	Block {
+	  BlockType		  Inport
+	  Name			  "SelectorCtrlAction"
+	  SID			  "194"
+	  Position		  [-90, 103, -60, 117]
+	  ZOrder		  -1
+	}
+	Block {
+	  BlockType		  Merge
+	  Name			  "Merge1"
+	  SID			  "195"
+	  Ports			  [6, 1]
+	  Position		  [305, -43, 330, 323]
+	  ZOrder		  43
+	  Inputs		  "6"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem10"
+	  SID			  "196"
+	  Ports			  [0, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [165, 213, 235, 247]
+	  ZOrder		  48
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  ContentPreviewEnabled	  on
+	  System {
+	    Name		    "Switch Case Action\nSubsystem10"
+	    Location		    [27, 0, 1920, 1057]
+	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "197"
+	      Position		      [170, -85, 229, -57]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "198"
+	      Position		      [590, 160, 620, 190]
+	      ZOrder		      21
+	      Value		      "-1"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "199"
+	      Position		      [690, 168, 720, 182]
+	      ZOrder		      -3
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem11"
+	  SID			  "200"
+	  Ports			  [0, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [165, 268, 235, 302]
+	  ZOrder		  49
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  ContentPreviewEnabled	  on
+	  System {
+	    Name		    "Switch Case Action\nSubsystem11"
+	    Location		    [27, 0, 1920, 1057]
+	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "201"
+	      Position		      [170, -85, 229, -57]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "202"
+	      Position		      [590, 160, 620, 190]
+	      ZOrder		      21
+	      Value		      "3"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "203"
+	      Position		      [690, 168, 720, 182]
+	      ZOrder		      -3
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem6"
+	  SID			  "204"
+	  Ports			  [0, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [160, -27, 230, 7]
+	  ZOrder		  44
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  ContentPreviewEnabled	  on
+	  System {
+	    Name		    "Switch Case Action\nSubsystem6"
+	    Location		    [27, 0, 1920, 1057]
+	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "205"
+	      Position		      [170, -85, 229, -57]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "206"
+	      Position		      [590, 160, 620, 190]
+	      ZOrder		      21
+	      Value		      "-9999"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "207"
+	      Position		      [690, 168, 720, 182]
+	      ZOrder		      -3
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem7"
+	  SID			  "208"
+	  Ports			  [0, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [160, 33, 230, 67]
+	  ZOrder		  45
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  ContentPreviewEnabled	  on
+	  System {
+	    Name		    "Switch Case Action\nSubsystem7"
+	    Location		    [27, 0, 1920, 1057]
+	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "209"
+	      Position		      [170, -85, 229, -57]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "210"
+	      Position		      [590, 160, 620, 190]
+	      ZOrder		      21
+	      Value		      "0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "211"
+	      Position		      [690, 168, 720, 182]
+	      ZOrder		      -3
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem8"
+	  SID			  "212"
+	  Ports			  [0, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [160, 93, 230, 127]
+	  ZOrder		  46
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  ContentPreviewEnabled	  on
+	  System {
+	    Name		    "Switch Case Action\nSubsystem8"
+	    Location		    [27, 0, 1920, 1057]
+	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "213"
+	      Position		      [170, -85, 229, -57]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "214"
+	      Position		      [590, 160, 620, 190]
+	      ZOrder		      21
+	      Value		      "-9"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "215"
+	      Position		      [690, 168, 720, 182]
+	      ZOrder		      -3
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Switch Case Action\nSubsystem9"
+	  SID			  "216"
+	  Ports			  [0, 1, 0, 0, 0, 0, 0, 1]
+	  Position		  [165, 153, 235, 187]
+	  ZOrder		  47
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  ContentPreviewEnabled	  on
+	  System {
+	    Name		    "Switch Case Action\nSubsystem9"
+	    Location		    [27, 0, 1920, 1057]
+	    SystemRect		    [0.000000, 0.000000, 0.000000, 0.000000]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
+	    Block {
+	      BlockType		      ActionPort
+	      Name		      "Action Port"
+	      SID		      "217"
+	      Position		      [170, -85, 229, -57]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "218"
+	      Position		      [590, 160, 620, 190]
+	      ZOrder		      21
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "219"
+	      Position		      [690, 168, 720, 182]
+	      ZOrder		      -3
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SwitchCase
+	  Name			  "Switch Case1"
+	  SID			  "220"
+	  Ports			  [1, 6]
+	  Position		  [-25, -85, 65, 285]
+	  ZOrder		  42
+	  CaseConditions	  "{0, 1, 2, 3, 4, 5}"
+	  ShowDefaultCase	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "SelectorCtrl"
+	  SID			  "221"
+	  Position		  [380, 133, 410, 147]
+	  ZOrder		  -2
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "Switch Case Action\nSubsystem9"
+	  SrcPort		  1
+	  DstBlock		  "Merge1"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Switch Case1"
+	  SrcPort		  1
+	  Points		  [125, 0]
+	  DstBlock		  "Switch Case Action\nSubsystem6"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Switch Case1"
+	  SrcPort		  3
+	  Points		  [43, 0; 0, 8]
+	  DstBlock		  "Switch Case Action\nSubsystem8"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "Switch Case1"
+	  SrcPort		  4
+	  Points		  [43, 0; 0, 8]
+	  DstBlock		  "Switch Case Action\nSubsystem9"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Switch Case1"
+	  SrcPort		  2
+	  Points		  [43, 0; 0, 8]
+	  DstBlock		  "Switch Case Action\nSubsystem7"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "Switch Case Action\nSubsystem7"
+	  SrcPort		  1
+	  DstBlock		  "Merge1"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "Switch Case1"
+	  SrcPort		  5
+	  Points		  [45, 0; 0, 8]
+	  DstBlock		  "Switch Case Action\nSubsystem10"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "Switch Case Action\nSubsystem6"
+	  SrcPort		  1
+	  DstBlock		  "Merge1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "Switch Case Action\nSubsystem11"
+	  SrcPort		  1
+	  Points		  [30, 0; 0, 5]
+	  DstBlock		  "Merge1"
+	  DstPort		  6
+	}
+	Line {
+	  ZOrder		  10
+	  SrcBlock		  "Switch Case Action\nSubsystem10"
+	  SrcPort		  1
+	  DstBlock		  "Merge1"
+	  DstPort		  5
+	}
+	Line {
+	  ZOrder		  11
+	  SrcBlock		  "Switch Case Action\nSubsystem8"
+	  SrcPort		  1
+	  DstBlock		  "Merge1"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  12
+	  SrcBlock		  "Switch Case1"
+	  SrcPort		  6
+	  Points		  [45, 0; 0, 3]
+	  DstBlock		  "Switch Case Action\nSubsystem11"
+	  DstPort		  ifaction
+	}
+	Line {
+	  ZOrder		  13
+	  SrcBlock		  "SelectorCtrlAction"
+	  SrcPort		  1
+	  Points		  [7, 0; 0, -10]
+	  DstBlock		  "Switch Case1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  14
+	  SrcBlock		  "Merge1"
+	  SrcPort		  1
+	  DstBlock		  "SelectorCtrl"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "ToCM"
+      SID		      "4"
+      Position		      [850, 315, 870, 325]
+      ZOrder		      4
+      BackgroundColor	      "cyan"
+      OutDataTypeStr	      "Bus: cmSelectorCtrlMappingOut"
+    }
+    Line {
+      ZOrder		      1
+      SrcBlock		      "FromCM"
+      SrcPort		      1
+      DstBlock		      "IF_In_Selector"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      3
+      SrcBlock		      "IF_Out_Selector"
+      SrcPort		      1
+      DstBlock		      "ToCM"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      4
+      SrcBlock		      "Current Selector Control"
+      SrcPort		      6
+      Points		      [70, 0; 0, 10]
+      DstBlock		      "Get DigitalSelectorCtrl Values"
+      DstPort		      7
+    }
+    Line {
+      Name		      "<SelectorCtrlAction>"
+      ZOrder		      21
+      Labels		      [1, 1]
+      SrcBlock		      "IF_In_Selector"
+      SrcPort		      1
+      DstBlock		      "SelectorCtrlAction2SelectorCtrl_trg"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      6
+      SrcBlock		      "Current Selector Control"
+      SrcPort		      2
+      Points		      [112, 0; 0, 30]
+      DstBlock		      "Get DigitalSelectorCtrl Values"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      40
+      SrcBlock		      "Get DigitalSelectorCtrl 0 Signal"
+      SrcPort		      1
+      DstBlock		      "IF_Out_Selector"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      38
+      SrcBlock		      "Get DigitalSelectorCtrl 1 Signal"
+      SrcPort		      1
+      DstBlock		      "IF_Out_Selector"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      9
+      SrcBlock		      "Current Selector Control"
+      SrcPort		      3
+      Points		      [102, 0; 0, 25]
+      DstBlock		      "Get DigitalSelectorCtrl Values"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      12
+      SrcBlock		      "SelectorCtrlAction2SelectorCtrl_trg"
+      SrcPort		      1
+      Points		      [118, 0]
+      Branch {
+	ZOrder			39
+	Points			[0, -25; 337, 0]
+	DstBlock		"IF_Out_Selector"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			11
+	Points			[0, 95]
+	DstBlock		"Get DigitalSelectorCtrl Values"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      13
+      SrcBlock		      "Current Selector Control"
+      SrcPort		      5
+      Points		      [81, 0; 0, 15]
+      DstBlock		      "Get DigitalSelectorCtrl Values"
+      DstPort		      6
+    }
+    Line {
+      ZOrder		      14
+      SrcBlock		      "Current Selector Control"
+      SrcPort		      1
+      Points		      [123, 0; 0, 35]
+      DstBlock		      "Get DigitalSelectorCtrl Values"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      37
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      DstBlock		      "IF_Out_Selector"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      16
+      SrcBlock		      "Current Selector Control"
+      SrcPort		      4
+      Points		      [91, 0; 0, 20]
+      DstBlock		      "Get DigitalSelectorCtrl Values"
+      DstPort		      5
+    }
+    Line {
+      Name		      "<VC_SelectorCtrl_in>"
+      ZOrder		      23
+      Labels		      [0, 0]
+      SrcBlock		      "IF_In_Selector"
+      SrcPort		      2
+      Points		      [54, 0; 0, 155]
+      DstBlock		      "Current Selector Control"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      20
+      SrcBlock		      "Get DigitalSelectorCtrl Values"
+      SrcPort		      1
+      Points		      [8, 0; 0, -95]
+      Branch {
+	ZOrder			19
+	DstBlock		"Get DigitalSelectorCtrl 1 Signal"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			18
+	Points			[0, -65]
+	DstBlock		"Get DigitalSelectorCtrl 0 Signal"
+	DstPort			1
+      }
+    }
+  }
+}
+MatData {
+  NumRecords		  1
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    > @   8    (     @         %    \"     $    !     0         %  0 \"0    $    _    ;E-I9"
+    "P      <VEG3F%M90  8FQK3F%M90  =F%L=65S    =&]0;W)T    <V5L96-T960 <V5L261X      X    X    !@    @    &          4"
+    "    (     0    $    !          D    (            $$ .    ( $   8    (     0         %    \"     $    $     0      "
+    "   .    2     8    (    !          %    \"     $    3     0         0    $P   $1-7U-E;&5C=&]R0W1R;%]O=70       X  "
+    "  P    !@    @    $          4    (     0    (    !         !   @!D,   #@   #     &    \"     0         !0    @   "
+    " !     @    $         $  \" &0Q   .    ,     8    (    !          %    \"     $    \"     0         0  ( 9#(   X  "
+    " !H 0  !@    @    !          4    (     0    0    !          X   !(    !@    @    $          4    (     0   !,    "
+    "!         !     3    1$U?4V5L96-T;W)#=')L7V]U=       #@   $@    &    \"     0         !0    @    !    %@    $     "
+    "    $    !8   !$:6=I=&%L4V5L96-T;W)#=')L+F0P   .    2     8    (    !          %    \"     $    6     0         0 "
+    "   %@   $1I9VET86Q396QE8W1O<D-T<FPN9#$   X   !(    !@    @    $          4    (     0   !8    !         !     6   "
+    " 1&EG:71A;%-E;&5C=&]R0W1R;\"YD,@  #@    @!   &    \"     $         !0    @    !    !     $         #@   #     &   "
+    " \"     0         !0    @    !     0    $         $  ! #     .    ,     8    (    !          %    \"     $    !   "
+    "  0         0  $ ,     X    P    !@    @    $          4    (     0    $    !         !   0 P    #@   #     &    \""
+    "     0         !0    @    !     0    $         $  ! #     .    < $   8    (     0         %    \"     $    $     0"
+    "         .    4     8    (    !          %    \"     $    :     0         0    &@   &-M4V5L96-T;W)#=')L36%P<&EN9T]"
+    "U=\"\\Q        #@   $@    &    \"     0         !0    @    !    %0    $         $    !4   !$:6=I=&%L4V5L96-T;W)#='"
+    ")L+S$    .    2     8    (    !          %    \"     $    5     0         0    %0   $1I9VET86Q396QE8W1O<D-T<FPO,@ "
+    "   X   !(    !@    @    $          4    (     0   !4    !         !     5    1&EG:71A;%-E;&5C=&]R0W1R;\"\\S    #@ "
+    "  &@!   &    \"     $         !0    @    $     0    $         #@   $@    &    \"     0         !0    @    !    $P "
+    "   $         $    !,   !$35]396QE8W1O<D-T<FQ?;W5T       .    2     8    (    !          %    \"     $    6     0  "
+    "       0    %@   $1I9VET86Q396QE8W1O<D-T<FPN9#    X   !(    !@    @    $          4    (     0   !8    !         !"
+    "     6    1&EG:71A;%-E;&5C=&]R0W1R;\"YD,0  #@   $@    &    \"     0         !0    @    !    %@    $         $    !"
+    "8   !$:6=I=&%L4V5L96-T;W)#=')L+F0R   .    * $   8    (     0         %    \"     $    $     0         .    .     8"
+    "    (    !@         %    \"     $    !     0         )    \"            / _#@   #@    &    \"     8         !0    "
+    "@    !     0    $         \"0    @             0 X    X    !@    @    &          4    (     0    $    !          D"
+    "    (            \"$ .    .     8    (    !@         %    \"     $    !     0         )    \"            !! "
+  }
+}
