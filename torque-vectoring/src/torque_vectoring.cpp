@@ -22,8 +22,12 @@ std::tuple<TorqueOutput, Reference, YawMomentTorqueRequest> TorqueVectoring::com
     YawMomentTorqueRequest high_level_request = high_level_controller_->compute_control(
         state, desired_reference, driver_command);
 
+     RCLCPP_INFO(rclcpp::get_logger("tv"), "Called HL Controller");
+
     // Compute low-level torque output
     TorqueOutput torque_output = low_level_controller_->compute_control(high_level_request);
+
+    RCLCPP_INFO(rclcpp::get_logger("tv"), "Called LL Controller, RL:%f, RR:%f", torque_output.rl_torque, torque_output.rr_torque);
 
     // Return all three in a tuple
     return std::make_tuple(torque_output, desired_reference, high_level_request);

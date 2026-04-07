@@ -1,4 +1,5 @@
 #include "high_level_controllers/pid_controller.hpp"
+#include "rclcpp/rclcpp.hpp"
 
 PIDController::PIDController(const CarParameters& car_params,
                              double kp,
@@ -52,6 +53,7 @@ YawMomentTorqueRequest PIDController::compute_control(
         -car_params_.max_yaw_moment,
          car_params_.max_yaw_moment
     );
+
 
     request.yaw_moment = yaw_moment;
 

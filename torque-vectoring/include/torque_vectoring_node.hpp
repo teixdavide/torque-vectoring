@@ -3,7 +3,9 @@
 #include "rclcpp/rclcpp.hpp"
 
 #include "std_msgs/msg/float64.hpp"
+#include "std_msgs/msg/float64.hpp"
 #include "geometry_msgs/msg/vector3.hpp"
+#include <std_msgs/msg/float64_multi_array.hpp>
 
 #include "torque_vectoring.hpp"
 #include "data_structures/vehicle_state.hpp"
@@ -31,7 +33,7 @@ private:
     rclcpp::Subscription<geometry_msgs::msg::Vector3>::SharedPtr accel_sub_;
 
     // Publisher
-    rclcpp::Publisher<geometry_msgs::msg::Vector3>::SharedPtr torque_pub_;
+    rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr torque_pub_;
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr yaw_rate_ref_pub_;
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr sideslip_ref_pub_;
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr yaw_moment_request_pub_;
@@ -46,6 +48,7 @@ private:
     Reference reference_;
     CarParameters car_params_;
     std::shared_ptr<TorqueVectoring> torque_vectoring_;
+    bool received_velocity = false;
 
     // Callbacks
     void throttleCallback(const std_msgs::msg::Float64::SharedPtr msg);

@@ -30,7 +30,7 @@ TorqueVectoringNode::TorqueVectoringNode()
         std::bind(&TorqueVectoringNode::accelCallback, this, std::placeholders::_1));
 
     // --- Publisher ---
-    torque_pub_ = this->create_publisher<geometry_msgs::msg::Vector3>(
+    torque_pub_ = this->create_publisher<std_msgs::msg::Float64MultiArray>(
         "/vehicle/wheel_torques", 10);
 
     yaw_rate_ref_pub_ = this->create_publisher<std_msgs::msg::Float64>(
@@ -51,8 +51,8 @@ TorqueVectoringNode::TorqueVectoringNode()
     car_params_.rear_axle_distance = 0.717;
     car_params_.front_track_width = 1.2;
     car_params_.rear_track_width = 1.2;
-    car_params_.cornering_stiffness_front = 15714;
-    car_params_.cornering_stiffness_rear = 21429;
+    car_params_.cornering_stiffness_front = 483;
+    car_params_.cornering_stiffness_rear = 530;
     car_params_.max_lateral_acceleration = 1.6 * 9.81;
     car_params_.max_yaw_moment = 150.0;
     car_params_.max_drive_torque = 63.2 * 13; // 63.2 Nm per wheel, 13 is the gear ratio
@@ -67,13 +67,13 @@ TorqueVectoringNode::TorqueVectoringNode()
         sideslip_generator
     );
     auto low_level_controller = std::make_shared<SimpleApproach>(car_params_);
-    auto high_level_controller = std::make_shared<PIDController>(car_params_, 119.52, 3855.6, 0.0, 0.01, 10.0);
+    auto high_level_controller = std::make_shared<PIDController>(car_params_, 119.52, 3855.6, 0.0, 0.001, 100.0);
     
     torque_vectoring_ = std::make_shared<TorqueVectoring>(car_params_, reference_generator, low_level_controller, high_level_controller);
 
     // --- Timer ---
     timer_ = this->create_wall_timer(
-        std::chrono::milliseconds(10),
+        std::chrono::milliseconds(1),
         std::bind(&TorqueVectoringNode::controlLoop, this));
 
     RCLCPP_INFO(this->get_logger(), "Finished constructor");
@@ -99,6 +99,7 @@ void TorqueVectoringNode::velocityCallback(const geometry_msgs::msg::Vector3::Sh
 {
     state_.velocity_x = msg->x;
     state_.velocity_y = msg->y;
+    received_velocity = true;
 }
 
 void TorqueVectoringNode::accelCallback(const geometry_msgs::msg::Vector3::SharedPtr msg)
@@ -110,17 +111,26 @@ void TorqueVectoringNode::accelCallback(const geometry_msgs::msg::Vector3::Share
 // --- Control loop ---
 void TorqueVectoringNode::controlLoop()
 {
-    if (state_.velocity_x <= 0) return;
+    //if (!received_velocity) return;
+
+    if (state_.velocity_x <= 0){
+        state_.velocity_x = 0.1;
+        //return;
+    }
 
     // Unpack the tuple returned by compute_control
     auto [torque_output, reference, yaw_request] = torque_vectoring_->compute_control(state_, command_);
 
-    geometry_msgs::msg::Vector3 torque_msg;
+     RCLCPP_INFO(rclcpp::get_logger("tv"), "Called all");
 
-    torque_msg.x = torque_output.rl_torque;
-    torque_msg.y = torque_output.rr_torque;
+    std_msgs::msg::Float64MultiArray torque_msg;
+
+    torque_msg.data.push_back(torque_output.rl_torque);
+    torque_msg.data.push_back(torque_output.rr_torque);
 
     torque_pub_->publish(torque_msg);
+
+    RCLCPP_INFO(rclcpp::get_logger("tv"), "Published data");
 
     // Publish reference and request for debugging/analysis
     std_msgs::msg::Float64 yaw_rate_ref_msg;

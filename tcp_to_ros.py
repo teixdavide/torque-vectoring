@@ -126,12 +126,16 @@ class TCPBridge(Node):
 
         try:
             # Convert torques to float64 array
-            data = np.array(msg.data, dtype=np.float64)
+            #msg.data[0] = msg.data[0]
+            #msg.data[1] = msg.data[1]
+            data = np.array(msg.data[0:2] , dtype=np.float64)
 
             # Optional: add flag for Simulink parsing
             packet = data  # flag=10
 
             self.client_out.sendall(packet.tobytes())
+            # self.get_logger().warn(f"Sent the packet to tcp")
+
 
         except Exception as e:
             self.get_logger().warn(f"Send failed: {e}")
