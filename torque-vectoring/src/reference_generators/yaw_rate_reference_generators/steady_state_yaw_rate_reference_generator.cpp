@@ -30,8 +30,13 @@ double SteadyStateYawRateReferenceGenerator::generate_reference_yaw_rate (
         return 0.0;
     }
 
+
+    double den = L + understeer_coefficient_ * V * V;
+
+    if (den < 0) den = L;
+
     // Steady-state yaw rate calculation
-    double yaw_rate_ref = V  / (L * (1 + understeer_coefficient_ * V * V)) * delta;
+    double yaw_rate_ref = V  / den * delta;
 
     // Limit yaw rate reference based on max lateral acceleration
     double a_y_max = car_parameters_.max_lateral_acceleration;
