@@ -7,8 +7,8 @@ TorqueOutput SimpleApproach::compute_control(const YawMomentTorqueRequest& yaw_m
 
     output.fl_torque = 0;
     output.fr_torque = 0;
-    output.rl_torque = yaw_moment_torque_request.total_torque / 2 + delta_torque;
-    output.rr_torque = yaw_moment_torque_request.total_torque / 2 - delta_torque;
+    output.rl_torque = yaw_moment_torque_request.total_torque / 2 - delta_torque;
+    output.rr_torque = yaw_moment_torque_request.total_torque / 2 + delta_torque;
 
     return output;
 }
