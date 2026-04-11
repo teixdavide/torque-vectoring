@@ -59,7 +59,7 @@ TorqueVectoringNode::TorqueVectoringNode()
     car_params_.max_brake_torque = 684.0; // 684 Nm per wheel
 
     // --- Initialize torque vectoring ---
-    auto yaw_rate_generator = std::make_shared<SteadyStateYawRateReferenceGenerator>(car_params_, true, 0.022);
+    auto yaw_rate_generator = std::make_shared<SteadyStateYawRateReferenceGenerator>(car_params_, true, 0.0);
     auto sideslip_generator = std::make_shared<SteadyStateSideslipReferenceGenerator>(car_params_);
 
     auto reference_generator = std::make_shared<ReferenceGenerator>(
@@ -67,7 +67,7 @@ TorqueVectoringNode::TorqueVectoringNode()
         sideslip_generator
     );
     auto low_level_controller = std::make_shared<SimpleApproach>(car_params_);
-    auto high_level_controller = std::make_shared<PIDController>(car_params_, 40.0, 0, 0.0, 0.001, 10000.0);
+    auto high_level_controller = std::make_shared<PIDController>(car_params_, 30.0, 0, 0.0, 0.001, 10000.0);
     
     torque_vectoring_ = std::make_shared<TorqueVectoring>(car_params_, reference_generator, low_level_controller, high_level_controller);
 
