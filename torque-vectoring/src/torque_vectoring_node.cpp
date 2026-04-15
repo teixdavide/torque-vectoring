@@ -67,7 +67,7 @@ TorqueVectoringNode::TorqueVectoringNode()
         sideslip_generator
     );
     auto low_level_controller = std::make_shared<SimpleApproach>(car_params_);
-    auto high_level_controller = std::make_shared<PIDController>(car_params_, 49.0, 20.0, 0.0, 0.001, 10000.0);
+    auto high_level_controller = std::make_shared<PIDController>(car_params_, 49.0, 16.0, 0.0, 0.001, 10000.0);
     
     torque_vectoring_ = std::make_shared<TorqueVectoring>(car_params_, reference_generator, low_level_controller, high_level_controller);
 
