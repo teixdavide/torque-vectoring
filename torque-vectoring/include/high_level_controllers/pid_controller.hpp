@@ -4,8 +4,12 @@
 #include <algorithm>
 
 /**
- * @brief A PID controller for yaw moment control in a torque vectoring system.
+ * @brief A PID + feedforward controller for yaw moment control in a torque vectoring system.
  * 
+ * This controller includes:
+ *  - PID yaw-rate tracking
+ *  - Feedforward yaw moment using Iz * d(yaw_rate)/dt
+ *  - First-order filtering of yaw acceleration (1 / (tau s + 1))
  */
 class PIDController : public HighLevelController {
 public:
@@ -17,42 +21,58 @@ public:
      * @param ki Integral gain
      * @param kd Derivative gain
      * @param dt Time step for integration and differentiation
-     * @param integral_limit Maximum absolute value for the integral term to prevent windup
+     * @param integral_limit Maximum absolute value for the integral term
+     * @param tau Time constant for yaw acceleration filtering
      */
     PIDController(const CarParameters& car_params,
                   double kp,
                   double ki,
                   double kd,
                   double dt,
-                  double integral_limit);
-    
+                  double integral_limit,
+                  double tau);   // <-- NEW
+
     /**
-     * @brief Compute the control output (yaw moment torque request) based on the current vehicle state, reference, and driver command.
-     * 
-     * @param state Current VehicleState
-     * @param reference Desired Reference (yaw rate, sideslip)
-     * @param driver_command Current DriverCommand (throttle, steering)
-     * @return YawMomentTorqueRequest High-level control outputs (yaw moment torque and total drive torque)
+     * @brief Compute the control output
      */
     YawMomentTorqueRequest compute_control(const VehicleState& state,
                                            const Reference& reference,
                                            const DriverCommand& driver_command) override;
-    
+
     /**
-     * @brief Reset the internal state of the PID controller (integral and previous error)
-     * 
+     * @brief Reset controller state
      */
     void reset();
 
 private:
-    double kp_; ///< Proportional gain
-    double ki_; ///< Integral gain
-    double kd_; ///< Derivative gain
+    // ===============================
+    // PID gains
+    // ===============================
+    double kp_;
+    double ki_;
+    double kd_;
 
-    double dt_; ///< Time step for integration and differentiation
+    // ===============================
+    // Timing
+    // ===============================
+    double dt_;
 
-    double integral_error_; ///< Accumulated integral error
-    double previous_error_; ///< Previous error for derivative calculation
+    // ===============================
+    // PID state
+    // ===============================
+    double integral_error_;
+    double previous_error_;
 
-    double integral_limit_; ///< Maximum absolute value for the integral term to prevent windup
+    double integral_limit_;
+
+    // ===============================
+    // Feedforward (Iz * s)
+    // ===============================
+    double previous_yaw_rate_ref_;   ///< Needed to compute derivative
+
+    // ===============================
+    // Low-pass filter (1 / (tau s + 1))
+    // ===============================
+    double tau_;                    ///< Filter time constant
+    double yaw_acc_filtered_;       ///< Filtered yaw acceleration
 };
