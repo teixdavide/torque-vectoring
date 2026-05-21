@@ -57,6 +57,7 @@ TorqueVectoringNode::TorqueVectoringNode()
     car_params_.max_yaw_moment = 150.0;
     car_params_.max_drive_torque = 63.2 * 13; // 63.2 Nm per wheel, 13 is the gear ratio
     car_params_.max_brake_torque = 684.0; // 684 Nm per wheel
+    car_params_.moment_of_inertia_z = 95.0;
 
     // --- Initialize torque vectoring ---
     auto yaw_rate_generator = std::make_shared<SteadyStateYawRateReferenceGenerator>(car_params_, true, 0.0);
@@ -68,7 +69,7 @@ TorqueVectoringNode::TorqueVectoringNode()
     );
     auto low_level_controller = std::make_shared<SimpleApproach>(car_params_);
 
-    auto high_level_controller = std::make_shared<PIDController>(car_params_, 65.0, 8.0, 0.0, 0.001, 10000.0, 0.07);
+    auto high_level_controller = std::make_shared<PIDController>(car_params_, 0.0, 0.0, 0.0, 0.001, 10000.0, 0.07);
     
     torque_vectoring_ = std::make_shared<TorqueVectoring>(car_params_, reference_generator, low_level_controller, high_level_controller);
 

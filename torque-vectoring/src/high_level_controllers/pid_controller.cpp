@@ -19,7 +19,10 @@ PIDController::PIDController(const CarParameters& car_params,
       previous_error_(0.0),
       previous_yaw_rate_ref_(0.0),
       yaw_acc_filtered_(0.0),
-      integral_limit_(integral_limit) {}
+      integral_limit_(integral_limit) {
+
+
+      }
 
 void PIDController::reset() {
     integral_error_ = 0.0;
@@ -32,6 +35,17 @@ YawMomentTorqueRequest PIDController::compute_control(
     const VehicleState& state,
     const Reference& reference,
     const DriverCommand& driver_command) {
+
+    double v = state.velocity_x;
+
+    //v = std::min(v, 32.0);
+
+    //kp_ = 1.67 * v - 8.76;
+    //ki_ = -0.23 * v + 9.95;
+
+    //kp_ = std::max(kp_, 0.0);
+    //ki_ = std::max(ki_, 0.0);
+
 
     YawMomentTorqueRequest request{};
 
@@ -67,8 +81,8 @@ YawMomentTorqueRequest PIDController::compute_control(
     previous_yaw_rate_ref_ = reference.yaw_rate;
 
     // Low-pass filter: 1 / (tau s + 1)
-    yaw_acc_filtered_ +=
-        (dt_ / tau_) * (yaw_acc_raw - yaw_acc_filtered_);
+    //yaw_acc_filtered_ +=
+    //    (dt_ / tau_) * (yaw_acc_raw - yaw_acc_filtered_);
 
     // Feedforward yaw moment
     const double mz_ff =
