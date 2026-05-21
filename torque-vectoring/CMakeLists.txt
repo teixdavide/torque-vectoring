@@ -31,6 +31,7 @@ add_library(torque_vectoring
     src/high_level_controllers/pid_controller.cpp
     src/low_level_controllers/simple_approach.cpp
     src/torque_vectoring.cpp
+    src/traction_control/traction_control.cpp
 )
 
 target_include_directories(torque_vectoring

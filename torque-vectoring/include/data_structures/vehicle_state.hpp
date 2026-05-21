@@ -11,4 +11,6 @@ struct VehicleState {
   double velocity_y; ///< Lateral velocity of the vehicle
   double acceleration_x; ///< Longitudinal acceleration of the vehicle
   double acceleration_y; ///< Lateral acceleration of the vehicle
+  double slip_ratio_rl; ///< Slip ratio of the rear left wheel
+  double slip_ratio_rr; ///< Slip ratio of the rear right wheel
 };

@@ -24,6 +24,8 @@ class TCPBridge(Node):
         self.yawrate_pub = self.create_publisher(Float64, '/vehicle/yaw_rate', 10)
         self.velocity_pub = self.create_publisher(Vector3, '/vehicle/velocity', 10)
         self.accel_pub = self.create_publisher(Vector3, '/vehicle/acceleration', 10)
+        self.slip_rl_pub = self.create_publisher(Float64, '/vehicle/slip_rl', 10)
+        self.slip_rr_pub = self.create_publisher(Float64, '/vehicle/slip_rr', 10)
 
         # Subscriber (NEW)
         self.torque_sub = self.create_subscription(
@@ -104,6 +106,17 @@ class TCPBridge(Node):
 
                 self.velocity_pub.publish(vel)
                 self.accel_pub.publish(acc)
+
+            elif flag == 3 and len(values) >= 3:
+
+                slip_rl = Float64()
+                slip_rr = Float64()
+
+                slip_rl.data = values[1]
+                slip_rr.data = values[2]
+
+                self.slip_rl_pub.publish(slip_rl)
+                self.slip_rr_pub.publish(slip_rr)
 
     # =========================
     # 🔹 OUTPUT: ROS → Simulink

@@ -31,6 +31,8 @@ private:
     rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr yawrate_sub_;
     rclcpp::Subscription<geometry_msgs::msg::Vector3>::SharedPtr velocity_sub_;
     rclcpp::Subscription<geometry_msgs::msg::Vector3>::SharedPtr accel_sub_;
+    rclcpp::Subscription<geometry_msgs::msg::Float64>::SharedPtr slip_rl_sub_;
+    rclcpp::Subscription<geometry_msgs::msg::Float64>::SharedPtr slip_rr_sub_;
 
     // Publisher
     rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr torque_pub_;
@@ -49,6 +51,8 @@ private:
     CarParameters car_params_;
     std::shared_ptr<TorqueVectoring> torque_vectoring_;
     bool received_velocity = false;
+    TractionControl traction_controlRR;
+    TractionControl traction_controlRL;
 
     // Callbacks
     void throttleCallback(const std_msgs::msg::Float64::SharedPtr msg);
@@ -56,6 +60,8 @@ private:
     void yawRateCallback(const std_msgs::msg::Float64::SharedPtr msg);
     void velocityCallback(const geometry_msgs::msg::Vector3::SharedPtr msg);
     void accelCallback(const geometry_msgs::msg::Vector3::SharedPtr msg);
+    void slipRLCallback(const std_msgs::msg::Float64::SharedPtr msg);
+    void slipRRCallback(const std_msgs::msg::Float64::SharedPtr msg);
 
     // Control loop
     void controlLoop();
