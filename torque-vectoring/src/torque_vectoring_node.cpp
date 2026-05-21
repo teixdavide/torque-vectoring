@@ -45,11 +45,12 @@ TorqueVectoringNode::TorqueVectoringNode()
     total_torque_request_pub_ = this->create_publisher<std_msgs::msg::Float64>(
         "/vehicle/total_torque_request", 10);
 
-    slip_rl_pub_ = this->create_publisher<std_msgs::msg::Float64>(
-        "/vehicle/slip_rl", 10);
+    slip_rl_sub_ = this->create_subscription<std_msgs::msg::Float64>(
+        "/vehicle/slip_rl", 10, std::bind(&TorqueVectoringNode::slipRLCallback, this, std::placeholders::_1));
 
-    slip_rr_pub_ = this->create_publisher<std_msgs::msg::Float64>(
-        "/vehicle/slip_rr", 10);
+    slip_rr_sub_ = this->create_subscription<std_msgs::msg::Float64>(
+        "/vehicle/slip_rr", 10, std::bind(&TorqueVectoringNode::slipRRCallback, this, std::placeholders::_1));
+
 
 
     // --- Car parameters ---
@@ -70,8 +71,8 @@ TorqueVectoringNode::TorqueVectoringNode()
     auto yaw_rate_generator = std::make_shared<SteadyStateYawRateReferenceGenerator>(car_params_, true, 0.0);
     auto sideslip_generator = std::make_shared<SteadyStateSideslipReferenceGenerator>(car_params_);
 
-    auto traction_controlRR = std::make_shared<TractionControl>(car_params_, 1.0, 0.0, 0.0, 0.001, 10000.0, 0.15);
-    auto traction_controlRL = std::make_shared<TractionControl>(car_params_, 1.0, 0.0, 0.0, 0.001, 10000.0, 0.15);
+    traction_controlRR = std::make_shared<TractionControl>(car_params_, 1500.0, 0.0, 0.0, 0.001, 10000.0, 0.15);
+    traction_controlRL = std::make_shared<TractionControl>(car_params_, 1500.0, 0.0, 0.0, 0.001, 10000.0, 0.15);
 
     auto reference_generator = std::make_shared<ReferenceGenerator>(
         yaw_rate_generator,  // pass raw pointer to ReferenceGenerator
@@ -145,8 +146,8 @@ void TorqueVectoringNode::controlLoop()
 
      RCLCPP_INFO(rclcpp::get_logger("tv"), "Called all");
 
-    torque_output.rr_torque = traction_controlRR.compute_control(state_.slip_ratio_rr, torque_output.rr_torque);
-    torque_output.rl_torque = traction_controlRL.compute_control(state_.slip_ratio_rl, torque_output.rl_torque);
+    torque_output.rr_torque = traction_controlRR->compute_control(state_.slip_ratio_rr, torque_output.rr_torque);
+    torque_output.rl_torque = traction_controlRL->compute_control(state_.slip_ratio_rl, torque_output.rl_torque);
 
     std_msgs::msg::Float64MultiArray torque_msg;
 

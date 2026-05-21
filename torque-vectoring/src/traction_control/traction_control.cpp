@@ -1,4 +1,4 @@
-#include "traction_control/pid_controller.hpp"
+#include "traction_control/traction_control.hpp"
 
 TractionControl::TractionControl(const CarParameters& car_params,
                                double kp,
@@ -13,6 +13,8 @@ TractionControl::TractionControl(const CarParameters& car_params,
 double TractionControl::compute_control(double slip_ratio, double driver_torque)
 {
     double error = slip_ratio - 0.12;
+
+    if (error < 0) return driver_torque;
 
     integral_error_ += error * dt_;
     integral_error_ = std::clamp(integral_error_, -integral_limit_, integral_limit_);
