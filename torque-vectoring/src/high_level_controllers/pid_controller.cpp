@@ -84,9 +84,12 @@ YawMomentTorqueRequest PIDController::compute_control(
     //yaw_acc_filtered_ +=
     //    (dt_ / tau_) * (yaw_acc_raw - yaw_acc_filtered_);
 
+
     // Feedforward yaw moment
     const double mz_ff =
-        car_params_.moment_of_inertia_z * yaw_acc_filtered_;
+        0.5 * car_params_.moment_of_inertia_z * yaw_acc_filtered_;
+
+    RCLCPP_WARN(rclcpp::get_logger("tv"), "Mz: %f", mz_ff);
 
     // ===============================
     // 3. Combine (PI + Feedforward)

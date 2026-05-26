@@ -1,31 +1,72 @@
 #include "traction_control/traction_control.hpp"
 
 TractionControl::TractionControl(const CarParameters& car_params,
-                               double kp,
-                               double ki,
-                               double kd,
-                               double dt,
-                               double integral_limit,
-                               double reference)
-: kp_(kp), ki_(ki), kd_(kd), dt_(dt), integral_error_(0.0), previous_error_(0.0), integral_limit_(integral_limit)
+                                 double dt,
+                                 double slip_threshold,
+                                 double k_reduce,
+                                 double k_increase,
+                                 double slope_deadband)
+    : dt_(dt),
+      slip_threshold_(slip_threshold),
+      k_reduce_(k_reduce),
+      k_increase_(k_increase),
+      slope_deadband_(slope_deadband),
+      previous_slip_(0.0), 
+      torque_limit_(0.0),
+      active_(false)
 {}
 
-double TractionControl::compute_control(double slip_ratio, double driver_torque)
+double TractionControl::compute_control(double slip_ratio,
+                                        double driver_torque,
+                                        VehicleState state)
 {
-    double error = slip_ratio - 0.12;
+    // --- Low speed torque limits (launch control, unchanged from original) ---
+    //if (state.velocity_x < 1.0) return std::min(driver_torque, 41.08);
+    //if (state.velocity_x < 4.0) return std::min(driver_torque, 102.7);
 
-    if (error < 0) return driver_torque;
+    // --- Slip slope TCS ---
+    // Compute slope of slip ratio over time
+    double slip_slope = (slip_ratio - previous_slip_) / dt_;
+    previous_slip_ = slip_ratio;
 
-    integral_error_ += error * dt_;
-    integral_error_ = std::clamp(integral_error_, -integral_limit_, integral_limit_);
+    if (!active_) {
+        // TCS not active: pass driver torque through
+        torque_limit_ = driver_torque;
 
-    double derivative_error = (error - previous_error_) / dt_;
-    previous_error_ = error;
+        // Activate if slip exceeds threshold
+        if (slip_ratio > slip_threshold_) {
+            active_ = true;
+        }
+        return driver_torque;
+    }
 
-    double control_output = kp_ * error + ki_ * integral_error_ + kd_ * derivative_error;
+    // TCS active: deactivate if slip dropped back below threshold
+    if (slip_ratio < slip_threshold_ * 0.8) {   // hysteresis band to avoid chattering
+        active_ = false;
+        torque_limit_ = driver_torque;
+        return driver_torque;
+    }
 
-    // Limit the control output to the driver's requested torque
-    control_output = std::clamp(control_output, 0.0, driver_torque);
+    // Slip slope logic (Gustafsson 1997):
+    //   slope > +deadband → slip increasing → reduce torque (moving away from peak)
+    //   slope < -deadband → slip decreasing → gently recover torque (approaching peak)
+    //   |slope| <= deadband → at peak → hold torque
+    if (slip_slope > slope_deadband_) {
+        torque_limit_ *= k_reduce_;
+    } else if (slip_slope < -slope_deadband_) {
+        torque_limit_ *= k_increase_;
+    }
+    // else: hold torque_limit_ unchanged
 
-    return driver_torque - control_output;
+    // Torque limit must stay within [0, driver_torque]
+    torque_limit_ = std::clamp(torque_limit_, 0.0, driver_torque);
+
+    return torque_limit_;
+}
+
+void TractionControl::reset()
+{
+    previous_slip_ = 0.0;
+    torque_limit_  = 0.0;
+    active_        = false;
 }
