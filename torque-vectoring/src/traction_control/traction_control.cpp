@@ -21,8 +21,10 @@ double TractionControl::compute_control(double slip_ratio,
                                         VehicleState state)
 {
     // --- Low speed torque limits (launch control, unchanged from original) ---
-    //if (state.velocity_x < 1.0) return std::min(driver_torque, 41.08);
-    //if (state.velocity_x < 4.0) return std::min(driver_torque, 102.7);
+    if (state.velocity_x < 1.0) return std::min(driver_torque, 41.08);
+    if (state.velocity_x < 2.0) return std::min(driver_torque, 102.7);
+    if (state.velocity_x < 4.0) return std::min(driver_torque, 143.78);
+    if (state.velocity_x < 7.0) return std::min(driver_torque, 184.86);
 
     // --- Slip slope TCS ---
     // Compute slope of slip ratio over time

@@ -71,8 +71,8 @@ TorqueVectoringNode::TorqueVectoringNode()
     auto yaw_rate_generator = std::make_shared<SteadyStateYawRateReferenceGenerator>(car_params_, true, 0.0);
     auto sideslip_generator = std::make_shared<SteadyStateSideslipReferenceGenerator>(car_params_);
 
-    traction_controlRR = std::make_shared<TractionControl>(car_params_, 0.001, 0.03, 0.97, 1.0007, 0.002);
-    traction_controlRL = std::make_shared<TractionControl>(car_params_, 0.001, 0.03, 0.97, 1.0007, 0.002);
+    traction_controlRR = std::make_shared<TractionControl>(car_params_, 0.001, 0.03, 0.97, 1.0007, 0.0015);
+    traction_controlRL = std::make_shared<TractionControl>(car_params_, 0.001, 0.03, 0.97, 1.0007, 0.0015);
 
     auto reference_generator = std::make_shared<ReferenceGenerator>(
         yaw_rate_generator,  // pass raw pointer to ReferenceGenerator
