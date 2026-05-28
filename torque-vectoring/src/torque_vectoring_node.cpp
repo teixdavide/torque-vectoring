@@ -80,7 +80,7 @@ TorqueVectoringNode::TorqueVectoringNode()
     );
     auto low_level_controller = std::make_shared<SimpleApproach>(car_params_);
 
-    //auto high_level_controller = std::make_shared<PIDController>(car_params_, 35.0, 10.0, 0.0, 0.001, 10000.0, 0.15);
+    //auto high_level_controller = std::make_shared<PIDController>(car_params_, 7.0, 25.0, 0.0, 0.001, 10000.0, 0.15);
 
     auto high_level_controller = std::make_shared<PIDController>(car_params_, 0.0, 0.0, 0.0, 0.001, 1000.0, 0.07);
     
@@ -148,8 +148,8 @@ void TorqueVectoringNode::controlLoop()
 
      RCLCPP_INFO(rclcpp::get_logger("tv"), "Called all");
 
-    //torque_output.rr_torque = traction_controlRR->compute_control(state_.slip_ratio_rr, torque_output.rr_torque, state_);
-    //torque_output.rl_torque = traction_controlRL->compute_control(state_.slip_ratio_rl, torque_output.rl_torque, state_);
+    torque_output.rr_torque = traction_controlRR->compute_control(state_.slip_ratio_rr, torque_output.rr_torque, state_);
+    torque_output.rl_torque = traction_controlRL->compute_control(state_.slip_ratio_rl, torque_output.rl_torque, state_);
 
     std_msgs::msg::Float64MultiArray torque_msg;
 
