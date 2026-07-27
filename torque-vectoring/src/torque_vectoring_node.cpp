@@ -107,6 +107,7 @@ void TorqueVectoringNode::slipRRCallback(const std_msgs::msg::Float64::SharedPtr
 // --- Callbacks ---
 void TorqueVectoringNode::throttleCallback(const std_msgs::msg::Float64::SharedPtr msg)
 {
+    //if (msg->data > 0)
     command_.throttle = msg->data;
 }
 
@@ -148,7 +149,7 @@ void TorqueVectoringNode::controlLoop()
 
      RCLCPP_INFO(rclcpp::get_logger("tv"), "Called all");
 
-    torque_output.rr_torque = traction_controlRR->compute_control(state_.slip_ratio_rr, torque_output.rr_torque, state_);
+    torque_output.rr_torque = traction_controlRR->compute_control(state_.slip_ratio_rr, torque_output.rr_torque, state_) ;
     torque_output.rl_torque = traction_controlRL->compute_control(state_.slip_ratio_rl, torque_output.rl_torque, state_);
 
     std_msgs::msg::Float64MultiArray torque_msg;
